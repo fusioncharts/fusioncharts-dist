@@ -1,0 +1,13 @@
+# - Do not allow installed node modules to be committed. Doing `npm install -d` will bring them in root or other places.
+node_modules
+
+# - Prevent addition of OS specific file explorer files
+Thumbs.db
+.DS_Store
+
+# - Prevent Sublime text IDE files from being commited to repository
+*.sublime-*
+
+# - Do not commit any log file from anywhere
+*.log
+

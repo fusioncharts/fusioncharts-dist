@@ -1,0 +1,28 @@
+{
+  "name": "fusioncharts",
+  "description": "FusionCharts JavaScript charting framework for distribution",
+  "main": "fusioncharts.js",
+  "authors": [
+    "FusionCharts Technologies <support@fusioncharts.com>"
+  ],
+  "license": "http://www.fusioncharts.com/buy/",
+  "keywords": [
+    "javascript-charts",
+    "interactive-charts",
+    "charts",
+    "graphs",
+    "visualization",
+    "data-visualization",
+    "dataviz",
+    "browserify",
+    "webpack"
+  ],
+  "homepage": "http://www.fusioncharts.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
