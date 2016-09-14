@@ -15,20 +15,20 @@ It is recommended that you download the **fusionmaps** package if you want to re
 ## Table of Contents
 
 - [Quick Start](#quick-start)
-  - [Installing FusionCharts from NPM](#installing-fusioncharts-from-npm)
-    - [Package-specific Dependencies for NPM](#package-specific-dependencies-for-npm)
-    - [Chart-specific Dependencies for NPM](#chart-specific-dependencies-for-npm)
+  - [Installing FusionCharts from npm](#installing-fusioncharts-from-npm)
+    - [Package-specific dependencies for npm](#package-specific-dependencies-for-npm)
+    - [Chart-specific dependencies for npm](#chart-specific-dependencies-for-npm)
   - [Installing FusionCharts from Bower](#installing-fusioncharts-from-bower)
-    - [Package-specific Dependencies for Bower](#package-specific-dependencies-for-bower)
-    - [Chart-specific Dependencies for Bower](#chart-specific-dependencies-for-bower)
+    - [Package-specific dependencies for Bower](#package-specific-dependencies-for-bower)
+    - [Chart-specific dependencies for Bower](#chart-specific-dependencies-for-bower)
 - [What's Included](#whats-included)
-  - [Directory Structure for FusionCharts Installed via NPM](#directory-structure-for-fusioncharts-installed-via-npm)
-  - [Directory Structure for FusionCharts Installed via Bower](#directory-structure-for-fusioncharts-installed-via-bower)
+  - [Directory structure for FusionCharts installed via npm](#directory-structure-for-fusioncharts-installed-via-npm)
+  - [Directory structure for FusionCharts installed via Bower](#directory-structure-for-fusioncharts-installed-via-bower)
 
 
 ## Quick Start
 
-### Installing FusionCharts from NPM
+### Installing FusionCharts from npm
 
 1. Install the FusionCharts package.
 
@@ -57,7 +57,7 @@ It is recommended that you download the **fusionmaps** package if you want to re
 }).render("chartContainer");
 ```
 
-#### Package-specific Dependencies for NPM
+#### Package-specific dependencies for npm
 
 - To render a chart belonging to the PowerCharts package, load the PowerCharts module:
 
@@ -81,7 +81,7 @@ To know the map definition file names, refer the [list of maps](http://www.fusio
 
 **Note**: The map definition files have to be included for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are required to be fetched from there.
 
-#### Chart-specific Dependencies for NPM
+#### Chart-specific dependencies for npm
 
 For some chart types, you need to include/exclude certain files and in a certain order. These chart types and the corresponding files are mentioned below:
 
@@ -152,7 +152,7 @@ For some chart types, you need to include/exclude certain files and in a certain
 </script>
 ```
 
-#### Package-specific Dependencies for Bower
+#### Package-specific dependencies for Bower
 
 - To render a chart belonging to the PowerCharts package, load the PowerCharts module:
 
@@ -175,7 +175,7 @@ To know the map definition file names, refer the [list of maps](http://www.fusio
 
 **Note**: The map definition files have to be included for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are required to be fetched from there.
 
-#### Chart-specific Dependencies for Bower
+#### Chart-specific dependencies for Bower
 
 For some chart types, you need to include/exclude certain files and in a certain order. These chart types and the corresponding files are mentioned below:
 
@@ -217,9 +217,9 @@ For some chart types, you need to include/exclude certain files and in a certain
   
 ## What's Included
 
-### Directory Structure for FusionCharts Installed via NPM
+### Directory structure for FusionCharts installed via npm
 
-When FusionCharts is installed via NPM, the downloaded package contains the following directories and files:
+When FusionCharts is installed via npm, the downloaded package contains the following directories and files:
 
 ```
 node_modules/
@@ -246,7 +246,7 @@ node_modules/
   ├── fusioncharts.widgets.js
   └── fusioncharts.maps.js
 ```
-### Directory Structure for FusionCharts Installed via Bower 
+### Directory structure for FusionCharts installed via Bower 
 
 When FusionCharts is installed via Bower, the downloaded package contains the following directories and files:
 
