@@ -32,7 +32,7 @@ It is recommended that you download the **fusionmaps** package if you want to re
 
 1. Install the FusionCharts package.
 
-   `$npm install fusioncharts`
+   `npm install fusioncharts`
    
 2. Load FusionCharts using require.
 
@@ -125,7 +125,7 @@ For some chart types, you need to include/exclude certain files and in a certain
 
 1. Install the FusionCharts package.
 
-   `$bower install fusioncharts`
+   `bower install fusioncharts`
    
 2. Load FusionCharts module.
 
