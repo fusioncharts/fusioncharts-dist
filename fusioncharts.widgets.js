@@ -3,12 +3,12 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.11.1
+ @version 3.11.2
  FusionCharts JavaScript Library
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.11.1
+ @version 3.11.2
 */
 (function(T){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=T:T(FusionCharts)})(function(T){T.register("module",["private","modules.renderer.js-spark",function(){var H=this.hcLib,ja=H.BLANKSTRING,r=H.pluck,O=H.pluckNumber,q=H.extend2,fa=H.chartAPI,g=H.graphics.getLightColor,V=H.COMMASTRING,e=H.graphics.convertColor,ib=H.getValidValue,sa=Math,Ga=sa.min,da=sa.max,Ea=sa.ceil,ra=H.toRaphaelColor,ma=H.parseUnsafeString,ka=H.graphics.getColumnColor,F=H.graphics.parseColor,
 x=H.COLOR_TRANSPARENT,S=H.POSITION_BOTTOM,Y=H.POSITION_MIDDLE,oa=H.POSITION_START,Ia=H.POSITION_END,xa=H.HUNDREDSTRING,sa=!/fusioncharts\.com$/i.test(this.window.location.hostname),ta=q({},H.defaultGaugePaletteOptions),Ja=function(){var e=this.chart,g=e.config,D=g.dataLabelStyle,r=e.components.paper,l=g.valuepadding+2,q=this.graphics.dataLabelContainer||e.graphics.datalabelsGroup,P=g.sparkValues||(g.sparkValues={}),J=e.graphics,J=J.sparkLabels||(J.sparkLabels={}),K=e.linkedItems.smartLabel,F=e.get("config",

@@ -3,7 +3,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.11.1
+ @version 3.11.2
 */
 (function(Q){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=Q:Q(FusionCharts)})(function(Q){Q.register("module",["private","modules.renderer.js-gantt",function(){var V=this,I=V.hcLib,ha=V.window,ia=/msie/i.test(ha.navigator.userAgent)&&!ha.opera,da=I.chartAPI,ba=I.extend2,q=I.pluck,r=I.pluckNumber,sa=I.pluckFontSize,X=I.getFirstColor,oa=I.parseConfiguration,ta=I.setAttribDefs,P=I.graphics,T=P.convertColor,ea=P.getDarkColor,Y=I.parseUnsafeString,la=I.getFirstValue,ua=
 I.getValidValue,fa=I.toPrecision,W=I.Raphael,va=I.chartPaletteStr,Da=I.componentDispose,wa=I.schedular,Ea=I.COMMASTRING,U=I.setLineHeight,ma=I.getDashStyle,ca=I.toRaphaelColor,xa=I.each,J=I.attrTypeNum,ga=I.attrTypeBool,Fa=I.dropHash,Ga=I.HASHSTRING,ha=!/fusioncharts\.com$/i.test(ha.location.hostname),ja="rgba(192,192,192,"+(ia?.002:1E-6)+")",ya=P.mapSymbolName,ia=Math,M=ia.max,na=ia.min,za=ia.abs,Ha=parseInt,Aa=parseFloat,Ba=I.graphics.getLightColor,N=I.plotEventHandler,ka,aa,pa=function(a){return void 0!==

@@ -3,7 +3,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.11.1
+ @version 3.11.2
 */
 (function(Y){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=Y:Y(FusionCharts)})(function(Y){Y.register("module",["private","modules.renderer.js-treemap",function(){function ba(c){return c?c.replace(/^#*/,"#"):"#E5E5E5"}function n(c,b,d){this.label=c;this.value=parseFloat(b,10);this.colorValue=parseFloat(d,10);this.prev=this.next=void 0;this.meta={}}function P(){this._b=[];this._css=void 0;this.rangeOurEffectApplyFn=function(){};this.statePointerLow={value:void 0,index:void 0};
 this.statePointerHigh={value:void 0,index:void 0}}var ia,ja,ga,ka,H=this.hcLib,ca=H.chartAPI,X=Math,Z=X.max,la=X.round,ra=X.tan,ma=X.min,sa=X.PI,na=H.extend2,aa=this.window,ta=H.parsexAxisStyles,X=H.Raphael,oa=H.graphics,da=oa.convertColor,pa=oa.getLightColor,A=this.raiseEvent,y=H.pluckNumber,D=H.pluck,ua=H.each,ha=H.BLANKSTRING,va="rgba(192,192,192,"+(/msie/i.test(aa.navigator.userAgent)&&!aa.opera?.002:1E-6)+")",aa=!/fusioncharts\.com$/i.test(aa.location.hostname),qa=H.schedular;X.addSymbol({backIcon:function(c,
