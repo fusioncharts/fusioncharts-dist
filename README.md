@@ -228,6 +228,7 @@ node_modules/
   ├── fusioncharts.charts.js
   ├── fusioncharts.zoomscatter.js
   ├── fusioncharts.powercharts.js
+  ├── fusioncharts.ssgrid.js
   ├── fusioncharts.gantt.js
   ├── fusioncharts.treemap.js
   ├── fusioncharts.widgets.js
@@ -255,6 +256,7 @@ bower_components/
   ├── fusioncharts.charts.js
   ├── fusioncharts.zoomscatter.js
   ├── fusioncharts.powercharts.js
+  ├── fusioncharts.ssgrid.js
   ├── fusioncharts.gantt.js
   ├── fusioncharts.treemap.js
   ├── fusioncharts.widgets.js

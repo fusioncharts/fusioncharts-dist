@@ -3,12 +3,12 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.11.1
+ @version 3.11.2
  FusionCharts JavaScript Library
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.11.1
+ @version 3.11.2
  FusionCharts JavaScript Library
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
@@ -22,7 +22,7 @@ loadMessage:["loadMessage","Loading chart. Please wait."],renderErrorMessage:["r
 v;else for(q in"object"!==typeof a[c]&&(a[c]={}),f[c])v=A[f[c][q][0]],a[c][q]=void 0===v?f[c][q][1]:v};n.parseCommands=function(a,f,A){var q,c;"string"===typeof f&&(f=B[f]||[]);q=0;for(c=f.length;q<c;q++)a[f[q]]=A[q];return a};n.registrars={module:function(){return n.core.apply(n.core,arguments)}};n.core=function(a){if(!(this instanceof n.core)){if(1===arguments.length&&a instanceof Array&&"private"===a[0]){if(C[a[1]])return;C[a[1]]={};a[3]instanceof Array&&(n.core.version[a[1]]=a[3]);return"function"===
 typeof a[2]?a[2].call(n,C[a[1]]):n}if(1===arguments.length&&"string"===typeof a)return n.core.items[a];n.raiseError&&n.raiseError(this,"25081840","run","",new SyntaxError('Use the "new" keyword while creating a new FusionCharts object'))}var f={};this.__state={};1===arguments.length&&"object"===typeof arguments[0]?f=arguments[0]:n.parseCommands(f,B.stat,arguments);1<arguments.length&&"object"===typeof arguments[arguments.length-1]&&(delete f[B.stat[arguments.length-1]],n.extend(f,arguments[arguments.length-
 1]));this.id="undefined"===typeof f.id?this.id=n.uniqueId():f.id;this.args=f;n.core.items[this.id]instanceof n.core&&n.raiseWarning(this,"06091847","param","",Error('A FusionCharts object with the specified id "'+this.id+'" already exists. Renaming it to '+(this.id=n.uniqueId())));n.parsePolicies(this,n.policies,f);this.attributes.id=this.id;this.resizeTo&&this.resizeTo(f.width,f.height,!0);this.chartType&&this.chartType(f.type||f.swfUrl,!0);n.raiseEvent("beforeInitialize",f,this);n.core.items[this.id]=
-this;n.core.defaultOptions=n.core.options;n.raiseEvent("initialized",f,this);return this};n.core.prototype={};n.core.prototype.constructor=n.core;n.extend(n.core,{id:"FusionCharts",version:["3","11","1"],items:{},options:{},getObjectReference:function(a){return n.core.items[a].ref},register:function(a){return n.registrars[a=a&&a.toString&&a.toString().toLowerCase()]&&n.registrars[a].apply(n.core,Array.prototype.slice.call(arguments,1))},get:function(a){return n.registrars[a=a&&a.toString&&a.toString().toLowerCase()]&&
+this;n.core.defaultOptions=n.core.options;n.raiseEvent("initialized",f,this);return this};n.core.prototype={};n.core.prototype.constructor=n.core;n.extend(n.core,{id:"FusionCharts",version:["3","11","2"],items:{},options:{},getObjectReference:function(a){return n.core.items[a].ref},register:function(a){return n.registrars[a=a&&a.toString&&a.toString().toLowerCase()]&&n.registrars[a].apply(n.core,Array.prototype.slice.call(arguments,1))},get:function(a){return n.registrars[a=a&&a.toString&&a.toString().toLowerCase()]&&
 n.registrars[a].apply(n.core,Array.prototype.slice.call(arguments,1))}});FusionCharts=d.FusionCharts=n.core;d.FusionMaps&&d.FusionMaps.legacy&&(n.core(["private","modules.core.geo",d.FusionMaps.legacy,d.FusionMaps.version]),f=!0);M.test(m.readyState)||m.loaded?(n.ready=!0,setTimeout(l,1)):function(){function O(){arguments.callee.done||(arguments.callee.done=!0,A&&clearTimeout(A),f||(d.FusionMaps&&d.FusionMaps.legacy&&n.core(["private","modules.core.geo",d.FusionMaps.legacy,d.FusionMaps.version]),
 d.FusionMaps=n.core),setTimeout(l,1))}function t(){M.test(m.readyState)?O():A=setTimeout(t,10)}var A,q;m.addEventListener?m.addEventListener("DOMContentLoaded",O,!1):m.attachEvent&&d.attachEvent("onLoad",O);if(a)try{"https:"===d.location.protocol?m.write('<script id="__ie_onload_fusioncharts" defer="defer" src="//:">\x3c/script>'):m.write('<script id="__ie_onload_fusioncharts" defer="defer" src="javascript:void(0)">\x3c/script>'),q=m.getElementById("__ie_onload_fusioncharts"),q.onreadystatechange=
 function(){"complete"==this.readyState&&O()}}catch(c){}/WebKit/i.test(E.userAgent)&&(A=setTimeout(t,10));d.onload=function(a){return function(){O();a&&a.call&&a.call(d)}}(d.onload)}();d.FusionMaps=n.core}})(Gb);FusionCharts.register("module",["private","modules.mantle.errormanager",function(){var d=this,m=d.window,E={type:"TypeException",range:"ValueRangeException",impl:"NotImplementedException",param:"ParameterException",run:"RuntimeException",comp:"DesignTimeError",undefined:"UnspecifiedException"},

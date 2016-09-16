@@ -3,7 +3,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.11.1
+ @version 3.11.2
 */
 (function(q){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=q:q(FusionCharts)})(function(q){q.register("module",["private","modules.renderer.js-ssgrid",function(){var F=this,p=F.hcLib,y=p.BLANKSTRING,g=p.pluck,d=p.pluckNumber,K=p.chartAPI,w=p.graphics.convertColor,x=p.getFirstColor,O=p.setLineHeight,C=Math,P=C.min,H=C.max,Q=C.ceil,R=C.round,S=p.toRaphaelColor,L=p.POSITION_START,M=p.HUNDREDSTRING,N=p.COLOR_TRANSPARENT,C=!/fusioncharts\.com$/i.test(F.window.location.hostname);
 K("ssgrid",{standaloneInit:!0,creditLabel:C,friendlyName:"ssgrid Chart",defaultDatasetType:"ssgrid",canvasBorderThickness:1,singleseries:!0,bgColor:"#FFFFFF",bgAlpha:100,_drawCaption:function(){},_drawCanvas:function(){},_createAxes:function(){},_feedAxesRawData:function(){},_setCategories:function(){},_setAxisLimits:function(){},_spaceManager:function(){var e=this.components.dataset[0];e._manageSpace&&this._allocateSpace(e._manageSpace())}},K.sscartesian);q.register("component",["dataset","ssgrid",
