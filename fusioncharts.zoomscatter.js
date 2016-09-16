@@ -3,7 +3,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.11.1
+ @version 3.11.2
 */
 (function(O){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=O:O(FusionCharts)})(function(O){O.register("module",["private","modules.renderer.js-zoomscatter",function(){function P(){}var E=this,v=E.hcLib,W=v.parseTooltext,M=v.Raphael,Q=E.window,X=v.addEvent,ea=v.removeEvent,Y=Q.MouseEvent,G=Q.document,F=v.BLANKSTRING,y=v.pluck,D=v.pluckNumber,fa=v.getFirstValue,ga=v.toRaphaelColor,ha=v.hasSVG,Z=v.isIE,R=v.getFirstColor,N=v.hasTouch,S="rgba(192,192,192,"+(Z?.002:1E-6)+
 ")",C=Math,K=C.round,z=C.min,B=C.max,T=C.abs,L=C.cos,H=C.sin,aa=C.floor,ia=2*Math.PI,ja=v.getMouseCoordinate,ka=v.POSITION_BOTTOM,I=v.chartAPI,U=v.HUNDREDSTRING,C=!/fusioncharts\.com$/i.test(Q.location.hostname),ba,ca,J=function(c,b){var a=ja(b.linkedItems.container,c),d=a.chartX,e=a.chartY,f=b.config,h=f.canvasLeft,l=f.canvasTop,g=f.canvasLeft+f.canvasWidth,f=f.canvasHeight+f.canvasTop;a.insideCanvas=!1;a.originalEvent=c;d>h&&d<g&&e>l&&e<f&&(a.insideCanvas=!0);return a},la=function(c,b,a){var d;

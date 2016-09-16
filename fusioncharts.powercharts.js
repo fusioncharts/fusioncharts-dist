@@ -3,12 +3,12 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.11.1
+ @version 3.11.2
  FusionCharts JavaScript Library
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.11.1
+ @version 3.11.2
 */
 (function(I){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=I:I(FusionCharts)})(function(I){I.register("module",["private","modules.renderer.js-gradientlegend",function(){function F(m,l){(function t(l,m){var u,x;for(x in l)Ba.call(l,x)&&(u=l[x],void 0===m[x]?m[x]=u:"object"===typeof u&&t(u,m[x]))})(m,l);return l}function w(m){return ga(m?m:Za)||Za}function $a(m){var l=m.fontSize+"";if(!l)return m;l=l.replace(/(\d+)(px)*/,"$1px");m.fontSize=l;return m}function Ja(m){return void 0===
 m||"undefined"===typeof m||null===m||m!==m?!0:!1}function ab(m,l){this.carpet=m;this._componentPool=l}function Xa(m){this.conf=m;this._id="GL_CARPET";this.compositionsByCategory={};this._lSpace=this.group=this.node=void 0;this.autoRecalculate=!1;this.groupName="fc-gradient-legend";this.moveInstructions={}}function xb(){Xa.apply(this,arguments)}function V(m,l){this.rawText=m;this.conf=l;this._id="GL_CAPTION";this._lSpace=this.bound=this.node=void 0}function qa(m,l,r){this.colorRange=m;this.conf=l;
