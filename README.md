@@ -65,7 +65,7 @@ var chart = new FusionCharts ({
 
 - To render a chart belonging to the FusionWidgets package, load the FusionWidgets module:
 
-  `require("fusioncharts/fusioncharts.fusionwidgets")(FusionCharts);`
+  `require("fusioncharts/fusioncharts.widgets")(FusionCharts);`
 
 To know which chart belongs to which package, refer the [list of charts](http://www.fusioncharts.com/dev/getting-started/list-of-charts.html).
 
@@ -153,7 +153,7 @@ require("fusioncharts/fusioncharts.gantt")(FusionCharts);
 
 - To render a chart belonging to the FusionWidgets package, load the FusionWidgets module:
 
-  `<script src="bower_components/fusioncharts/fusioncharts.fusionwidgets.js"> </script>`
+  `<script src="bower_components/fusioncharts/fusioncharts.widgets.js"> </script>`
 
 To know which chart belongs to which package, refer the [list of charts](http://www.fusioncharts.com/dev/getting-started/list-of-charts.html).
 
