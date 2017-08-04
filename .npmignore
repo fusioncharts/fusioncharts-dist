@@ -1,0 +1,2 @@
+# - Prevent type definition source directory from being publish to npm
+typedef/

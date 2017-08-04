@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/fusioncharts/fusioncharts-dist"
   },
+  "scripts": {
+    "build": "cp ./typedef/*.d.ts ./ && cp ./typedef/maps/*.d.ts ./maps/ && cp ./typedef/themes/*.d.ts ./themes/"
+  },
   "keywords": [
     "javascript-charts",
     "interactive-charts",
