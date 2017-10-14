@@ -3,7 +3,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
 */
 (function(Q){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=Q:Q(FusionCharts)})(function(Q){Q.register("module",["private","modules.renderer.js-gantt",function(){var V=this,I=V.hcLib,ha=V.window,ia=/msie/i.test(ha.navigator.userAgent)&&!ha.opera,da=I.chartAPI,ba=I.extend2,q=I.pluck,r=I.pluckNumber,sa=I.pluckFontSize,X=I.getFirstColor,oa=I.parseConfiguration,ta=I.setAttribDefs,P=I.graphics,T=P.convertColor,ea=P.getDarkColor,Y=I.parseUnsafeString,la=I.getFirstValue,ua=
 I.getValidValue,fa=I.toPrecision,W=I.Raphael,va=I.chartPaletteStr,Da=I.componentDispose,wa=I.schedular,Ea=I.COMMASTRING,U=I.setLineHeight,ma=I.getDashStyle,ca=I.toRaphaelColor,xa=I.each,J=I.attrTypeNum,ga=I.attrTypeBool,Fa=I.dropHash,Ga=I.HASHSTRING,ha=!I.CREDIT_REGEX.test(ha.location.hostname),ja="rgba(192,192,192,"+(ia?.002:1E-6)+")",ya=P.mapSymbolName,ia=Math,M=ia.max,na=ia.min,za=ia.abs,Ha=parseInt,Aa=parseFloat,Ba=I.graphics.getLightColor,N=I.plotEventHandler,ka,aa,pa=function(a){return void 0!==
@@ -154,3 +154,5 @@ f.fontFamily),fontSize:q(t.fontsize,f.fontSize).replace(/px/i,"")+"px",fontWeigh
 g;return m},adjustWidth:function(){var a=this.config,b=a.totalWidth,c=b,d=0,f=!1,e,h,m,g,l,n;e=a.processVlineArr=[];c-=20*(a.hasDataTables&&a.dataTables&&a.dataTables.dataTable&&a.dataTables.dataTable.datacolumn?a.dataTables.dataTable.datacolumn.length+1:1);m=function(a){c+=20;a=a.match(/%/g)?r(b*Number(a.replace(/%/g,"")/100),0):r(a,0);20>c?a=20:a>c&&(a=c);c-=a;return a};a.hasProcess&&(process=a.processes.process.process,g=a.processes.process,"right"===g.positioningrid&&(f=!0),h=process._attrib,
 l=d,d+=m(h.width||""+(h.rightPos-h.leftPos)),h.leftPos=l,h.rightPos=d,f?d=0:e.push({type:"process",ind:0,xPos:h.rightPos,left:h,leftLimit:h.leftPos+20}));if(a.hasDataTables)for(n in g=a.dataTables.dataTable.datacolumn,g)if(g.hasOwnProperty(n)&&"_attrib"!==n){h=g[n];h=h._attrib;l=d;d+=m(h.width||""+(h.rightPos-h.leftPos));h.leftPos=l;h.rightPos=d;if(l=e[e.length-1])l.right=h,l.rightLimit=h.rightPos-20;e.push({type:"dataTable",ind:n,xPos:h.rightPos,left:h,leftLimit:h.leftPos+20})}if(a.hasProcess)if(f){if(h=
 process._attrib,h.rightPos=d+(h.rightPos-h.leftPos),h.leftPos=d,d+=h.rightPos-h.leftPos,l=e[e.length-1])l.right=h,l.rightLimit=h.rightPos-20}else e.pop();a.totalWidth=d}},"ganttCommon"])}])});
+
+//# sourceMappingURL=http://localhost:3052/3.12.2/map/eval/fusioncharts.gantt.js.map

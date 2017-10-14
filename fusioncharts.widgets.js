@@ -3,12 +3,12 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
  FusionCharts JavaScript Library
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
 */
 (function(E){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=E:E(FusionCharts)})(function(E){E.register("module",["private","modules.renderer.js-spark",function(){var b=this.hcLib,k=b.BLANKSTRING,d=b.pluck,a=b.pluckNumber,n=b.extend2,L=b.chartAPI,D=b.graphics.getLightColor,u=b.COMMASTRING,e=b.graphics.convertColor,C=b.getValidValue,N=Math,J=N.min,K=N.max,I=N.ceil,G=b.toRaphaelColor,Z=b.parseUnsafeString,S=b.graphics.getColumnColor,c=b.graphics.parseColor,F=b.COLOR_TRANSPARENT,
 g=b.POSITION_BOTTOM,H=b.POSITION_MIDDLE,B=b.POSITION_START,f=b.POSITION_END,r=b.HUNDREDSTRING,N=!b.CREDIT_REGEX.test(this.window.location.hostname),y=n({},b.defaultGaugePaletteOptions),W=function(){var c=this.chart,v=c.config,l=v.dataLabelStyle,p=c.components.paper,g=v.valuepadding+2,m=this.graphics.dataLabelContainer||c.graphics.datalabelsGroup,h=v.sparkValues||(v.sparkValues={}),w=c.graphics,w=w.sparkLabels||(w.sparkLabels={}),q=c.linkedItems.smartLabel,z=c.get("config","animationObj"),c=z.transposeAnimDuration,
@@ -483,3 +483,5 @@ this._drawBackground();C.annotations?(this._drawAnnotations(),this._drawCreditLa
 function(){var b=this.hcLib.chartAPI;b("realtimestackedarea",{defaultDatasetType:"realtimearea",applicableDSList:{realtimearea:!0}},b.realtimearea,{isstacked:!0,enablemousetracking:!0})}]);E.register("module",["private","modules.renderer.js-realtimeline",function(){var b=this.hcLib.chartAPI;b("realtimeline",{defaultDatasetType:"realtimeline",axisPaddingLeft:0,axisPaddingRight:0,applicableDSList:{realtimeline:!0},zeroplanethickness:1,zeroplanealpha:40,showzeroplaneontop:0},b.realtimecolumn,{zeroplanethickness:1,
 zeroplanealpha:40,showzeroplaneontop:0,enablemousetracking:!0},b.areabase)}]);E.register("module",["private","modules.renderer.js-realtimelinedy",function(){var b=this.hcLib.chartAPI;b("realtimelinedy",{isRealTime:!0,defaultDatasetType:"realtimeline",axisPaddingLeft:0,isDual:!0,axisPaddingRight:0,applicableDSList:{realtimeline:!0},_createAxes:b.msdybasecartesian._createAxes,_setAxisLimits:b.msdybasecartesian._setAxisLimits,_postSpaceManagement:b.msdybasecartesian._postSpaceManagement,_feedAxesRawData:b.msdybasecartesian._feedAxesRawData},
 b.realtimecolumn,{isdual:!0,zeroplanethickness:1,zeroplanealpha:40,showzeroplaneontop:0,enablemousetracking:!0},b.areabase)}])});
+
+//# sourceMappingURL=http://localhost:3052/3.12.2/map/eval/fusioncharts.widgets.js.map

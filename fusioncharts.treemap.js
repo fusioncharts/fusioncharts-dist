@@ -3,7 +3,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
 */
 (function(T){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=T:T(FusionCharts)})(function(T){T.register("module",["private","modules.renderer.js-treemap",function(){function Z(a){return a?a.replace(/^#*/,"#"):"#E5E5E5"}function r(a,b,d){this.label=a;this.value=parseFloat(b,10);this.colorValue=parseFloat(d,10);this.prev=this.next=void 0;this.meta={}}function O(){this._b=[];this._css=void 0;this.rangeOurEffectApplyFn=function(){};this.statePointerLow={value:void 0,index:void 0};
 this.statePointerHigh={value:void 0,index:void 0}}var ia,ja,ga,ka,D=this.hcLib,aa=D.chartAPI,N=Math,W=N.max,la=N.round,sa=N.tan,ma=N.min,ta=N.PI,na=D.extend2,X=this.window,ua=D.parsexAxisStyles,N=D.Raphael,oa=D.graphics,ba=oa.convertColor,pa=oa.getLightColor,K=this.raiseEvent,y=D.pluckNumber,H=D.pluck,va=D.each,ca=D.BLANKSTRING,wa="rgba(192,192,192,"+(/msie/i.test(X.navigator.userAgent)&&!X.opera?.002:1E-6)+")",X=!D.CREDIT_REGEX.test(X.location.hostname),qa=D.plotEventHandler,da=D.schedular,xa=D.preDefStr.DEFAULT;
@@ -92,3 +92,5 @@ L.getLabel():ca]},callback:w})},l=function(a){return{treeMap:r,navigationBar:h,s
 a.name;this.setDrawingArea(a.drawingAreaMeasurement);this.draw=this.draw(b)};c.prototype.setDrawingArea=function(a){this.conf.drawingAreaMeasurement=a};c.prototype.draw=function(a){return function(){var b=this.conf;0<b.drawingAreaMeasurement.effectiveHeight&&a(b.drawingAreaMeasurement)}};c.prototype.eventCallback=function(){};f=function(){var a=[];return{get:function(){return a},set:function(b){var d;b?(d=new c,d.init({name:b.type,drawingAreaMeasurement:b.drawingArea},b.drawFn),a.push(d)):a.length=
 0;return a}}}();d.init=function(){var a,b=["navigationBar","treeMap","stackedNavigation"];a=Array.prototype.slice.call(arguments,0);B=a[0];z=a[1];m=B.conf;A=a[2];w=a[4];for(f.get().length>=b.length&&f.set();b.length;)a=b.shift(),f.set({type:a,drawFn:l(a),drawingArea:u(a)})};d.draw=function(b){var c,h,k;c=a.getVisibleRoot();A.disposeChild(c);b&&(c=b[1]);c.getParent()?m.showNavigationBar&&d.heightProportion.set(!0):d.heightProportion.set(!1);h=f.get();for(c=0;c<h.length;c+=1)k=h[c],k.setDrawingArea(u(k.conf.name)),
 b&&a.setVisibleRoot(b[c]),k.draw()};d.heightProportion=x;d.remove=function(){var b=a.getVisibleRoot();b&&A.disposeChild(b)};return d}}])});
+
+//# sourceMappingURL=http://localhost:3052/3.12.2/map/eval/fusioncharts.treemap.js.map

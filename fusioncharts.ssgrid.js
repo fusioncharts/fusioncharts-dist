@@ -3,7 +3,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
 */
 (function(v){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=v:v(FusionCharts)})(function(v){v.register("module",["private","modules.renderer.js-ssgrid",function(){var E=this,m=E.hcLib,q=m.BLANKSTRING,g=m.pluck,d=m.pluckNumber,K=m.chartAPI,x=m.graphics.convertColor,y=m.getFirstColor,O=m.setLineHeight,w=Math,P=w.min,H=w.max,Q=w.ceil,R=w.round,S=m.toRaphaelColor,L=m.POSITION_START,M=m.HUNDREDSTRING,N=m.COLOR_TRANSPARENT,w=!m.CREDIT_REGEX.test(E.window.location.hostname);
 K("ssgrid",{standaloneInit:!0,creditLabel:w,friendlyName:"ssgrid Chart",defaultDatasetType:"ssgrid",canvasBorderThickness:1,singleseries:!0,bgColor:"#FFFFFF",bgAlpha:100,_drawCaption:function(){},_drawCanvas:function(){},_createAxes:function(){},_feedAxesRawData:function(){},_setCategories:function(){},_setAxisLimits:function(){},_spaceManager:function(){var e=this.components.dataset[0];e._manageSpace&&this._allocateSpace(e._manageSpace())}},K.sscartesian);v.register("component",["dataset","ssgrid",
@@ -25,3 +25,5 @@ this,a=e.chart,b=e.config,l=b.actualDataLen,g=b.itemsPerPage,d=e.graphics,k=a.co
 k.group("page-prev-nav",r));z||(z=a.pageNextNavigationLayer=k.group("page-next-nav",r));l>g?(r.show(),d.navElePrv||(d.navElePrv=k.path(A)),x=d.navElePrv.attr({path:["M",m,b,"L",m+h+f,b-f,m+h,b,m+h+f,b+f,"Z"],fill:c,"stroke-width":0,cursor:"pointer"}),d.navTrackerPrv||(d.navTrackerPrv=k.circle(A).mouseover(function(){x.attr({fill:v,cursor:"pointer"})}).mouseout(function(){x.attr({fill:c})}).click(function(){e._nenagitePage(-1)})),d.navTrackerPrv.attr({cx:m+h,cy:b,r:h,fill:N,"stroke-width":0,cursor:"pointer"}),
 d.navEleNxt||(w=d.navEleNxt=k.path(z)),w=d.navEleNxt.attr({path:["M",q,b,"L",q-h-f,b-f,q-h,b,q-h-f,b+f,"Z"],fill:c,"stroke-width":0,cursor:"pointer"}),d.navTrackerNxt||(d.navTrackerNxt=k.circle(z).mouseover(function(){w.attr({fill:v})}).mouseout(function(){w.attr({fill:c})}).click(function(){e._nenagitePage(1)})),d.navTrackerNxt.attr({cx:q-h,cy:b,r:h,fill:N,"stroke-width":0,cursor:"pointer"}),0===y?A.hide():A.show(),y===B-1?z.hide():z.show()):r.hide()},_nenagitePage:function(e){var a=this.chart,b=
 this.graphics.container,d=this.currentPage,g=a.graphics,m=g.pagePreNavigationLayer,g=g.pageNextNavigationLayer,k=b.length;b[d+e]&&(b[d].hide(),b[d+e].show(),d=this.currentPage+=e);e=b[d].data("eventArgs");E.raiseEvent("pageNavigated",{pageId:d,data:e.data},a.chartInstance);0===d?m.hide():m.show();d===k-1?g.hide():g.show()}}])},[3,2,0,"sr2"]])});
+
+//# sourceMappingURL=http://localhost:3052/3.12.2/map/eval/fusioncharts.ssgrid.js.map

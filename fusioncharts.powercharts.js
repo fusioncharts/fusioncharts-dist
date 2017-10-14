@@ -3,12 +3,12 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
  FusionCharts JavaScript Library
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
 */
 (function(J){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=J:J(FusionCharts)})(function(J){J.register("module",["private","modules.renderer.js-gradientlegend",function(){function a(d,h){(function k(t,h){var x,p;for(p in t)ka.call(t,p)&&(x=t[p],void 0===h[p]?h[p]=x:"object"===typeof x&&k(x,h[p]))})(d,h);return h}function c(d){return U(d?d:P)||P}function E(d){var h=d.fontSize+"";if(!h)return d;h=h.replace(/(\d+)(px)*/,"$1px");d.fontSize=h;return d}function e(d){return void 0===
 d||"undefined"===typeof d||null===d||d!==d?!0:!1}function ba(d,h){this.carpet=d;this._componentPool=h}function W(d){this.conf=d;this._id="GL_CARPET";this.compositionsByCategory={};this._lSpace=this.group=this.node=void 0;this.autoRecalculate=!1;this.groupName="fc-gradient-legend";this.moveInstructions={}}function S(){W.apply(this,arguments)}function I(d,h){this.rawText=d;this.conf=h;this._id="GL_CAPTION";this._lSpace=this.bound=this.node=void 0}function B(d,h,q){this.colorRange=d;this.conf=h;this.childTextConf=
@@ -776,3 +776,5 @@ l,C,H=c(1/W.binSize*W.labelBinSize);for(l=I=W=B=0;B<F&&J;B+=e,W++,I++){C=l%H;l++
 ["datasetGroup","DragLine",{_decidePlotableData:J.get("component",["datasetGroup","DragArea"]).prototype._decidePlotableData},"line"])}]);J.register("module",["private","modules.renderer.js-dataset-group-boxandwhisker2d",function(){var a=this.hcLib,c=a.extend2,a=a.preDefStr,E=a.configStr,e=a.animationObjStr;J.register("component",["datasetGroup","boxandwhisker2d",{draw:function(){var a=this.positionStackArr,J=a.length,S,I,B,X;S=this.chart;I=S.graphics.datasetGroup;var M=S.graphics;B=S.components.canvas.config.clip["clip-canvas"].slice(0);
 X=c([],S.components.canvas.config.clip["clip-canvas-init"]);var M=M.datalabelsGroup,R=S.get(E,e),r=R.animType,D=R.animObj,v=R.dummyObj,R=R.duration;S.fireInitialAnimation&&(I.attr({"clip-rect":X}),M.attr({"clip-rect":X}));S.fireInitialAnimation=!1;I.animateWith(v,D,{"clip-rect":B},R,r);M.animateWith(v,D,{"clip-rect":B},R,r);this.preDrawCalculate();this.drawSumValueFlag=!0;for(S=0;S<J;S++)for(I=a[S],B=I.length,this.manageClip=!0,I=0;I<B;I++)X=a[S][I].dataSet,X.draw()}},a.column])}]);J.register("module",
 ["private","modules.renderer.js-dataset-group-heatmap",function(){J.register("component",["datasetGroup","heatmap",{},this.hcLib.preDefStr.column])}])});
+
+//# sourceMappingURL=http://localhost:3052/3.12.2/map/eval/fusioncharts.powercharts.js.map
