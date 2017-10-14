@@ -3,12 +3,12 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
  FusionCharts JavaScript Library
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
 */
 (function(T){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=T:T(FusionCharts)})(function(T){T.register("module",["private","modules.renderer.js-kdtree",function(){function q(h){function m(h,p,z,q){var I={},B;B=q?"y":"x";if(p===z)return I.point=h[p],I;if(1===z-p)return h[p][B]>h[z][B]?(I.point=h[p],I.left={point:h[z]}):(I.point=h[z],I.left={point:h[p]}),I;B=p+z>>1;q?u(h,B,p,z):J(h,B,p,z);I.point=h[B];I.left=m(h,p,B-1,!q);I.right=m(h,B+1,z,!q);return I}function J(h,m,z,
 q){for(var x,B,u,A,C;q>z;){600<q-z&&(x=q-z+1,B=m-z+1,u=D(x),A=.5*H(2*u/3),C=.5*N(u*A*(x-A)/x)*(0>B-x/2?-1:1),u=y(z,L(m-B*A/x+C)),x=E(q,L(m+(x-B)*A/x+C)),J(h,m,u,x));x=h[m];B=z;A=q;p(h,z,m);for(h[q].x>x.x&&p(h,z,q);B<A;){p(h,B,A);B++;for(A--;h[B].x<x.x;)B++;for(;h[A].x>x.x;)A--}h[z].x===x.x?p(h,z,A):(A++,p(h,A,q));A<=m&&(z=A+1);m<=A&&(q=A-1)}}function u(h,m,z,x){for(var q,B,J,A,C;x>z;){600<x-z&&(q=x-z+1,B=m-z+1,J=D(q),A=.5*H(2*J/3),C=.5*N(J*A*(q-A)/q)*(0>B-q/2?-1:1),J=y(z,L(m-B*A/q+C)),q=E(x,L(m+(q-
@@ -202,3 +202,5 @@ f.addGroup(v[1])},getShapeArgs:function(){var b=this.config,a=y({},this.shapeObj
 a){return{x:b.toString(),y:a.toString(),align:"center",valign:"middle"}}},getWrapWidth:{right:function(b,a){return a},left:function(b,a){return b-a},center:function(b,a){return 2*H(a,b-a)}},getWrapHeight:{top:function(b,a){return a},middle:function(b,a){return 2*H(a,b-a)},bottom:function(b,a){return b-a}},addMarkerItem:function(b){var a=this.components.markerObjs,c=this.components.shapeObjs,d=this.components.markerGroup,e=this.components.markerLabelGroup,h,f;if((f=b.id.toLowerCase())&&!a[f]){delete b.value;
 this.imageLoadCount=0;b=this._initializeMarkerItem(f,b,null);b.dataset=this;if(h=b.config.options.shapeid)b.shapeObj=c[h&&h.toLowerCase()];a[f]=b;a=this._drawMarkerItem.call(b);d&&e&&(b.markerShape=a.markerShape&&d.addItem(a.markerShape,!0),b.markerLabel=a.markerLabel&&e.addItem(a.markerLabel,!0));this._buildKdTree()}},updateMarkerItem:function(b,a){var c=this.chart.components.mapAnnotations,d,e=this.components.markerObjs[b];e&&(d=e.config.options,y(d,a),this.imageLoadCount=0,d=this._drawMarkerItem.call(e).markerShape,
 this._buildKdTree(),c.update(b,d))},_removeMarkerItem:function(b){var a=this.components,c=a.markerObjs,d=c[b],a=a.kdArrayMap,e;d&&(e=d.markerShape,d=d.markerLabel,e&&e.destroy(),d&&d.destroy(),delete a[b],this._buildKdTree());delete c[b]},getElement:function(b){if(this.components.kDTree)return this.components.kDTree.getNeighbour(b)}},"Entities"])},[3,2,0,"release"]])});
+
+//# sourceMappingURL=http://localhost:3052/3.12.2/map/eval/fusioncharts.maps.js.map

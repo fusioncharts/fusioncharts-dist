@@ -3,12 +3,12 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
  FusionCharts JavaScript Library
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
  FusionCharts JavaScript Library
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
@@ -16,7 +16,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
 */
 (function(Ab,Rb){"object"===typeof module&&module.exports?module.exports=Ab.document?Rb(Ab):function(Q){if(!Q.document)throw Error("Window with document not present");return Rb(Q,!0)}:Ab.FusionCharts=Rb(Ab,!0)})("undefined"!==typeof window?window:this,function(Ab,Rb){"undefined"===typeof Ab&&"object"===typeof window&&(Ab=window);var Q=function(b){if(b.FusionCharts&&b.FusionCharts.version)return b.FusionCharts;var v=b.document,J=b.navigator,C={window:b},H=C.modules={},A=C.interpreters={},u=Object.prototype.toString,
 a=/msie/i.test(J.userAgent)&&!b.opera,O=/loaded|complete/,q=!1,M=function(){var a=C.ready;C.ready=!0;C.raiseEvent&&(C.readyNotified=!0,C.raiseEvent("ready",{version:C.core.version,now:!a},C.core));C.readyNow=!a},U=function(a,b){var r,k;if(b instanceof Array)for(r=0;r<b.length;r+=1)"object"!==typeof b[r]?a[r]=b[r]:("object"!==typeof a[r]&&(a[r]=b[r]instanceof Array?[]:{}),U(a[r],b[r]));else for(r in b)"object"===typeof b[r]?(k=u.call(b[r]),"[object Object]"===k?("object"!==typeof a[r]&&(a[r]={}),U(a[r],
@@ -27,7 +27,7 @@ loadMessage:["loadMessage","Loading chart. Please wait."],renderErrorMessage:["r
 n;else for(k in"object"!==typeof a[m]&&(a[m]={}),b[m])n=r[b[m][k][0]],a[m][k]=void 0===n?b[m][k][1]:n};C.parseCommands=function(a,b,r){var k,m;"string"===typeof b&&(b=A[b]||[]);k=0;for(m=b.length;k<m;k++)a[b[k]]=r[k];return a};C.registrars={module:function(){return C.core.apply(C.core,arguments)}};C.core=function(a){if(!(this instanceof C.core)){if(1===arguments.length&&a instanceof Array&&"private"===a[0]){if(H[a[1]])return;H[a[1]]={};a[3]instanceof Array&&(C.core.version[a[1]]=a[3]);return"function"===
 typeof a[2]?a[2].call(C,H[a[1]]):C}if(1===arguments.length&&"string"===typeof a)return C.core.items[a];C.raiseError&&C.raiseError(this,"25081840","run","",new SyntaxError('Use the "new" keyword while creating a new FusionCharts object'))}var b={};this.__state={};1===arguments.length&&"object"===typeof arguments[0]?b=arguments[0]:C.parseCommands(b,A.stat,arguments);1<arguments.length&&"object"===typeof arguments[arguments.length-1]&&(delete b[A.stat[arguments.length-1]],C.extend(b,arguments[arguments.length-
 1]));this.id="undefined"===typeof b.id?this.id=C.uniqueId():b.id;this.args=b;C.core.items[this.id]instanceof C.core&&C.raiseWarning(this,"06091847","param","",Error('A FusionCharts object with the specified id "'+this.id+'" already exists. Renaming it to '+(this.id=C.uniqueId())));C.parsePolicies(this,C.policies,b);this.attributes.id=this.id;this.resizeTo&&this.resizeTo(b.width,b.height,!0);this.chartType&&this.chartType(b.type||b.swfUrl,!0);C.raiseEvent("beforeInitialize",b,this);C.core.items[this.id]=
-this;C.core.defaultOptions=C.core.options;C.raiseEvent("initialized",b,this);return this};C.core.prototype={};C.core.prototype.constructor=C.core;C.extend(C.core,{id:"FusionCharts",version:["3","12","1"],items:{},options:{},getObjectReference:function(a){return C.core.items[a].ref},register:function(a){return C.registrars[a=a&&a.toString&&a.toString().toLowerCase()]&&C.registrars[a].apply(C.core,Array.prototype.slice.call(arguments,1))},get:function(a){return C.registrars[a=a&&a.toString&&a.toString().toLowerCase()]&&
+this;C.core.defaultOptions=C.core.options;C.raiseEvent("initialized",b,this);return this};C.core.prototype={};C.core.prototype.constructor=C.core;C.extend(C.core,{id:"FusionCharts",version:["3","12","2"],items:{},options:{},getObjectReference:function(a){return C.core.items[a].ref},register:function(a){return C.registrars[a=a&&a.toString&&a.toString().toLowerCase()]&&C.registrars[a].apply(C.core,Array.prototype.slice.call(arguments,1))},get:function(a){return C.registrars[a=a&&a.toString&&a.toString().toLowerCase()]&&
 C.registrars[a].apply(C.core,Array.prototype.slice.call(arguments,1))}});b.FusionCharts=C.core;b.FusionMaps&&b.FusionMaps.legacy&&(C.core(["private","modules.core.geo",b.FusionMaps.legacy,b.FusionMaps.version]),q=!0);O.test(v.readyState)||v.loaded?(C.ready=!0,setTimeout(M,1)):function(){function N(){m||(m=!0,r&&clearTimeout(r),q||(b.FusionMaps&&b.FusionMaps.legacy&&C.core(["private","modules.core.geo",b.FusionMaps.legacy,b.FusionMaps.version]),b.FusionMaps=C.core),setTimeout(M,1))}function E(){O.test(v.readyState)?
 N():r=setTimeout(E,10)}var r,k,m;v.addEventListener?v.addEventListener("DOMContentLoaded",N,!1):v.attachEvent&&b.attachEvent("onLoad",N);if(a)try{"https:"===b.location.protocol?v.write('<script id="__ie_onload_fusioncharts" defer="defer" src="//:">\x3c/script>'):v.write('<script id="__ie_onload_fusioncharts" defer="defer" src="javascript:void(0)">\x3c/script>'),k=v.getElementById("__ie_onload_fusioncharts"),k.onreadystatechange=function(){"complete"==this.readyState&&N()}}catch(n){}/WebKit/i.test(J.userAgent)&&
 (r=setTimeout(E,10));b.onload=function(a){return function(){N();a&&a.call&&a.call(b)}}(b.onload)}();return b.FusionMaps=C.core}(Ab);Q.register("module",["private","modules.mantle.errormanager",function(){var b=this,v=b.window,J={type:"TypeException",range:"ValueRangeException",impl:"NotImplementedException",param:"ParameterException",run:"RuntimeException",comp:"DesignTimeError",undefined:"UnspecifiedException"},C=function(A,u,a,O,q,M){var C="#"+u+" "+(A?A.id:"unknown-source")+O+" "+M+" >> ";q instanceof
@@ -1986,3 +1986,5 @@ a};n.prototype.attachEventHandlers=function(a,g){this.eventHandlers[a]||(this.ev
 "");if(z&&g[z])for(r=0,u=a.length;r<u;r++)n=a[r],m=n.type||m,m=m.toLowerCase(),q=M(n.itemId,n.legendItemId),void 0!==q&&(q=q===b,g[z][m]?g[z][m].call(n,v,e,q,k[0]):g[z]["default"].call(n,v,e,q,k[0]))};b.registrars.highlighteffect=function(a){a&&g.add(a)};g.attachEventHandlers("legenditemrollover",function(a,b){var e=a.sender.jsVars.instanceAPI;!1!==e.hasInteractiveLegend&&!1!==e.highlightEnabled&&g.applyEffect(e,b,!0)});g.attachEventHandlers("legenditemrollout",function(a,b){var e=a.sender.jsVars.instanceAPI;
 !1!==e.hasInteractiveLegend&&!1!==e.highlightEnabled&&g.applyEffect(e,b,!1)});g.attachEventHandlers("legenditemclicked",function(a,b){var e=a.sender.jsVars.instanceAPI;!1!==e.hasInteractiveLegend&&!1!==e.highlightEnabled&&g.applyEffect(e,b,!0)});Q.register("highlightEffect",{name:"fadeout",area:m.area,radar:m.area,bubble:m.bubble,pie2d:m.pie,line:m.line,spline:m.line,areaspline:m.area,pie3d:m.pie,zoomline:m.line,funnel:m.funnelpyramid,pyramid:m.funnelpyramid,scatter:m.line,doughnut2d:m.pie,doughnut3d:m.pie,
 heatmap:m.heatmap,boxandwhisker2d:m.boxandwhisker2d,multiaxisline:m.line,"default":m["default"]})}]);Rb&&(Ab.FusionCharts=Q);return Q});
+
+//# sourceMappingURL=http://localhost:3052/3.12.2/map/eval/fusioncharts.js.map
