@@ -3,12 +3,12 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
  FusionCharts JavaScript Library - ZoomScatter Chart
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.12.1
+ @version 3.12.2
 */
 (function(P){"object"===typeof module&&"undefined"!==typeof module.exports?module.exports=P:P(FusionCharts)})(function(P){P.register("module",["private","modules.renderer.js-kdtree",function(){function K(f){function x(f,E,H,r){var l={},e;e=r?"y":"x";if(E===H)return l.point=f[E],l;if(1===H-E)return f[E][e]>f[H][e]?(l.point=f[E],l.left={point:f[H]}):(l.point=f[H],l.left={point:f[E]}),l;e=E+H>>1;r?u(f,e,E,H):v(f,e,E,H);l.point=f[e];l.left=x(f,E,e-1,!r);l.right=x(f,e+1,H,!r);return l}function v(f,x,e,
 n){for(var l,u,C,q,I;n>e;){600<n-e&&(l=n-e+1,u=x-e+1,C=O(l),q=.5*N(2*C/3),I=.5*B(C*q*(l-q)/l)*(0>u-l/2?-1:1),C=y(e,A(x-u*q/l+I)),l=D(n,A(x+(l-u)*q/l+I)),v(f,x,C,l));l=f[x];u=e;q=n;r(f,e,x);for(f[n].x>l.x&&r(f,e,n);u<q;){r(f,u,q);u++;for(q--;f[u].x<l.x;)u++;for(;f[q].x>l.x;)q--}f[e].x===l.x?r(f,e,q):(q++,r(f,q,n));q<=x&&(e=q+1);x<=q&&(n=q-1)}}function u(f,x,e,n){for(var l,v,C,q,I;n>e;){600<n-e&&(l=n-e+1,v=x-e+1,C=O(l),q=.5*N(2*C/3),I=.5*B(C*q*(l-q)/l)*(0>v-l/2?-1:1),C=y(e,A(x-v*q/l+I)),l=D(n,A(x+(l-
@@ -90,3 +90,5 @@ b.dashed=Q(d.dashed,I),b.color=y(d.color,w.lineColor),b.alpha=y(d.alpha,w.lineAl
 l=c+d*N(e),e=b+d*L(e),m=c+d*N(f),f=b+d*L(f),g=T.rad(45),k=l+a*N(g),n=e+a*L(g),q=m+a*N(g)-1;a=f+a*L(g)-1;return["M",l,e,"A",d,d,0,1,0,m,f,"Z","M",l+1,e+1,"L",k,n,q,a,m+1,f+1,"Z","M",c-2,b,"L",c+2,b,"Z","M",c,b-2,"L",c,b+2,"Z"]},zoomModeIcon:function(c,b,a){var d=[];c-=.2*a;b-=.2*a;var e=.8*a,f=T.rad(43),l=T.rad(48),m=c+e*N(f),f=b+e*L(f),g=c+e*N(l),l=b+e*L(l),k=T.rad(45),n=m+a*N(k),q=f+a*L(k),r=g+a*N(k)-1;a=l+a*L(k)-1;return d=d.concat(["M",m,f,"A",e,e,0,1,0,g,l,"Z","M",m+1,f+1,"L",n,q,r,a,r+1,a-1,
 r+1.5,a+1.5,r-1,a+1,r,a,g+1,l+1,"Z","M",c-2,b,"L",c+2,b,"Z","M",c,b-2,"L",c,b+2,"Z"])},panModeIcon:function(c,b,a){var d=c-11.25,d=c;a*=2.5;return[].concat(["M",d-a/16,b-a/8,"L",d+a/16,b-a/8,"L",d+a/16,b-a/3.2,"L",d+6*a/32,b-10*a/32,"L",d,b-a/2,"L",d-6*a/32,b-10*a/32,"L",d-a/16,b-a/3.2,"Z","M",d+4*a/32,b-2*a/32,"L",d+10*a/32,b-2*a/32,"L",d+10*a/32,b-6*a/32,"L",d+16*a/32,b,"L",d+10*a/32,b+6*a/32,"L",d+10*a/32,b+2*a/32,"L",d+4*a/32,b+2*a/32,"Z","M",d+2*a/32,b+5*a/32,"L",d+2*a/32,b+10*a/32,"L",d+6*a/
 32,b+10*a/32,"L",d,b+16*a/32,"L",d-6*a/32,b+10*a/32,"L",d-2*a/32,b+10*a/32,"L",d-2*a/32,b+5*a/32,"Z","M",d-4*a/32,b-2*a/32,"L",d-10*a/32,b-2*a/32,"L",d-10*a/32,b-6*a/32,"L",d-16*a/32,b,"L",d-10*a/32,b+6*a/32,"L",d-10*a/32,b+2*a/32,"L",d-4*a/32,b+2*a/32,"Z"])}})}])});
+
+//# sourceMappingURL=http://localhost:3052/3.12.2/map/eval/fusioncharts.zoomscatter.js.map
