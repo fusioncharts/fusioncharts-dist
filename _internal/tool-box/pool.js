@@ -1,0 +1,1 @@
+class Pool{constructor(){this.pool={}}}export default Pool;

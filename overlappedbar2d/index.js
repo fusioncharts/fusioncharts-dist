@@ -1,0 +1,1 @@
+import OverlapperBar2D from'../viz/overlappedbar2d';import crossline from'../features/crossline-adapter/index';export{OverlapperBar2D};export default{name:'overlappedbar2d',type:'package',requiresFusionCharts:!0,extension:a=>{a.addDep(crossline),a.addDep(OverlapperBar2D)}};

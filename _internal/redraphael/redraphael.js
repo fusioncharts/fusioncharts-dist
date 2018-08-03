@@ -1,0 +1,1 @@
+import Raphael from'../vendors/redraphael/source/raphael.core';Raphael.stopPartialEventPropagation=!0,Raphael._stopabsolutePath=!0;export default{extension:Raphael,name:'redraphael',type:'plugin'};

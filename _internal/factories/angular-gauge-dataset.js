@@ -1,0 +1,1 @@
+import{datasetFactory}from'../lib/lib';import AngularGaugeDataset from'../datasets/angulargauge';export default function(a){var b=a.getFromEnv('dataSource'),c=b.pointers||b.dials;c||(b.dials=c={dial:[{value:0}]}),datasetFactory(a,AngularGaugeDataset,'dataset',1,[c])}

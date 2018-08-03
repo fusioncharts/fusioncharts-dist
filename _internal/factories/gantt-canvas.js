@@ -1,0 +1,1 @@
+import CanvasGantt from'../canvases/canvas-gantt';import{componentFactory}from'../lib/lib';export default function(a){let b;componentFactory(a,CanvasGantt,'canvas',1),b=a.getChildren('canvas');for(let c=0,d=b.length;c<d;c++)b[c].configure()}

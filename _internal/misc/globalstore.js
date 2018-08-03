@@ -1,0 +1,1 @@
+import ComponentInterface from'../../core/component-interface';class GlobalStore extends ComponentInterface{getName(){return'globalStore'}getType(){return'globalStore'}}export default GlobalStore;

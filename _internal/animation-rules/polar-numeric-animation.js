@@ -1,0 +1,1 @@
+import fadeInAtAxis from'./polar-axis-animation';export default{"initial.axis.polarNumeric":function(){return{"path.appearing":fadeInAtAxis,"text.appearing":fadeInAtAxis,"polypath.appearing":fadeInAtAxis,"ringpath.appearing":fadeInAtAxis,"*":null}}};

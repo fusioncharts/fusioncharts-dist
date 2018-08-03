@@ -1,0 +1,1 @@
+import LineDataset from'./line';import{_realTimeConfigure,resetCatPos}from'./realtimecolumn';class RealtimeLineDataset extends LineDataset{_realTimeConfigure(a){_realTimeConfigure.call(this,a)}getType(){return'dataset'}getName(){return'realtimeLine'}}RealtimeLineDataset.prototype.resetCatPos=resetCatPos;export default RealtimeLineDataset;

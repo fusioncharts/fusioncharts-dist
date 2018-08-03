@@ -1,0 +1,1 @@
+function interpolateRound(a,b){a=+a,b=+b;let c=b-a;return b=>Math.round(c*b+a)}export default interpolateRound;
