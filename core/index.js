@@ -1,0 +1,1 @@
+import FusionCharts from'./skeleton';import defaultFeatures from'../features';FusionCharts.addDep(defaultFeatures);export default FusionCharts;

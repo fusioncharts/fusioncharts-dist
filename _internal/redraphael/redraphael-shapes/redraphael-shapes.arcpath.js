@@ -1,0 +1,1 @@
+export default function(a){var b;a.define&&a.define([{name:'arcpath',arcpath:function(){return this.path(b,a._lastArgIfGroup(arguments))},ca:function(a,b,c,e){var f,g=e,d=Math.PI*((g-90)/180),h=a+c*Math.cos(d),i=b+c*Math.sin(d),j=180<g?1:0;return f=['M',a,b-c,'A',c,c,0,j,1,h,i],{path:f}}}])}

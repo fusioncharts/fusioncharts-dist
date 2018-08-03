@@ -1,0 +1,1 @@
+import GaugeAxis from'../axis/gauge';import{componentFactory}from'../lib/lib';export default function(a){let b=a.getChildren('canvas')[0];componentFactory(a,GaugeAxis,'scale',1,a._feedAxesRawData()),a.getChildren('scale')[0].setLinkedItem('canvas',b),a.addToEnv('scale',a.getChildren('scale')[0])}

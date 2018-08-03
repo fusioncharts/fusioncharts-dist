@@ -1,0 +1,1 @@
+import{datasetFactory}from'../lib/lib';import MultiLevelPieDataset from'../datasets/multilevelpie';export default function(a){let b,c,d,e=a.getFromEnv('dataSource'),f={};return b=a.config.categories=e.category||[],c=b.length,!d&&c&&(f=b,d=c),c?void datasetFactory(a,MultiLevelPieDataset,'dataset',d,[f]):void a.setChartMessage()}

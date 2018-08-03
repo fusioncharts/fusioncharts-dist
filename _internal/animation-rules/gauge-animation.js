@@ -1,0 +1,1 @@
+import{appearingAxis,appearingFinal}from'./cartesian-axis-animation';export default{"initial.axis.gaugeAxis":{"text.appearing":appearingAxis,"path.appearing":appearingAxis},"update.axis.gaugeAxis":{"text.appearing":appearingFinal,"path.appearing":appearingFinal}};

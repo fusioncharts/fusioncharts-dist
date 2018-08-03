@@ -1,0 +1,1 @@
+const QUOT='"',QUOTCOLON='":';function ignoreCaseExt(a){a.addEventListener('beforedataupdate',function(a,b){let c=JSON.stringify(b.data);c&&(b.data=JSON.parse(c.replace(/"([^"]+)"[\s]*:/g,function(){return QUOT+arguments[1].toLowerCase()+QUOTCOLON})))})}export default{extension:ignoreCaseExt,name:'IgnoreCaseExt',type:'extension',requiresFusionCharts:!0};

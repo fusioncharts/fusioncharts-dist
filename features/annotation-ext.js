@@ -1,0 +1,1 @@
+import Annotation from'../_internal/vendors/fc-ext-annotation/src/index';export default Annotation;

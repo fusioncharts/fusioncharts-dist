@@ -1,0 +1,1 @@
+import areaAnimationRules from'./area-animation';export default{"*.dataset.dragArea":areaAnimationRules['*.dataset.area']};
