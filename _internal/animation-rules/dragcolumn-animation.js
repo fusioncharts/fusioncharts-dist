@@ -1,0 +1,1 @@
+import columnAnimation from'./column-animation';export default{"initial.dataset.dragColumn":columnAnimation['initial.dataset.column']};

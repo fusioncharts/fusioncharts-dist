@@ -148,9 +148,9 @@ declare namespace FusionCharts {
 
         chartType(value?: string, options?: any): string;
 
-        addEventListener(type: string | string[], listener: (eventObject?: EventObject, eventArgs?: {}) => void): void;
+        addEventListener(eventType: string | string[], callback: (eventObject?: EventObject, eventArgs?: {}) => void, options?: {}): any;
 
-        removeEventListener(type: string | string[], listener: (eventObject?: EventObject, eventArgs?: {}) => void): void;
+        removeEventListener(eventType: string | string[], callback: (eventObject?: EventObject, eventArgs?: {}) => void): void;
 
         configureLink(param: {} | any[], level?: number): void;
 
@@ -163,12 +163,12 @@ declare namespace FusionCharts {
         setXMLData(data: string | {}): void;
 
         setXMLUrl(url: string): void;
+        
+        setChartDataUrl(url: string, format: ChartDataFormats, config?: any, callback?: () => any, silent?: boolean): any;
 
-        setChartDataUrl(url: string, format: ChartDataFormats): void;
+        setChartData(data: {}, format: ChartDataFormats, config?: any, callback?: () => any, silent?: boolean): void;
 
-        setChartData(data: string | {}, format: ChartDataFormats): void;
-
-        getChartData(format: ChartDataFormats): any;
+        getChartData(format: ChartDataFormats, advanced?: boolean, update?: boolean): any;
 
         dataReady(available?: boolean): boolean;
 
@@ -181,56 +181,54 @@ declare namespace FusionCharts {
         setData(value: number, label: string): void;
 
         stopUpdate(): void;
-
+        
         restartUpdate(): void;
-
+        
         isUpdateActive(): boolean;
-
+        
         clearChart(): void;
-
-        getSWFHTML(): any;
-
-        addVariable(): void;
-
-        getXML(): any;
-
+        
         setDataXML(data: string | {}): void;
-
-        setDataURL(url: string): void;
+        
+        setDataURL(url: string, dataType: ChartDataFormats): void;
 
         hasRendered(): boolean;
 
         setTransparent(transparency?: boolean): void;
-
+        
         isPlotItemSliced(index: number): boolean;
-
-        slicePlotItem(index: number, slice: boolean): void;
-
+        
+        slicePlotItem(index: number, slice?: boolean, callback?: () => any): void;
+        
         centerLabel(labelText: string, options?: {}): void;
 
-        startingAngle(angle?: number, relative?: boolean): void;
+        startingAngle(angle?: number, relative?: boolean, callback?: (output) => void): any;
 
         zoomOut(): void;
 
-        zoomTo(startIndex: number, endIndex: number): void;
+        zoomTo(startIndex: number, endIndex: number, event?: any): void;
 
         resetChart(): void;
 
         setZoomMode(yes: boolean): void;
 
-        getViewStartIndex(): number;
+        getViewStartIndex(callback?: (startIndex: number) => void): number;
 
-        getViewEndIndex(): number;
+        getViewEndIndex(callback?: (endIndex: number) => void): number;
 
-        print(options?: {}): void;
+        print(options?: {}): any;
 
-        exportChart(options?: {}): void;
+        exportChart(options?: {}): boolean;
 
-        getSVGString(): string;
+        getSVGString(callback?: (svg:string) => void): string;
 
         lockResize(state: boolean): boolean;
 
-        showChartMessage(text: string, modal?: boolean, cancelable?: boolean): void;
+        showChartMessage(text: string, modal?: boolean, cancelable?: boolean, customAttrs?: any): void;
+
+        showMessage(msg: string, attrs?: any, cancelable?: boolean): void;
+        
+        hideChartMessage(): void;   
 
         getJSONData(): JSON;
 
@@ -244,11 +242,40 @@ declare namespace FusionCharts {
 
         render(containerElement?: string | Element, insertMode?: string, callback?: () => any): FusionCharts;
 
-        resizeTo(width: number | string, height: number | string): any;
+        resizeTo(width: number | string, height: number | string, silent?: boolean): any;
 
         dispose(): void;
 
         configure(options: {}): void;
+
+        getLowerLimit(callback?: (lowerLimit: number) => void): number;
+
+        getUpperLimit(callback?: (upperLimit: number) => void): number;
+
+        setLowerLimit(limit: number, callback?: (isApplied: boolean) => void): void;
+
+        setUpperLimit(limit: number, callback?: (isApplied: boolean) => void): void;
+
+        showLog(): void;
+
+        hideLog(): void;
+
+        clearLog(): void;
+
+        annotations: {
+            update(id: string, config:any): any;
+            show(id: string): void;
+            hide(id: string): void;
+            destroy(id: string): void;
+            clear(): void;
+            addItem(groupId: any, itemConfig?: any, drawImmediate?: any, component?: any): any;
+            addGroup(config?: any, component?: any): any;
+        };
+
+        setDataForId(id: any, value: any): void;
+        getDataForId(id: any, callback?: (value: any) => void): any;
+        
+        scrollTo(value: number): void;
 
         ref: {};
 
@@ -278,6 +305,24 @@ declare namespace FusionCharts {
         getCurrentRenderer(): string;
 
         render(options?: ChartObject, callback?: () => any): FusionCharts;
+
+        addDep(dep: any): void;
+
+        getDep(name: string, type: string): any;
+
+        on(type: string | string[], listener: (eventObject?: EventObject, eventArgs?: {}) => void): void;
+
+        setAnimation(rule: any): void;
+
+        setEasingEffect(name: string, fn: () => any): void;
+
+        getScriptBaseURI(): string;
+
+        setScriptBaseURI(scriptBaseURI: string): void;
+
+        getChartFromId(id: string): ChartObject;
+        
+
 
         version: string[];
 

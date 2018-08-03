@@ -1,0 +1,1 @@
+function pair(c,a){return[c,a]}function toPairs(a,b){(null===b||'undefined'==typeof b)&&(b=pair);let c=0,d=a.length-1,e=a[0],f=Array(0>d?0:d);for(;c<d;)f[c]=b(e,e=a[++c]);return f}export default toPairs;

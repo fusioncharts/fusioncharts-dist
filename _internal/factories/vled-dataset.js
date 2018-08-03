@@ -1,0 +1,1 @@
+import{datasetFactory}from'../lib/lib';export default function(a){var b,c=a.getFromEnv('dataSource'),d=c.value,e=c.target,f=[],g={};f.push({value:d,target:e}),g.data=f,b=a.getDSdef(),datasetFactory(a,b,'dataset',1,[g])}

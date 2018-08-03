@@ -1,0 +1,1 @@
+import columnAnimation from'./column-animation';export default{"initial.dataset.sparkWinLoss":columnAnimation['initial.dataset.column']};

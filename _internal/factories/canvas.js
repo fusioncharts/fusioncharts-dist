@@ -1,0 +1,1 @@
+import Canvas from'../canvases/canvas';import{componentFactory}from'../lib/lib';export default function(a){let b;componentFactory(a,Canvas,'canvas',a.config.showVolumeChart?2:1),b=a.getChildren('canvas');for(let c=0,d=b.length;c<d;c++)b[c].configure()}

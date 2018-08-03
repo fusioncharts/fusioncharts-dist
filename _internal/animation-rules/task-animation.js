@@ -1,0 +1,1 @@
+export default{"initial.dataset.task":()=>({"rect.appearing":a=>[{initialAttr:{width:0},finalAttr:{width:a.attr.width},slot:'middle'}],"path.appearing":a=>{let b=a.attr.path,c=b.slice(0,3);return[{initialAttr:{path:c},finalAttr:{path:b},slot:'middle'}]}})};

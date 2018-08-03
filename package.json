@@ -1,27 +1,27 @@
 {
   "name": "fusioncharts",
-  "version": "3.12.2",
-  "description": "FusionCharts JavaScript charting framework for distribution",
-  "homepage": "http://www.fusioncharts.com",
   "main": "fusioncharts.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fusioncharts/fusioncharts-dist"
-  },
-  "keywords": [
-    "javascript-charts",
-    "interactive-charts",
-    "charts",
-    "graphs",
-    "visualization",
-    "data-visualization",
-    "dataviz",
-    "browserify",
-    "webpack"
-  ],
-  "author": "FusionCharts Technologies <support@fusioncharts.com>",
-  "license": "http://www.fusioncharts.com/buy/",
   "bugs": {
     "url": "http://www.fusioncharts.com/contact-support/"
+  },
+  "description": "FusionCharts JavaScript charting framework",
+  "license": "http://www.fusioncharts.com/buy/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fusioncharts/fusioncharts-dist.git"
+  },
+  "author": "FusionCharts Technologies  <support@fusioncharts.com>",
+  "version": "3.13.0",
+  "homepage": "http://www.fusioncharts.com/",
+  "keywords": [
+    "fusioncharts",
+    "charts",
+    "gauges",
+    "maps"
+  ],
+  "dependencies": {
+    "core-js": "^2.5.6",
+    "promise-polyfill": "^7.1.2",
+    "ramda": "^0.25.0"
   }
 }
