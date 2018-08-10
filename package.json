@@ -11,13 +11,24 @@
     "url": "git+https://github.com/fusioncharts/fusioncharts-dist.git"
   },
   "author": "FusionCharts Technologies  <support@fusioncharts.com>",
-  "version": "3.13.0",
+  "version": "3.13.1",
   "homepage": "http://www.fusioncharts.com/",
   "keywords": [
     "fusioncharts",
     "charts",
-    "gauges",
-    "maps"
+    "dataviz",
+    "graphs",
+    "visualization",
+    "js-charts",
+    "javascript-charts",
+    "dashboards",
+    "data-stories",
+    "bar-charts",
+    "pie-charts",
+    "line-charts",
+    "area-charts",
+    "column-charts",
+    "gantt-chart"
   ],
   "dependencies": {
     "core-js": "2.5.6",
