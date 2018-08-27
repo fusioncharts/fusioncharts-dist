@@ -1,1 +1,1 @@
-class Pool{constructor(){this.pool={}}}export default Pool;
+function Pool(){this.pool={}}export default Pool;
