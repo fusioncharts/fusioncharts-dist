@@ -19,7 +19,7 @@ This package also contains FusionWidgets  (gauges, real-time charts), PowerChart
 ### Table of Contents
 * [Installing FusionCharts](#installing-fusioncharts)
 * [Getting Started](#getting-started)
-* [Using FusionCharts as an ES Modules](#using-fusioncharts-as-an-es-modules)
+* [Using FusionCharts as an ES Module](#using-fusioncharts-as-an-es-module)
 * [Related Packages](#related-packages)
 	* [Front-end Integrations](#front-end-integrations)
 	* [Back-end Integrations](#back-end-integrations)
@@ -99,8 +99,8 @@ Here’re links to quick start guides:
 * [FusionMaps](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-13)
 
 
-## Using FusionCharts as an ES Modules
-FusionCharts can be loaded as an ES modules via transpilers.
+## Using FusionCharts as an ES Module
+FusionCharts can be loaded as an ES module via transpilers.
 
 *The following examples presumes you are using npm to install FusionCharts, see Install FusionCharts for more details.*
 ```javascript
