@@ -1,0 +1,1 @@
+class AggregatorStore{constructor(){this.store={}}register(a,b){this.store[a]=b}resolve(a){return this.store[a]}}const aggregatorStore=function(){function a(){return null===b&&(b=new AggregatorStore),b}let b=null;return a()}();export default aggregatorStore;

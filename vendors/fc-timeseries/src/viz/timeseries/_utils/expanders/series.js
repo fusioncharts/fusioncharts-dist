@@ -1,0 +1,1 @@
+import stringHasContent from'../../../../../../fc-utils/src/type/string-has-content';export default((a=[],b=[],c='')=>{let d=b=>stringHasContent(b)&&0<=a.indexOf(b),e=d(c);return b.map(a=>{let b;return!d(a.series)&&e&&(b=c),Object.assign({series:b},a)})});

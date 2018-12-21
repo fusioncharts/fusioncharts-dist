@@ -1,0 +1,1 @@
+import Crossline from'../components/crossline';export default(a=>{let b=a.config.yConfigs[0],c=b.scale;c&&a.attachChild(Crossline,'horizontalCrossLine').configure({scale:c,type:'horizontal',formatterFn:b.formatterFn,prefix:b.formatLabelPrefix,suffix:b.formatLabelSuffix})});

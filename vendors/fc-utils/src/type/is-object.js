@@ -1,0 +1,1 @@
+export default(a=>null!==a&&'object'==typeof a&&!Array.isArray(a));

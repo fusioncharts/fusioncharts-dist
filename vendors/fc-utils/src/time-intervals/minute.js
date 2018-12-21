@@ -1,0 +1,1 @@
+import TimeInterval from'./time-interval.js';import{durationMinute}from'./durations.js';const minute=new TimeInterval('minute',a=>a.setTime(Math.floor(a/durationMinute)*durationMinute),(a,b)=>a.setTime(+a+b*durationMinute),(a,b)=>(b-a)/durationMinute,a=>a.getMinutes());export default minute;

@@ -1,1 +1,1 @@
-import SSCartesian from'./sscartesian';import ColumnDataset from'../_internal/datasets/column';class Column2D extends SSCartesian{static getName(){return'Column2D'}getName(){return'Column2D'}__setDefaultConfig(){super.__setDefaultConfig(),this.config.friendlyName='Column Chart',this.config.singleseries=!0,this.config.defaultDatasetType='column',this.config.enablemousetracking=!0}getDSdef(){return ColumnDataset}}export default Column2D;
+import Column2d from'../vendors/fc-charts/src/chart/column2d';export default Column2d;

@@ -1,0 +1,1 @@
+import TimeInterval from'./time-interval.js';const month=new TimeInterval('month',a=>{a.setDate(1),a.setHours(0,0,0,0)},(a,b)=>a.setMonth(a.getMonth()+b),(a,b)=>b.getMonth()-a.getMonth()+12*(b.getFullYear()-a.getFullYear()),a=>a.getMonth());export default month;

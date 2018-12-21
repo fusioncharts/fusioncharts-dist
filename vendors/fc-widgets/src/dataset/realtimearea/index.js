@@ -1,0 +1,1 @@
+import AreaDataset from'../../../../fc-charts/src/dataset/area';import{_realTimeConfigure,resetCatPos}from'../realtimecolumn';class RealtimeAreaDataset extends AreaDataset{_realTimeConfigure(a){_realTimeConfigure.call(this,a)}getType(){return'dataset'}getName(){return'realTimeArea'}}RealtimeAreaDataset.prototype.resetCatPos=resetCatPos;export default RealtimeAreaDataset;

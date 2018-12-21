@@ -1,0 +1,1 @@
+import TimeInterval from'./time-interval.js';import{durationHour,durationMinute}from'./durations.js';const hour=new TimeInterval('hour',a=>{let b=a.getTimezoneOffset()*durationMinute%durationHour;0>b&&(b+=durationHour),a.setTime(Math.floor((+a-b)/durationHour)*durationHour+b)},(a,b)=>a.setTime(+a+b*durationHour),(a,b)=>(b-a)/durationHour,a=>a.getHours());export default hour;

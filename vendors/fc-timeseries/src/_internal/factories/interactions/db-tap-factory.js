@@ -1,0 +1,1 @@
+let dbTapHandler=function(a){return function(){let b,c,d=a.getLinkedParent(),e=a.config.xConfigs[0].scale,[f,g]=e.getRange();f+=offset,g-=offset,b=e.getDomainValue(f),c=e.getDomainValue(g),d.setFocusLimit([b,c])}},offset=20;export default function(a){let b=a.config;b.enableInteraction&&!b.dbTapEventAdded&&(a.addEventListener('fc-dbclick',dbTapHandler(a)),b.dbTapEventAdded=!0)}

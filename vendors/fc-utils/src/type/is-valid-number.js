@@ -1,0 +1,1 @@
+export default(a=>''!==a&&'number'==typeof+a&&!isNaN(+a)&&a!==1/0&&a!==-Infinity);

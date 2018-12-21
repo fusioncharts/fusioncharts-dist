@@ -1,0 +1,1 @@
+function leftMostExactOrGreater(a,b,c,d,e){let f=d,g=e;for(;f<g;){let d=f+Math.floor((g-f)/2);0>c(b[d],a)?f=d+1:g=d}return f}function rightMostExactOrLesser(a,b,c,d,e){let f=d,g=e;for(;f<g;){let d=f+Math.floor((g-f)/2);0<c(b[d],a)?g=d:f=d+1}return f-1}export{leftMostExactOrGreater,rightMostExactOrLesser};

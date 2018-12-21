@@ -1,0 +1,1 @@
+import exponent from'./exponent';const precisionPrefix=(a,b)=>{var c=Math.max;return c(0,3*c(-8,Math.min(8,Math.floor(exponent(b)/3)))-exponent(Math.abs(a)))};export default precisionPrefix;

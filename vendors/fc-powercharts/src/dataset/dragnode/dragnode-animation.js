@@ -1,0 +1,1 @@
+export default{"initial.dataset.dragNode":function(){return{"node.appearing":()=>[{initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'axis'}]}}};

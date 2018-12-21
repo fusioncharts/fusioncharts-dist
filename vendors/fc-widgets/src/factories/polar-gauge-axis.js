@@ -1,0 +1,1 @@
+import PolarGaugeAxis from'../../../fc-core/src/axis/polar-numeric';import{componentFactory}from'../../../fc-core/src/lib';export default function(a){componentFactory(a,PolarGaugeAxis,'scale',1,a._feedAxesRawData()),a.addToEnv('scale',a.getChildren('scale')[0])}

@@ -1,0 +1,1 @@
+export default{"initial.canvas.canvas":function(){return{"rect.appearing":()=>[{initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'initial'}],"*":null}},"update.canvas.canvas":{"rect.updating":[{slot:'middle'}]}};

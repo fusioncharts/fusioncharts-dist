@@ -1,0 +1,1 @@
+function _getData(){var a,b,c,d,e,f=this,g=f.getChildren(),h=f.getDatasets(),k=g.xAxis&&g.xAxis[0]||g.scale,l=[],m=0;if(h){for(a=h.length,b=0;b<a;b++)m=Math.max(m,h[b].components.data.length);for(b=0;b<m;b++)for(e=l[b]=[],e[0]=k.getLabel(b).label,c=1;c<=a;c++)d=h[c-1].components.data[b],e[c]=d&&d.config.setValue;return l}}export default _getData;

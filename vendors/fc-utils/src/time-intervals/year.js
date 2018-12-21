@@ -1,0 +1,1 @@
+import YearInterval from'./time-interval-year.js';const year=new YearInterval('year',a=>{a.setMonth(0,1),a.setHours(0,0,0,0)},(a,b)=>a.setFullYear(a.getFullYear()+b),(a,b)=>b.getFullYear()-a.getFullYear(),a=>a.getFullYear());export default year;

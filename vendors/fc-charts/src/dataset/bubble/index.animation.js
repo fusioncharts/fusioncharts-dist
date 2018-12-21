@@ -1,0 +1,1 @@
+export default{"initial.dataset.bubble":function(){return{"circle.appearing":a=>[{initialAttr:{cx:a.attr.cx,cy:a.attr.cy,r:0},slot:'plot'}],"group.appearing":a=>'label-group'===a.attr.name?[{initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'final'}]:[{initialAttr:{opacity:1},finalAttr:{opacity:1},slot:'final'}],"*":null}}};

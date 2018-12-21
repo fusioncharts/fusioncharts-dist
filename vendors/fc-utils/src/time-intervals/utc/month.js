@@ -1,0 +1,1 @@
+import TimeInterval from'../time-interval.js';const utcMonth=new TimeInterval('month',a=>{a.setUTCDate(1),a.setUTCHours(0,0,0,0)},(a,b)=>a.setUTCMonth(a.getUTCMonth()+b),(a,b)=>b.getUTCMonth()-a.getUTCMonth()+12*(b.getUTCFullYear()-a.getUTCFullYear()),a=>a.getUTCMonth());export default utcMonth;

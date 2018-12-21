@@ -1,0 +1,1 @@
+import TimeInterval from'./time-interval.js';import{durationSecond}from'./durations.js';const second=new TimeInterval('second',a=>a.setTime(Math.floor(a/durationSecond)*durationSecond),(a,b)=>a.setTime(+a+b*durationSecond),(a,b)=>(b-a)/durationSecond,a=>a.getUTCSeconds());export default second;

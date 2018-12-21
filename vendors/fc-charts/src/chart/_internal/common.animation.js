@@ -1,0 +1,1 @@
+export default{"*.*.*":{"*.disappearing":[{finalAttr:{opacity:0},slot:'initial',callback:function(){this.hide()}}]}};

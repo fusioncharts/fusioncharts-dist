@@ -281,6 +281,134 @@ declare namespace FusionCharts {
 
     }
 
+    interface Handler {
+        (eventObj: any): void;
+    }
+
+    interface DataTable {
+        count(): number;
+
+        getData(offset?:number, numberOfItems?:number): any;     
+
+        min(columnName: string) : number;
+
+        max(columnName: string) : number;
+
+        unique(columnName: string) : Array<any>;
+
+        extents(columnName: string): any;
+
+        getSchema(): Array<any>;
+
+        addColumns(...args: any[]): void;
+
+        query(queryOperations: any | Array<any>): DataTable;
+
+        getDataStore(): DataStore;
+
+        indexOf(columnName: string): number;
+
+        on(eventName: string, handler: Handler | Array<Handler>): void;
+
+        off(eventName: string, handler: Handler | Array<Handler>): void;
+
+        dispose(): void;
+    }
+
+    interface DataStore {
+        createDataTable(data: Array<any>, schema: Array<any>, config?: any, id?: string): DataTable;
+        
+        appendRows(rows: Array<Array<any>>, id?: string): void;
+
+        getDataTable(id: string): DataTable;
+
+        on(eventName: string, handler: Handler | Array<Handler>): void;
+
+        off(eventName: string, handler: Handler | Array<Handler>): void;
+        
+        trigger(eventName: string, data?: any): void;
+        
+        dispose(): void;        
+    }
+
+    interface DatetimeUnits {
+        Year: any;
+        Quarter: any;
+        Month: any;
+        Week: any;
+        Day: any;
+        Hour: any;
+        Minute: any;
+        Second: any;
+        Millisecond: any;
+    }
+
+    interface Weekdays {
+        Sunday: any;
+        Monday: any;
+        Tuesday: any;
+        Wednesday: any;
+        Thursday: any;
+        Friday: any;
+        Saturday: any;
+    }
+
+    interface Duration {
+        Unit: string;
+        number: number;
+        ms: number;
+    }
+
+    interface Utils {
+        DatetimeUnits: DatetimeUnits;
+
+        Weekdays: Weekdays;
+
+        duration(DatetimeUnits: DatetimeUnits, number: number): any;
+
+        before(duration: Duration, date?: number, isUTC?: boolean, weekStartFrom?: Weekdays): number;
+
+        after(duration: Duration, date?: number, isUTC?: boolean, weekStartFrom?: Weekdays): number;
+
+        parseDate(date: string, format?: string, isUTC?: boolean): number;
+
+        formatDate(timestamp: number, format?: string, isUTC?: boolean): number;
+    }
+
+    interface Operators {
+        select(columnName: string | Array<string>): any;
+
+        sort(customSortQuery: any | Array<any> | ((a: any, b: any) => any)): any;
+
+        equals(columnName: string, value: number): any;
+
+        greater(columnName: string, value: number): any;
+
+        greaterEquals(columnName: string, value: number): any;
+
+        less(columnName: string, value: number): any;
+
+        lessEquals(columnName: string, value: number): any;
+
+        between(columnName: string, startValue: number, endValue: number): any;
+
+        filter(customFilterQuery: ((row: Array<any>, columns: any) => any)): any;
+
+        groupBy(groupConfigArr: any | Array<any>, aggrConfigArr: any | Array<any>): any;
+
+        pivot(groupConfigArr: any | Array<any>, pivotColumn: string, aggrConfigArr: any | Array<any>): any;
+
+        pipe(...args: any[]): Array<any>;
+    }
+
+    interface DataStoreStatic {
+        new (): DataStore;
+
+        Operators: Operators;
+
+        Aggregators: any;
+    }
+
     interface FusionChartStatic {
         new (chartObject: ChartObject|{}): FusionCharts;
 
@@ -321,8 +449,10 @@ declare namespace FusionCharts {
         setScriptBaseURI(scriptBaseURI: string): void;
 
         getChartFromId(id: string): ChartObject;
-        
 
+        DataStore: DataStoreStatic;
+        
+        Utils: Utils;
 
         version: string[];
 
