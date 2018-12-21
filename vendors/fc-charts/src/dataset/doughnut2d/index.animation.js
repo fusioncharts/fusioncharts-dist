@@ -1,0 +1,1 @@
+import pie2dAnimation from'../pie2d/index.animation';export default{"initial.dataset.doughnut2D":pie2dAnimation['initial.dataset.pie2D']};

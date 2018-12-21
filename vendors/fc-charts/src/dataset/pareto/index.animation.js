@@ -1,0 +1,1 @@
+import columnAnimation from'../column/index.animation';export default{"initial.dataset.paretoColumn":columnAnimation['initial.dataset.column']};

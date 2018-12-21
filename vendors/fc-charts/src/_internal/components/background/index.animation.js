@@ -1,0 +1,1 @@
+export default{"initial.background.background":()=>({"rect.appearing":()=>[{initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'initial'}]})};

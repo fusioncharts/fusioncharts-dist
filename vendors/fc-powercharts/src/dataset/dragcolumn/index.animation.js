@@ -1,0 +1,1 @@
+import columnAnimation from'../../../../fc-charts/src/dataset/column/index.animation';export default{"initial.dataset.dragColumn":columnAnimation['initial.dataset.column']};

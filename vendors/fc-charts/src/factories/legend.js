@@ -1,0 +1,1 @@
+import{componentFactory}from'../../../fc-core/src/lib';import LegendClass from'../_internal/components/legend/discrete';export default function(a){let b;componentFactory(a,LegendClass,'legend'),b=a.getChildren('legend')[0],b.configure(),a.addToEnv('legend',b),a.config.showLegend||b.remove()}

@@ -1,0 +1,1 @@
+export default{"initial.dataset.errorLine":function(){return{"path.appearing":()=>[{initialAttr:{opacity:0},finalAttr:{opacity:1},startEnd:{start:.5,end:1},slot:'plot'}],"*":null}}};

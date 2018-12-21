@@ -1,0 +1,1 @@
+import isString from'./is-string';export default(a=>isString(a)&&a.length);

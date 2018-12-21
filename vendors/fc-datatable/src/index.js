@@ -1,0 +1,1 @@
+import DataStore from'./datastore';export default DataStore;

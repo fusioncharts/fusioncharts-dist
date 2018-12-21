@@ -1,0 +1,1 @@
+import TimeInterval from'../time-interval.js';import{durationHour}from'../durations.js';const utcHour=new TimeInterval('hour',a=>a.setUTCMinutes(0,0,0),(a,b)=>a.setTime(+a+b*durationHour),(a,b)=>(b-a)/durationHour,a=>a.getUTCHours());export default utcHour;

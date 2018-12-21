@@ -1,0 +1,1 @@
+import TimeInterval from'../time-interval.js';class UtcYearInterval extends TimeInterval{every(a){var b=Math.floor;return isFinite(a=b(a))&&0<a?new TimeInterval('year',c=>{c.setUTCFullYear(b(c.getUTCFullYear()/a)*a),c.setUTCMonth(0,1),c.setUTCHours(0,0,0,0)},(b,c)=>b.setUTCFullYear(b.getUTCFullYear()+c*a)):null}}export default UtcYearInterval;

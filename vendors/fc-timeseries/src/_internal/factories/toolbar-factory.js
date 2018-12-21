@@ -1,0 +1,1 @@
+import{ToolBar}from'../../../../fc-core/src/toolbox';import{componentFactory}from'../../../../fc-core/src/lib';export default(a=>{let b,c=a.getFromEnv('dataSource').chart;componentFactory(a,ToolBar,'selectorToolbar',1,[Object.assign({toolbarhdirection:1},c)]),b=a.getChildren('selectorToolbar')[0],a.addToEnv('selectorToolbar',b)});

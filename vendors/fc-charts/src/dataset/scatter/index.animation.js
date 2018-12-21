@@ -1,0 +1,1 @@
+import lineAnimation from'../line/index.animation';export default{"*.dataset.scatter":lineAnimation['*.dataset.line']};

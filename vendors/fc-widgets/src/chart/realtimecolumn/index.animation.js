@@ -1,0 +1,1 @@
+export default{"initial.chartAPI.RealtimeColumn":function(){return{"*":null}}};

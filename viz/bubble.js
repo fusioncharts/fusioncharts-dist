@@ -1,1 +1,1 @@
-import Scatter from'./scatter';import BubbleDataset from'../_internal/datasets/bubble';import BubbleDatasetGroup from'../_internal/datasets/groups/bubble';class Bubble extends Scatter{static getName(){return'Bubble'}getName(){return'Bubble'}__setDefaultConfig(){super.__setDefaultConfig();let a=this.config;a.friendlyName='Bubble Chart',a.enablemousetracking=!0}getDSdef(){return BubbleDataset}getDSGroupdef(){return BubbleDatasetGroup}}export default Bubble;
+import Bubble from'../vendors/fc-charts/src/chart/bubble';export default Bubble;
