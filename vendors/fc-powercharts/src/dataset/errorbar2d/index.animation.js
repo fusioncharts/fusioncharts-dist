@@ -1,0 +1,1 @@
+import columnAnimation from'../../../../fc-charts/src/dataset/column/index.animation';export default{column:{"initial.dataset.errorBar2D":columnAnimation['initial.dataset.column']},error:{"initial.dataset.errorBar2D":function(){return{"path.appearing":[{initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'final'}]}}}};

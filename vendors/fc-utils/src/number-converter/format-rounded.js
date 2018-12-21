@@ -1,0 +1,1 @@
+import formatDecimal from'./format-decimal';const formatRounded=(a,b)=>{const c=formatDecimal(a,b);let d,e;return c?(d=c[0],e=c[1],0>+e?'0.'+Array(-e).join('0')+d:d.length>e+1?d.slice(0,e+1)+'.'+d.slice(e+1):d+Array(e-d.length+2).join('0')):a+''};export default formatRounded;

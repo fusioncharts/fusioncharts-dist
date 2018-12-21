@@ -1,0 +1,1 @@
+const START=0,STEP=1;let range=(...a)=>{let b,c,d,e,f,g=[];if(2<a.length?(b=a[0],c=a[1],d=a[2]):1===a.length?(b=START,c=a[0],d=STEP):(b=a[0],c=a[1],d=STEP),e=Math.floor(Math.max(0,Math.ceil((c-b)/d))),isFinite(e))for(f=0;f<e;++f)g.push(d*f+b);return g};export default range;

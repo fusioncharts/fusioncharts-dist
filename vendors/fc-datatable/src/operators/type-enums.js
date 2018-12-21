@@ -1,0 +1,1 @@
+export const OperatorTypes={IndexOpsFilter:0,GenericFilter:1,GroupBy:2,Sort:3,Select:4};

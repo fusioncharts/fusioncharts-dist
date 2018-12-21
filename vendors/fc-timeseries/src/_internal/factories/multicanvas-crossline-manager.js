@@ -1,0 +1,1 @@
+import CrosslineManager from'../components/multicanvas-crossline-manager';import{componentFactory}from'../../../../fc-core/src/lib';export default(a=>{let b;componentFactory(a,CrosslineManager,'multicanvasCrosslineManager',1),b=a.getChildren('multicanvasCrosslineManager')[0],b.configure()});

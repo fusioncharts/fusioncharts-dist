@@ -1,0 +1,1 @@
+export default{"*.legendItem.legendItem":()=>({"icon.appearing":()=>[{initialAttr:{opacity:0},slot:'plot',startEnd:{start:.5,end:1},finalAttr:{opacity:1}}],"background.appearing":a=>[{initialAttr:{opacity:0},slot:'plot',startEnd:{start:.5,end:1},finalAttr:{opacity:a.attr.opacity}}],"icon.disappearing":()=>[{finalAttr:{opacity:0},slot:'initial'}]})};

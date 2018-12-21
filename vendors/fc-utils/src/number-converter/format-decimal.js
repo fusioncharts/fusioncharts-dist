@@ -1,0 +1,1 @@
+const formatDecimal=(a,b)=>{let c,d;return(a=b?a.toExponential(b-1):a.toExponential(),c=a.indexOf('e'),0>c)?null:(d=a.slice(0,c),[1<d.length?d[0]+d.slice(2):d,+a.slice(c+1)])};export default formatDecimal;

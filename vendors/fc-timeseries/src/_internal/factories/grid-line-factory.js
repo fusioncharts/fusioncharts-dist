@@ -1,0 +1,1 @@
+import GridLine from'../components/grid-lines';export default(a=>{if(a.config.enableGridLines){let b=a.attachChild(GridLine,'gridLine');b.configure({direction:a.config.gridLineDirection,styleGridLines:a.config.styleGridLines,defaultStyle:a.config.gridLineStyle})}});

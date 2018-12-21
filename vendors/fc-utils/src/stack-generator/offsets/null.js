@@ -1,0 +1,1 @@
+export default((a,b)=>{const c=a.length;if(1<c){let d,e,f,g=a[b[0]],h=g.length;for(e=0;e<g.length;e++)g[e][0]=null;for(e=1;e<c;++e)for(d=g,g=a[b[e]],f=0;f<h;++f)g[f][0]=isNaN(d[f][1])?d[f][0]:d[f][1],g[f][1]+=g[f][0]}});

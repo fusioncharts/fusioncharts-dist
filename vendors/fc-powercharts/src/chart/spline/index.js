@@ -1,0 +1,1 @@
+import Spline from'../../../../fc-charts/src/chart/spline';export default Spline;

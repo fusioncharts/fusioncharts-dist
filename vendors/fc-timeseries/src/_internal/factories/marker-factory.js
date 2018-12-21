@@ -1,0 +1,1 @@
+import FlagMarker from'./../components/data-marker/flag-marker';export default function(a){let b,c,d=a.getFromEnv('dataSource'),e=a.config,f=e.series,g=e.enableMarkers,h=[];g&&(b=d.datamarker)&&(b.forEach(a=>{f===a.seriesname&&h.push(a)}),0!==h.length&&(c=a.attachChild(FlagMarker,'flagMarker'),c.configure({data:h,visibility:e.visibility})))}

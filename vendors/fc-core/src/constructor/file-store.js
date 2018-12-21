@@ -1,0 +1,1 @@
+let fileStore={},addFile=function(a){fileStore[a]=!0},getFile=function(a){return fileStore[a]};export{addFile,getFile};export default{extension:function(a){a.addFile=addFile,a.getFile=getFile},name:'fileStore',type:'plugin',requiresFusionCharts:!0};

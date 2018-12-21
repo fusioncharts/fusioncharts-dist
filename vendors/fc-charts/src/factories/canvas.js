@@ -1,0 +1,1 @@
+import Canvas from'../_internal/components/canvases/canvas';import{componentFactory}from'../../../fc-core/src//lib';export default function(a){let b;componentFactory(a,Canvas,'canvas',a.config.showVolumeChart?2:1),b=a.getChildren('canvas');for(let c=0,d=b.length;c<d;c++)b[c].configure()}

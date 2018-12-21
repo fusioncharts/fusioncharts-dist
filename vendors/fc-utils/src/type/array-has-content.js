@@ -1,0 +1,1 @@
+import isArray from'./is-array';export default(a=>isArray(a)&&a.length);

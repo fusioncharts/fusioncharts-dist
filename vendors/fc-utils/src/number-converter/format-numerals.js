@@ -1,0 +1,1 @@
+const formatNumerals=a=>b=>b.replace(/[0-9]/g,b=>a[+b]);export default formatNumerals;

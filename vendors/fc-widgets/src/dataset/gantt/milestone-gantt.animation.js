@@ -1,0 +1,1 @@
+export default{"initial.dataset.milestone":()=>({"polypath.appearing":()=>[{initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'middle',startEnd:{start:.9,end:1}}]})};

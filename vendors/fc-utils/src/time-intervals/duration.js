@@ -1,0 +1,1 @@
+import{DatetimeUnits}from'../datetime-enums';function duration(a,b){if(!a||!DatetimeUnits[a.name])throw new Error(`Invalid Unit provided: ${a}`);return b=Math.abs(b)||1,{Unit:a.name,number:b,ms:a.ms*b}}export{duration};

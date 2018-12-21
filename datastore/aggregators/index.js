@@ -1,0 +1,1 @@
+import aggregatorStore from'../../vendors/fc-datatable/src/aggregators/';export{aggregatorStore};

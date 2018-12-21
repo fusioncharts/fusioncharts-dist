@@ -1,0 +1,1 @@
+import MouseTracker from'./../components/mouse-tracker';export default function(a){let b;a.config.enableMouseTracking&&(b=a.attachChild(MouseTracker,'mouseTracker'),a.addToEnv('mouseTracker',b),!b.config.mouseTrackerEventAdded&&(b.addEvents(),b.config.mouseTrackerEventAdded=!0))}
