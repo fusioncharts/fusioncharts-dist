@@ -1,6 +1,6 @@
 FusionCharts is a JavaScript charting library providing 95+ charts and 1,400+ maps for your web and mobile applications. All the visualizations are interactive and animated, which are rendered in SVG and VML  (for IE 6/7/8).
 
-This package also contains FusionWidgets  (gauges, real-time charts), PowerCharts  (statistical and advanced charts), and FusionMaps  (choropleth geo maps).
+This package also contains FusionTime (timeseries charts), FusionWidgets  (gauges, real-time charts), PowerCharts  (statistical and advanced charts), and FusionMaps  (choropleth geo maps).
 
 * Official Website: [https://www.fusioncharts.com/](https://www.fusioncharts.com/)
 * Documentation: [https://www.fusioncharts.com/dev/](https://www.fusioncharts.com/dev/)
@@ -10,11 +10,11 @@ This package also contains FusionWidgets  (gauges, real-time charts), PowerChart
 * Issues: [https://github.com/fusioncharts/fusioncharts-dist/issues](https://github.com/fusioncharts/fusioncharts-dist/issues)
 
 ### What's New:
-* Introduced overlapped column and bar charts
-* Support for spline and spline area in combination charts.
-* Highlight effect customization options in multi-level pie chart
-* Introduced 3 new themes.
-* Support for exporting multi-level pie chart in CSV or XLS formats
+**FusionTime V1 :boom:**
+* [Click here to checkout FusionTime V1 >>](https://www.fusioncharts.com/fusiontime)
+* [Examples](https://www.fusioncharts.com/fusiontime/examples)
+* [Documentation](https://www.fusioncharts.com/dev/fusiontime/getting-started/how-fusion-time-works)
+
 ---
 ### Table of Contents
 * [Installing FusionCharts](#installing-fusioncharts)
@@ -95,6 +95,7 @@ Easiest way to start with FusionCharts is to include the JavaScript library in y
 ```
 Here’re links to quick start guides:
 * [FusionCharts](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-chart-1)
+* [FusionTime](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime) | [Release Notes](https://www.fusioncharts.com/dev/fusiontime/getting-started/release-notes)
 * [FusionWidgets](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-gauge-8)
 * [FusionMaps](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-13)
 
