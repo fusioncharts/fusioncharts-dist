@@ -11,7 +11,7 @@
     "url": "git+https://github.com/fusioncharts/fusioncharts-dist.git"
   },
   "author": "FusionCharts Technologies  <support@fusioncharts.com>",
-  "version": "3.13.3-sr.1",
+  "version": "3.13.4",
   "homepage": "http://www.fusioncharts.com/",
   "keywords": [
     "fusioncharts",
