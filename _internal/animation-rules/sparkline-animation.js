@@ -1,1 +1,0 @@
-import lineAnimation from'./line-animation';export default{"*.dataset.sparkLine":lineAnimation['*.dataset.line']};

@@ -1,1 +1,0 @@
-var diff=(a,b)=>a.filter(a=>0>b.indexOf(a));export default diff;

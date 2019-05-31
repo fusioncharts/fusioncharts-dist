@@ -1,1 +1,0 @@
-export default{"initial.dataset.boxandwhiskerline":function(){return{"line.appearing":[{initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'plot',startEnd:{start:.5,end:1}}],"anchor.appearing":[{initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'plot',startEnd:{start:.5,end:1}}]}}};

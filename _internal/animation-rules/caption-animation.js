@@ -1,1 +1,0 @@
-export default{"initial.caption.caption":()=>({"text.appearing":()=>[{initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'initial'}]})};
