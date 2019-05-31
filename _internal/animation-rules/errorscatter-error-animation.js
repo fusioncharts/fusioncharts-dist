@@ -1,1 +1,0 @@
-import errorAnimation from'./errorline-error-animation';export default{"initial.dataset.errorScatter":errorAnimation['initial.dataset.errorLine']};

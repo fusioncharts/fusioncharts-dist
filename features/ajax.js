@@ -1,1 +1,0 @@
-import Ajax from'../_internal/misc/ajax';export default{name:'Ajax',type:'extension',requiresFusionCharts:!0,extension:function(a){a.ajax=Ajax}};

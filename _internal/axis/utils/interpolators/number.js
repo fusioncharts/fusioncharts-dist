@@ -1,1 +1,0 @@
-function interpolateNumber(a,b){a=+a,b=+b;let c=b-a;return b=>c*b+a}export default interpolateNumber;

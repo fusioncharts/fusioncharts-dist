@@ -1,1 +1,0 @@
-import lineAnimation from'./line-animation';export default{"*.dataset.errorLine":lineAnimation['*.dataset.line']};

@@ -11,7 +11,7 @@
     "url": "git+https://github.com/fusioncharts/fusioncharts-dist.git"
   },
   "author": "FusionCharts Technologies  <support@fusioncharts.com>",
-  "version": "3.13.4",
+  "version": "3.13.5",
   "homepage": "http://www.fusioncharts.com/",
   "keywords": [
     "fusioncharts",
@@ -32,8 +32,6 @@
   ],
   "dependencies": {
     "core-js": "2.5.6",
-    "jss": "9.8.7",
-    "jss-preset-default": "4.5.0",
     "promise-polyfill": "7.1.2",
     "ramda": "0.25.0"
   }

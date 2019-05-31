@@ -1,1 +1,0 @@
-export default{"initial.centerLabel.centerLabel.text.appearing":a=>{if(a.attr)return[{initialAttr:{x:a.attr.x,y:a.attr.y}}]}};

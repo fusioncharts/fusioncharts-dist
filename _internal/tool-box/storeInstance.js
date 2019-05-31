@@ -1,1 +1,0 @@
-var StoreInstance={setNewInstance:function(a,b){StoreInstance.instances[a]=b},getInstanceById:function(a){return StoreInstance.instances[a]},instances:{}};export{StoreInstance};

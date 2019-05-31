@@ -1,1 +1,0 @@
-import ScaleContinuous,{deInterpolateLinear,copyScale}from'./continuous';import interpolateNumber from'../utils/interpolators/number';class ScaleCategory extends ScaleContinuous{constructor(){super(deInterpolateLinear,interpolateNumber)}copy(){return copyScale(this,new ScaleCategory)}}export default ScaleCategory;

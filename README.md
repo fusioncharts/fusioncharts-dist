@@ -9,11 +9,17 @@ This package also contains FusionTime (timeseries charts), FusionWidgets  (gauge
 * Support: [https://www.fusioncharts.com/contact-support](https://www.fusioncharts.com/contact-support)
 * Issues: [https://github.com/fusioncharts/fusioncharts-dist/issues](https://github.com/fusioncharts/fusioncharts-dist/issues)
 
+
 ### What's New:
-**FusionTime V1 :boom:**
-* [Click here to checkout FusionTime V1 >>](https://www.fusioncharts.com/fusiontime)
-* [Examples](https://www.fusioncharts.com/fusiontime/examples)
-* [Documentation](https://www.fusioncharts.com/dev/fusiontime/getting-started/how-fusion-time-works)
+* :new: Added Grouped Column (Multi-series Column) chart for FusionTime.
+* :art: Added CSS Styling for FusionTime.
+* :new: Added Umber theme.
+* Added improvements in Multi-Level Pie chart.
+* Introduction of an extensible approach to export chart as XLS data.
+* Improved Stacked Area chart representation for FusionTime.
+* Developer friendly and improved error messages for plot/axis configurations.
+* Better and improved themes to style more chart components.
+
 
 ---
 ### Table of Contents
@@ -95,7 +101,7 @@ Easiest way to start with FusionCharts is to include the JavaScript library in y
 ```
 Here’re links to quick start guides:
 * [FusionCharts](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-chart-1)
-* [FusionTime](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime) | [Release Notes](https://www.fusioncharts.com/dev/fusiontime/getting-started/release-notes)
+* [FusionTime](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime) | [Release Notes](https://www.fusioncharts.com/dev/fusiontime/release-notes)
 * [FusionWidgets](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-gauge-8)
 * [FusionMaps](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-13)
 
@@ -294,6 +300,7 @@ fusioncharts/
   ├── viz/ - Contains all the individual vizualizations (Column2D, SplineArea, AngularGauge etc.)
   ├── charts/ - Contains all the visualizations of the Charts package (similar to fusioncharts.charts.js).
   ├── powercharts/ - Contains all the visualizations of the PowerCharts package.
+  ├── timeseries/ - Contains all the visualizations of the FusionTime package.
   ├── widgets/ - Contains all the visualizations of the FusionWidgets package.
   ├── maps/ - Contains the map renderer
   │   └── es/ - Contains the map definition files of World and USA
