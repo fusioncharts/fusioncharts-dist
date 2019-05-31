@@ -1,1 +1,0 @@
-import columnAnimation from'./column-animation';export default{"initial.dataset.sparkColumn":columnAnimation['initial.dataset.column']};

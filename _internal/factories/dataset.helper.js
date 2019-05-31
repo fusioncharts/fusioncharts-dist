@@ -1,1 +1,0 @@
-let removeComponents=(a,b)=>{a&&a.iterateComponents(a=>{-1!==b.indexOf(a.getName().toLowerCase())||a.getLinkedParent().getState('removed')||a.remove()})};export{removeComponents};

@@ -1,0 +1,1 @@
+import ExcelExport from'../vendors/fc-features/src/excel-export';export default ExcelExport;

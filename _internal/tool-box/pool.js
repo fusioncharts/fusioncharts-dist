@@ -1,1 +1,0 @@
-function Pool(){this.pool={}}export default Pool;

@@ -1,1 +1,0 @@
-import bar2dAnimation from'./bar-animation';export default{"initial.dataset.bar3D":bar2dAnimation['initial.dataset.bar2D']};

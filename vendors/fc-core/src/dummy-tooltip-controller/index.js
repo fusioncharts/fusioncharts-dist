@@ -1,1 +1,1 @@
-class SkeletonTooltipController{draw(){}drawAt(){}hide(){}hideAll(){}enableToolTip(){}disableToolTip(){}setStyle(){}}export default{extension:SkeletonTooltipController,name:'ToolTipController',type:'plugin'};
+class SkeletonTooltipController{draw(){}drawAt(){}hide(){}hideAll(){}enableToolTip(){}disableToolTip(){}setStyle(){}setApplyScale(){}}export default{extension:SkeletonTooltipController,name:'ToolTipController',type:'plugin'};
