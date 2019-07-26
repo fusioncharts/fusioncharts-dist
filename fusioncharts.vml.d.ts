@@ -1,5 +1,5 @@
 
-import { FusionChartStatic } from "fusioncharts";
+import { FusionChartStatic } from 'fusioncharts';
 
 declare namespace Vml {}
 declare var Vml: (H: FusionChartStatic) => FusionChartStatic;
