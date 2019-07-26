@@ -1,5 +1,5 @@
 
-import { FusionChartStatic } from "fusioncharts";
+import { FusionChartStatic } from 'fusioncharts';
 
 declare namespace Excelexport {}
 declare var Excelexport: (H: FusionChartStatic) => FusionChartStatic;

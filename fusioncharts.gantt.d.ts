@@ -1,5 +1,5 @@
 
-import { FusionChartStatic } from "fusioncharts";
+import { FusionChartStatic } from 'fusioncharts';
 
 declare namespace Gantt {}
 declare var Gantt: (H: FusionChartStatic) => FusionChartStatic;

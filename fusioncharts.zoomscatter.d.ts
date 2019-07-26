@@ -1,5 +1,5 @@
 
-import { FusionChartStatic } from "fusioncharts";
+import { FusionChartStatic } from 'fusioncharts';
 
 declare namespace Zoomscatter {}
 declare var Zoomscatter: (H: FusionChartStatic) => FusionChartStatic;
