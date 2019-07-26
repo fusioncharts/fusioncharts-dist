@@ -1,5 +1,5 @@
 
-import { FusionChartStatic } from "fusioncharts";
+import { FusionChartStatic } from 'fusioncharts';
 
 declare namespace Overlappedbar2d {}
 declare var Overlappedbar2d: (H: FusionChartStatic) => FusionChartStatic;

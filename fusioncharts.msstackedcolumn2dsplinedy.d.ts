@@ -1,5 +1,5 @@
 
-import { FusionChartStatic } from "fusioncharts";
+import { FusionChartStatic } from 'fusioncharts';
 
 declare namespace Msstackedcolumn2dsplinedy {}
 declare var Msstackedcolumn2dsplinedy: (H: FusionChartStatic) => FusionChartStatic;
