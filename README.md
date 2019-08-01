@@ -1,4 +1,4 @@
-FusionCharts is a JavaScript charting library providing 95+ charts and 1,400+ maps for your web and mobile applications. All the visualizations are interactive and animated, which are rendered in SVG and VML  (for IE 6/7/8).
+FusionCharts is a JavaScript charting library providing 95+ charts and 2,000+ maps for your web and mobile applications. All the visualizations are interactive and animated, which are rendered in SVG and VML  (for IE 6/7/8).
 
 This package also contains FusionTime (timeseries charts), FusionWidgets  (gauges, real-time charts), PowerCharts  (statistical and advanced charts), and FusionMaps  (choropleth geo maps).
 
@@ -23,18 +23,22 @@ This package also contains FusionTime (timeseries charts), FusionWidgets  (gauge
 
 ---
 ### Table of Contents
-* [Installing FusionCharts](#installing-fusioncharts)
-* [Getting Started](#getting-started)
-* [Using FusionCharts as an ES Module](#using-fusioncharts-as-an-es-module)
-* [Related Packages](#related-packages)
-	* [Front-end Integrations](#front-end-integrations)
-	* [Back-end Integrations](#back-end-integrations)
-* [Using Themes](#using-themes)
-* [FusionMaps](#fusionmaps)
-* [Going beyond Charts](#going-beyond-charts)
-* [Version History](#version-history)
-* [Contact Support](#contact-support)
-* [Folder Structure](#folder-structure)
+- [Installing FusionCharts](#installing-fusioncharts)
+  - [Direct Download](#direct-download)
+  - [Using CDN](#using-cdn)
+  - [Install from NPM](#install-from-npm)
+- [Getting Started](#getting-started)
+- [Using FusionCharts as an ES Module](#using-fusioncharts-as-an-es-module)
+- [Related Packages](#related-packages)
+  - [Front-end Integrations](#front-end-integrations)
+  - [Back-end Integrations](#back-end-integrations)
+- [Using Themes](#using-themes)
+  - [Using themes in ES6](#using-themes-in-es6)
+- [FusionMaps](#fusionmaps)
+- [Going beyond Charts](#going-beyond-charts)
+- [Version History](#version-history)
+- [Contact Support](#contact-support)
+- [Folder Structure](#folder-structure)
 
 
 ## Installing FusionCharts
@@ -272,7 +276,7 @@ See all the themes live [here](https://www.fusioncharts.com/explore/chart-galler
 
 
 ## FusionMaps
-FusionMaps is a companion package meant to be used in conjunction with FusionCharts to render choropleth geo maps. FusionMaps provide over 1,400+ geographical maps, including all countries, US states, and regions in Europe for plotting business data like revenue by regions, employment levels by state and office locations. See below links to know more:
+FusionMaps is a companion package meant to be used in conjunction with FusionCharts to render choropleth geo maps. FusionMaps provide over 2,000+ geographical maps, including all countries, US states, and regions in Europe for plotting business data like revenue by regions, employment levels by state and office locations. See below links to know more:
 * [Examples](https://www.fusioncharts.com/explore/chart-gallery?product=fusionmaps)
 * [Documentation](https://www.fusioncharts.com/dev/map-guide/setup)
 * [Github Repo](https://github.com/fusioncharts/fusionmaps-dist) and [NPM Package](https://www.npmjs.com/package/fusionmaps)
