@@ -202,7 +202,7 @@ declare namespace FusionCharts {
         
         centerLabel(labelText: string, options?: {}): void;
 
-        startingAngle(angle?: number, relative?: boolean, callback?: (output) => void): any;
+        startingAngle(angle?: number, relative?: boolean, callback?: (output:number) => void): any;
 
         zoomOut(): void;
 
