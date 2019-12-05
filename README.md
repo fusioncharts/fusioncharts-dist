@@ -1,4 +1,10 @@
-FusionCharts is a JavaScript charting library providing 95+ charts and 2,000+ maps for your web and mobile applications. All the visualizations are interactive and animated, which are rendered in SVG and VML  (for IE 6/7/8).
+[<img src="https://www.fusioncharts.com/dev/_nuxt/img/d427d93.svg" width="234px" alt="FusionCharts - Build beautiful web & mobile dashboards">](https://www.fusioncharts.com/)
+[<img alt="FusionCharts jsDelivr Hits" src="https://img.shields.io/jsdelivr/npm/hm/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.jsdelivr.com/package/npm/fusioncharts)
+[<img alt="FusionCharts Downloads" src="https://img.shields.io/npm/dm/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.fusioncharts.com/download)
+[<img alt="FusionCharts NPM Version" src="https://img.shields.io/npm/v/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.npmjs.com/package/fusioncharts)
+
+
+FusionCharts is a JavaScript charting library providing 100+ charts and 2,000+ maps for your web and mobile applications. All the visualizations are interactive and animated, which are rendered in SVG and VML  (for IE 6/7/8).
 
 This package also contains FusionTime (timeseries charts), FusionWidgets  (gauges, real-time charts), PowerCharts  (statistical and advanced charts), and FusionMaps  (choropleth geo maps).
 
@@ -11,14 +17,19 @@ This package also contains FusionTime (timeseries charts), FusionWidgets  (gauge
 
 
 ### What's New:
-* :new: Added Grouped Column (Multi-series Column) chart for FusionTime.
-* :art: Added CSS Styling for FusionTime.
-* :new: Added Umber theme.
-* Added improvements in Multi-Level Pie chart.
-* Introduction of an extensible approach to export chart as XLS data.
-* Improved Stacked Area chart representation for FusionTime.
-* Developer friendly and improved error messages for plot/axis configurations.
-* Better and improved themes to style more chart components.
+#### FusionCharts
+* :new: Added **3** new charts:
+  * :white_check_mark: Chord diagram - `chord`
+  * :white_check_mark: Sankey diagram - `sankey`
+  * :white_check_mark: Sunburst chart - `sunburst`
+* :hammer_and_wrench: Improved Box and whisker chart with support to process large data, scroll and more.
+* :art: Improved themes
+
+#### FusionTime
+* :new: Added real-time support for FusionTime :fire:
+* :triangular_ruler: Added support for customizing time navigator and canvas height in FusionTime.
+* :nut_and_bolt: Improved legend with support to hide/initially hide data series and more.
+* :hammer_and_wrench: Improved CRS for mobile and small screens.
 
 
 ---
@@ -105,7 +116,7 @@ Easiest way to start with FusionCharts is to include the JavaScript library in y
 ```
 Here’re links to quick start guides:
 * [FusionCharts](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-chart-1)
-* [FusionTime](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime) | [Release Notes](https://www.fusioncharts.com/dev/fusiontime/release-notes)
+* [FusionTime](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime)
 * [FusionWidgets](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-gauge-8)
 * [FusionMaps](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-13)
 
@@ -164,7 +175,7 @@ Want to render data-driven maps  (FusionMaps) - check out [this link](https://ww
 |Angular (2.x and above)|[Github Repo](https://github.com/fusioncharts/angular-fusioncharts)|[Documentation](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular)|
 |jQuery|[Github Repo](https://github.com/fusioncharts/fusioncharts-jquery-plugin)|[Documentation](https://www.fusioncharts.com/dev/getting-started/jquery/your-first-chart-using-jquery)|
 |React|[Github Repo](https://github.com/fusioncharts/react-fusioncharts-component)|[Documentation](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react)|
-|Vue.js|[Github Repo](https://github.com/fusioncharts/vue-fusioncharts)|[Documentation](https://www.fusioncharts.com/dev/getting-started/vue/your-first-chart-using-vuejs)|
+|Vue|[Github Repo](https://github.com/fusioncharts/vue-fusioncharts)|[Documentation](https://www.fusioncharts.com/dev/getting-started/vue/your-first-chart-using-vuejs)|
 |Ember|[Github Repo](https://github.com/fusioncharts/ember-fusioncharts)|[Documentation](https://www.fusioncharts.com/dev/getting-started/ember/your-first-chart-using-ember)|
 
 ### Back-end Integrations
@@ -276,7 +287,7 @@ See all the themes live [here](https://www.fusioncharts.com/explore/chart-galler
 
 
 ## FusionMaps
-FusionMaps is a companion package meant to be used in conjunction with FusionCharts to render choropleth geo maps. FusionMaps provide over 2,000+ geographical maps, including all countries, US states, and regions in Europe for plotting business data like revenue by regions, employment levels by state and office locations. See below links to know more:
+FusionMaps is a companion package meant to be used in conjunction with FusionCharts to render choropleth geo maps. FusionMaps provide over 1,400+ geographical maps, including all countries, US states, and regions in Europe for plotting business data like revenue by regions, employment levels by state and office locations. See below links to know more:
 * [Examples](https://www.fusioncharts.com/explore/chart-gallery?product=fusionmaps)
 * [Documentation](https://www.fusioncharts.com/dev/map-guide/setup)
 * [Github Repo](https://github.com/fusioncharts/fusionmaps-dist) and [NPM Package](https://www.npmjs.com/package/fusionmaps)
