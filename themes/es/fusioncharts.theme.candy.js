@@ -25,14 +25,14 @@ function styleInject(css, ref) {
   }
 }
 
-var css = "@font-face {\n  font-family: \"Fira Sans Light\";\n  font-style: normal;\n  font-weight: 300;\n  src: local(\"Fira Sans Light\"), local(\"FiraSans-Light\"),\n    url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnPKreRhf6Xl7Glw.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: \"Fira Sans Regular\";\n  font-style: normal;\n  font-weight: 400;\n  src: local(\"Fira Sans Regular\"), local(\"FiraSans-Regular\"),\n    url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jLazX3dA.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}";
+var css = "@font-face {\n  font-family: \"Fira Sans Light\";\n  font-style: normal;\n  font-weight: 300;\n  src: local(\"Fira Sans Light\"), local(\"FiraSans-Light\"),\n    url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnPKreRhf6Xl7Glw.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: \"Fira Sans Regular\";\n  font-style: normal;\n  font-weight: 400;\n  src: local(\"Fira Sans Regular\"), local(\"FiraSans-Regular\"),\n    url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jLazX3dA.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n/* ft calendar customiztion */\n.fc-cal-day-candy {\n  background-color: rgb(52, 52, 52);\n  color: rgb(204, 204, 204);\n  font-family: \"Fira Sans Light\";\n  border: none;\n}\n\n.fc-cal-date-normal-candy {\n  background-color: rgb(52, 52, 52);\n  color: rgb(204, 204, 204);\n  font-family: \"Fira Sans Light\";\n  border: none;\n}\n\n.fc-cal-date-normal-candy:hover {\n  background-color: rgb(110, 110, 110);\n  color: rgb(255, 255, 255);\n  font-family: \"Fira Sans Light\";\n  border: none;\n}\n\n.fc-cal-date-disabled-candy {\n  background-color: rgb(52, 52, 52);\n  color: rgba(153, 156, 165, 0.75);\n  font-family: \"Fira Sans Light\";\n  border: none;\n}\n\n.fc-cal-month-header-candy {\n  background-color: rgb(54, 134, 156);\n  font-family: \"Fira Sans Light\";\n}\n\n.fc-cal-weekend-candy {\n  background-color: rgb(53, 85, 93);\n}\n\n.fc-cal-container-candy {\n  border: 0.5px solid rgb(75, 75, 75);\n}\n\n.fc-cal-nav-next-candy,\n.fc-cal-nav-prev-candy {\n  font-family: \"Fira Sans Light\";\n  font-size: 12px;\n}\n\n.fc-cal-date-selected-candy {\n  background-color: rgb(54, 134, 156);\n  color: rgb(255, 255, 255);\n  font-family: \"Fira Sans Regular\";\n}";
 styleInject(css);
 
 /*
- Candy Theme v0.3
+ Candy Theme v0.5
  FusionCharts JavaScript Library
 
- Copyright FusionCharts Technologies LLP
+ Copyright InfoSoft Global Pvt. Ltd.
  License Information at <http://www.fusioncharts.com/license>
 */
 /* jshint ignore:end */
@@ -1856,7 +1856,11 @@ var themeObject = {
         useHoverColor: "1",
         hoverFillColor: "#4B4B4B",
         showHoverEffect: "1",
-        plotHoverEffect: "1"
+        plotHoverEffect: "1",
+        showPlotBorder: "1",
+        plotBorderColor: "#262A33",
+        plotBorderThickness: "0.75",
+        plotBorderAlpha: "100"
       },
 
       category: [
@@ -1967,7 +1971,171 @@ var themeObject = {
       }
     },
 
-    // 97. timeseries
+    // 97. Scroll Bar2D Chart
+    scrollbar2d: {
+      chart: {
+        drawCrossLine: "1",
+        showLegend: "1",
+        legendIconSides: "4",
+        flatScrollBars: "1",
+        scrollShowButtons: "0",
+        scrollColor: "#ABABAB",
+        scrollWidth: "10"
+      }
+    },
+
+    // 98. Scroll Stacked Bar2D Chart
+    scrollstackedbar2d: {
+      chart: {
+        showLegend: "1",
+        legendIconSides: "4",
+        drawCrossLine: "1",
+        flatScrollBars: "1",
+        scrollShowButtons: "0",
+        scrollColor: "#ABABAB",
+        scrollWidth: "10"
+      }
+    },
+
+    // 99. Scroll Multi-series Stacked Column2D Chart
+    scrollmsstackedcolumn2d: {
+      chart: {
+        showLegend: "1",
+        legendIconSides: "4",
+        flatScrollBars: "1",
+        scrollShowButtons: "0",
+        scrollColor: "#ABABAB",
+        scrollheight: "10"
+      }
+    },
+
+    // 100. Scroll Multi-series Stacked Column2D + Line Dual Y-Axis
+    scrollmsstackedcolumn2dlinedy: {
+      chart: {
+        lineThickness: "3",
+        showLegend: "1",
+        drawCrossLine: "1",
+        drawAnchors: "1",
+        legendIconBorderThickness: "2",
+        anchorBgColor: "#262A33",
+        anchorRadius: "4",
+        anchorHoverRadius: "7",
+        anchorBorderHoverThickness: "1",
+        anchorBorderHoverColor: "#ECEBE4",
+        anchorBgHoverAlpha: "100",
+        flatScrollBars: "1",
+        scrollShowButtons: "0",
+        scrollColor: "#ABABAB",
+        scrollheight: "10"
+      }
+    },
+
+    // 101. Stacked Column2D + Line Dual Y-Axis Chart
+    stackedcolumn2dlinedy: {
+      chart: {
+        lineThickness: "3",
+        showLegend: "1",
+        drawCrossLine: "1",
+        drawAnchors: "1",
+        legendIconBorderThickness: "2",
+        anchorBgColor: "#262A33",
+        anchorRadius: "4",
+        anchorHoverRadius: "7",
+        anchorBorderHoverThickness: "1",
+        anchorBorderHoverColor: "#ECEBE4",
+        anchorBgHoverAlpha: "100"
+      }
+    },
+
+    // 102. Stacked Area2D + Line Dual Y-Axis Chart
+    stackedarea2dlinedy: {
+      chart: {
+        showLegend: "1",
+        legendIconSides: "4",
+        plotFillAlpha: "85",
+        drawCrossLine: "1",
+        lineThickness: "3",
+        drawAnchors: "1",
+        legendIconBorderThickness: "2",
+        anchorBgColor: "#262A33",
+        anchorRadius: "4",
+        anchorHoverRadius: "7",
+        anchorBorderHoverThickness: "1",
+        anchorBorderHoverColor: "#ECEBE4",
+        anchorBgHoverAlpha: "100"
+      }
+    },
+
+    // 103. Multi-series 3D Single Y Combination Chart
+    mscombidy3d: {
+      chart: {
+        lineThickness: "3",
+        showLegend: "1",
+        drawAnchors: "1",
+        legendIconBorderThickness: "2",
+        anchorBgColor: "#262A33",
+        anchorRadius: "4",
+        anchorHoverRadius: "7",
+        anchorBorderHoverThickness: "1",
+        anchorBorderHoverColor: "#ECEBE4",
+        anchorBgHoverAlpha: "100",
+        canvasBaseDepth: "2",
+        canvasBaseColor: "#4D5058"
+      }
+    },
+
+    // 104. Sankey Diagram
+    sankey: {
+      chart: {
+        nodeLabelFontSize: 13,
+        nodeLabelFontColor: "#999CA5",
+        nodeLabelPosition: "end",
+        nodeAlpha: 100,
+        linkAlpha: 50,
+        nodeHoverAlpha: 100,
+        linkHoverAlpha: 100,
+        enableDrag: 0,
+        plothighlighteffect: "fadeout",
+        linkColor: "blend"
+      }
+    },
+
+    // 105. Sunburst Chart
+    sunburst: {
+      chart: {
+        valueFontColor: "#F6F6F6",
+        valueFontBold: "1",
+        valueFontSize: "12.5",
+        valueFont: "Fira Sans Light",
+        useHoverColor: "0",
+        showPlotBorder: "1",
+        plotBorderColor: "#262A33",
+        plotBorderThickness: "0.75",
+        plotBorderAlpha: "100"
+      }
+    },
+
+    // 106. Chord Diagram
+    chord: {
+      chart: {
+        drawCustomLegendIcon: 0,
+        legendPosition: "right",
+        nodeThickness: 15,
+        nodeLabelColor: "#999CA5",
+        nodeLabelFontSize: 13,
+        nodeLabelPosition: "outside",
+        nodeHoverAlpha: 100,
+        nodeLinkPadding: 5,
+        nodeBorderColor: "#262A33",
+        nodeBorderThickness: 0.75,
+        nodeAlpha: 100,
+        linkAlpha: 50,
+        linkBorderAlpha: 50,
+        linkHoverAlpha: 100
+      }
+    },
+
+    // timeseries
     timeseries: {
       // caption styling
       caption: {
@@ -2175,18 +2343,52 @@ var themeObject = {
         }
       },
       legend: {
-        item: {
-          style: {
-            text: {
-              fill: "#999CA5",
-              "font-size": 14,
-              "font-family": "Fira Sans Regular",
-              "font-weight": "bold"
-            }
+        style: {
+          text: {
+            fill: "#999CA5",
+            "font-size": 14,
+            "font-family": "Fira Sans Regular",
+            "font-weight": "bold"
           }
         }
       },
       xaxis: {
+        timemarker: [
+          {
+            style: {
+              marker: {
+                fill: "#e64141",
+                stroke: "#4B4B4B",
+                "stroke-width": 1
+              },
+              "marker-notch": {
+                fill: "#e64141",
+                stroke: "#e64141"
+              },
+              "marker:hover": {
+                fill: "#d81c1c",
+                stroke: "#FFFFFF",
+                "stroke-width": 1
+              },
+              "marker-notch:hover": {
+                fill: "#d81c1c",
+                stroke: "#d81c1c"
+              },
+              "marker-line": {
+                stroke: "#e64141"
+              },
+              "marker-line:hover": {
+                stroke: "#d81c1c"
+              },
+              text: {
+                fill: "#999ca5"
+              },
+              "text:hover": {
+                fill: "#FFFFFF"
+              }
+            }
+          }
+        ],
         style: {
           title: {
             "font-size": 14,
@@ -2322,8 +2524,8 @@ var themeObject = {
 
 var index = {
   extension: themeObject,
-  name: 'candyTheme',
-  type: 'theme'
+  name: "candyTheme",
+  type: "theme"
 };
 
 export default index;

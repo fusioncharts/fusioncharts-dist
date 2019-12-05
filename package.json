@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/fusioncharts/fusioncharts-dist.git"
   },
-  "author": "FusionCharts Technologies  <support@fusioncharts.com>",
-  "version": "3.14.0-sr.1",
+  "author": "InfoSoft Global Pvt. Ltd.  <support@fusioncharts.com>",
+  "version": "3.15.0",
   "homepage": "http://www.fusioncharts.com/",
   "keywords": [
     "fusioncharts",

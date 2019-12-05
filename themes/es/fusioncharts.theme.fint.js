@@ -2,7 +2,7 @@
  * @license Fint Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
  * FusionCharts JavaScript Library
  *
- * Copyright FusionCharts Technologies LLP
+ * Copyright InfoSoft Global Pvt. Ltd.
  * License Information at <http://www.fusioncharts.com/license>
  */
 var themeObject = {

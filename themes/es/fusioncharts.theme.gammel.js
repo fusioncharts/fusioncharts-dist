@@ -1,8 +1,8 @@
 /*
- Gammel Theme v0.3
+ Gammel Theme v0.5
  FusionCharts JavaScript Library
 
- Copyright FusionCharts Technologies LLP
+ Copyright InfoSoft Global Pvt. Ltd.
  License Information at <http://www.fusioncharts.com/license>
 */
 var themeObject = {
@@ -86,6 +86,7 @@ var themeObject = {
         centerLabelColor: "#666666",
         centerLabelBgOval: "1",
         useEllipsesWhenOverflow: "1",
+        textOutline: 1,
 
         // legend customization
         showLegend: "1",
@@ -1687,6 +1688,189 @@ var themeObject = {
       }
     },
 
+    // 95 Overlapped Bar2D Chart
+    overlappedbar2d: {
+      chart: {
+        yAxisValuesPadding: "10",
+        showValues: "0",
+        drawCrossLine: "1"
+      }
+    },
+
+    // 96 Overlapped Column2D Chart
+    overlappedcolumn2d: {
+      chart: {
+        showValues: "0",
+        drawCrossLine: "1"
+      }
+    },
+
+    // 97 Scroll Bar2D Chart
+    scrollbar2d: {
+      chart: {
+        showLegend: "1",
+        showShadow: "0",
+        adjustDiv: "1",
+        flatScrollBars: "1",
+        scrollShowButtons: "1",
+        scrollHeight: "15",
+        scrollColor: "#F3F3F3"
+      }
+    },
+
+    // 98 Scroll Stacked Bar2D
+    scrollstackedbar2d: {
+      chart: {
+        showValues: "0",
+        showSum: "1",
+        showLegend: "1",
+        showShadow: "0",
+        adjustDiv: "1",
+        flatScrollBars: "1",
+        scrollShowButtons: "1",
+        scrollHeight: "15",
+        scrollColor: "#F3F3F3"
+      }
+    },
+
+    // 99 Scroll Multi-series Stacked Column2D
+    scrollmsstackedcolumn2d: {
+      chart: {
+        showShadow: "0",
+        drawAnchors: "1",
+        anchorRadius: "4",
+        anchorHoverRadius: "6",
+        showValues: "0",
+        anchorBorderHoverColor: "#D8D8D8",
+        anchorHoverEffect: "1",
+        anchorBgHoverAlpha: "95",
+        anchorBorderHoverThickness: "2",
+        drawCrossLine: "1",
+        legendIconBorderThickness: "1",
+        adjustDiv: "1",
+        flatScrollBars: "1",
+        scrollShowButtons: "1",
+        scrollHeight: "15",
+        scrollColor: "#F3F3F3"
+      }
+    },
+
+    // 100 Scroll Multi-series Stacked Column2D + Line Dual Y-Axis Chart
+    scrollmsstackedcolumn2dlinedy: {
+      chart: {
+        drawAnchors: "1",
+        anchorRadius: "4",
+        anchorHoverRadius: "6",
+        showValues: "0",
+        anchorBorderHoverColor: "#D8D8D8",
+        anchorHoverEffect: "1",
+        anchorBgHoverAlpha: "95",
+        anchorBorderHoverThickness: "2",
+        drawCrossLine: "1",
+        legendIconBorderThickness: "1",
+        flatScrollBars: "1",
+        scrollShowButtons: "1",
+        scrollHeight: "15",
+        scrollColor: "#F3F3F3"
+      }
+    },
+
+    // 101 Stacked Column2D + Line Dual Y-Axis Chart
+    stackedcolumn2dlinedy: {
+      chart: {
+        drawAnchors: "1",
+        anchorRadius: "4",
+        anchorHoverRadius: "6",
+        showValues: "0",
+        anchorBorderHoverColor: "#D8D8D8",
+        anchorHoverEffect: "1",
+        anchorBgHoverAlpha: "95",
+        anchorBorderHoverThickness: "2",
+        drawCrossLine: "1",
+        legendIconBorderThickness: "1"
+      }
+    },
+
+    // 102 Stacked Area2D + Line Dual Y-Axis Chart
+    stackedarea2dlinedy: {
+      chart: {
+        drawAnchors: "1",
+        anchorRadius: "4",
+        anchorHoverRadius: "6",
+        showValues: "0",
+        anchorBorderHoverColor: "#D8D8D8",
+        anchorHoverEffect: "1",
+        anchorBgHoverAlpha: "95",
+        anchorBorderHoverThickness: "2",
+        drawCrossLine: "1",
+        legendIconBorderThickness: "1",
+        plotFillAlpha: "70"
+      }
+    },
+
+    // 103 Multi-series 3D Single Y Combination Chart
+    mscombidy3d: {
+      chart: {
+        drawAnchors: "1",
+        anchorRadius: "4",
+        anchorHoverRadius: "6",
+        showValues: "0",
+        anchorBorderHoverColor: "#D8D8D8",
+        anchorHoverEffect: "1",
+        anchorBgHoverAlpha: "95",
+        anchorBorderHoverThickness: "2",
+        legendIconBorderThickness: "1"
+      }
+    },
+
+    // 104 Sankey Diagram
+    sankey: {
+      chart: {
+        showLegend: 0,
+        nodeLabelFontColor: "#000000",
+        nodeLabelFontBold: 1,
+        nodeLabelFontSize: 11,
+        nodeAlpha: 100,
+        linkAlpha: 50,
+        nodeLabelPosition: "inside",
+        nodeHoverAlpha: 100,
+        linkHoverAlpha: 100,
+        enableDrag: 0
+      }
+    },
+
+    // 105 Sunburst Chart
+    sunburst: {
+      chart: {
+        showPlotBorder: 1,
+        plotBorderColor: "#FFFFFF",
+        plotBorderAlpha: "100",
+        plotBorderThickness: "1",
+        useHoverColor: "0"
+      }
+    },
+
+    //106 Chord Diagram
+    chord: {
+      chart: {
+        drawCustomLegendIcon: 0,
+        showLegend: 0,
+        nodeLabelColor: "#000000",
+        nodeLabelFontBold: 1,
+        nodeLabelFontSize: 11,
+        nodeLabelPosition: "outside",
+        nodeAlpha: 100,
+        nodeHoverAlpha: 100,
+        linkAlpha: 50,
+        linkBorderAlpha: 50,
+        linkHoverAlpha: 100,
+        nodeBorderThickness: 0,
+        nodeSpacing: 2,
+        nodeThickness: 11,
+        nodeLinkPadding: 4
+      }
+    },
+
     // timeseries
     timeseries: {
       // caption styling
@@ -1823,7 +2007,7 @@ var themeObject = {
               fill: "#F7F7F7"
             },
             "button-background:hover": {
-                fill: "#F7F7F7"
+              fill: "#F7F7F7"
             },
             "button-background:active": {
               fill: "#EBEBF5"
@@ -1915,19 +2099,58 @@ var themeObject = {
         }
       },
       legend: {
-        item: {
-          style: {
-            text: {
-              fill: "#333333",
-              "font-size": 12,
-              "font-family":
-                "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
-              "font-weight": 600
-            }
+        style: {
+          text: {
+            fill: "#333333",
+            "font-size": 12,
+            "font-family":
+              "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
+            "font-weight": 600
           }
         }
       },
       xaxis: {
+        timemarker: [
+          {
+            style: {
+              marker: {
+                fill: "#ebebf5",
+                stroke: "#666666",
+                "stroke-width": 1
+              },
+              "marker-notch": {
+                fill: "#ebebf5",
+                stroke: "#ebebf5"
+              },
+              "marker:hover": {
+                fill: "#b2b2d9",
+                stroke: "#333333",
+                "stroke-width": 1
+              },
+              "marker-notch:hover": {
+                fill: "#b2b2d9",
+                stroke: "#b2b2d9"
+              },
+              "marker-line": {
+                stroke: "#ebebf5"
+              },
+              "marker-line:hover": {
+                stroke: "#b2b2d9"
+              },
+              text: {
+                fill: "#333333",
+                "font-family":
+                  "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif"
+              },
+              "text:hover": {
+                fill: "#333333",
+                "font-family":
+                  "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
+                "font-weight": 600
+              }
+            }
+          }
+        ],
         style: {
           title: {
             "font-size": 12,
@@ -2065,8 +2288,8 @@ var themeObject = {
 
 var index = {
   extension: themeObject,
-  name: 'gammelTheme',
-  type: 'theme'
+  name: "gammelTheme",
+  type: "theme"
 };
 
 export default index;
