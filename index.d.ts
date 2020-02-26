@@ -202,7 +202,7 @@ declare namespace FusionCharts {
         
         centerLabel(labelText: string, options?: {}): void;
 
-        startingAngle(angle?: number, relative?: boolean, callback?: (output) => void): any;
+        startingAngle(angle?: number, relative?: boolean, callback?: (output: any) => void): any;
 
         zoomOut(): void;
 
@@ -458,7 +458,17 @@ declare namespace FusionCharts {
 
         items: {};
 
-        options: {};
+        options: {
+            creditLabel?: string | boolean,
+            defaultTheme?: string,
+            export?: {
+                useCanvas?: string | boolean
+            },
+            preventTrackResize?: boolean,
+            resizeTrackingInterval?: number,
+            scriptBaseUri?: string,
+            SVGDefinitionURL?: string
+        };
 
         debugger: Debugger;
 
