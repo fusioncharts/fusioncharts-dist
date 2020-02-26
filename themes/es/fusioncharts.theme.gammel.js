@@ -1,8 +1,8 @@
 /*
- Gammel Theme v0.5
+ Gammel Theme v0.6
  FusionCharts JavaScript Library
 
- Copyright InfoSoft Global Pvt. Ltd.
+ Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 */
 var themeObject = {
@@ -1409,12 +1409,7 @@ var themeObject = {
       },
       data: [
         {
-          fillColor: "#F4F4F4",
-          data: [
-            {
-              fillColor: "#F4F4F4"
-            }
-          ]
+          fillColor: "#F4F4F4"
         }
       ]
     },
@@ -1844,9 +1839,11 @@ var themeObject = {
       chart: {
         showPlotBorder: 1,
         plotBorderColor: "#FFFFFF",
-        plotBorderAlpha: "100",
-        plotBorderThickness: "1",
-        useHoverColor: "0"
+        plotBorderAlpha: 100,
+        plotBorderThickness: 1,
+        textOutline: 1,
+        unfocussedAlpha: 50,
+        hoverFillAlpha: 100
       }
     },
 

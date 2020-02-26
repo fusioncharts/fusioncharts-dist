@@ -29,10 +29,10 @@ var css = "@font-face {\n  font-family: \"Fira Sans Light\";\n  font-style: norm
 styleInject(css);
 
 /*
- Candy Theme v0.5
+ Candy Theme v0.6
  FusionCharts JavaScript Library
 
- Copyright InfoSoft Global Pvt. Ltd.
+ Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 */
 /* jshint ignore:end */
@@ -1610,12 +1610,7 @@ var themeObject = {
       },
       data: [
         {
-          fillColor: "#4A5264",
-          data: [
-            {
-              fillColor: "#4A5264"
-            }
-          ]
+          fillColor: "#4A5264"
         }
       ]
     },
@@ -2104,14 +2099,15 @@ var themeObject = {
     sunburst: {
       chart: {
         valueFontColor: "#F6F6F6",
-        valueFontBold: "1",
+        valueFontBold: 1,
         valueFontSize: "12.5",
         valueFont: "Fira Sans Light",
-        useHoverColor: "0",
-        showPlotBorder: "1",
+        showPlotBorder: 1,
         plotBorderColor: "#262A33",
-        plotBorderThickness: "0.75",
-        plotBorderAlpha: "100"
+        plotBorderThickness: 0.75,
+        plotBorderAlpha: 100,
+        unfocussedAlpha: 50,
+        hoverFillAlpha: 100
       }
     },
 
