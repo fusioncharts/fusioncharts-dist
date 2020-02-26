@@ -18,38 +18,30 @@ This package also contains FusionTime (timeseries charts), FusionWidgets  (gauge
 
 ### What's New:
 #### FusionCharts
-* :new: Added **3** new charts:
-  * :white_check_mark: Chord diagram - `chord`
-  * :white_check_mark: Sankey diagram - `sankey`
-  * :white_check_mark: Sunburst chart - `sunburst`
-* :hammer_and_wrench: Improved Box and whisker chart with support to process large data, scroll and more.
-* :art: Improved themes
+* :hammer_and_wrench: Added support to customize legend position on 12 different places.
+* :straight_ruler: Ability to place axis and scrollbar on opposite sides of the canvas.
+* :lock: Improved Cross-site scripting (XSS) security.
+* :capital_abcd: Improved data export for gantt, candlestick, bubble, and spark charts.
 
 #### FusionTime
-* :new: Added real-time support for FusionTime :fire:
-* :triangular_ruler: Added support for customizing time navigator and canvas height in FusionTime.
-* :nut_and_bolt: Improved legend with support to hide/initially hide data series and more.
-* :hammer_and_wrench: Improved CRS for mobile and small screens.
-
+* :new: Added area and column range plots for FusionTime :fire:
+* :white_check_mark: Added support for clipping of time-axis.
+* :hammer_and_wrench: Added support to customize caption and sub-caption position.
 
 ---
 ### Table of Contents
-- [Installing FusionCharts](#installing-fusioncharts)
-  - [Direct Download](#direct-download)
-  - [Using CDN](#using-cdn)
-  - [Install from NPM](#install-from-npm)
-- [Getting Started](#getting-started)
-- [Using FusionCharts as an ES Module](#using-fusioncharts-as-an-es-module)
-- [Related Packages](#related-packages)
-  - [Front-end Integrations](#front-end-integrations)
-  - [Back-end Integrations](#back-end-integrations)
-- [Using Themes](#using-themes)
-  - [Using themes in ES6](#using-themes-in-es6)
-- [FusionMaps](#fusionmaps)
-- [Going beyond Charts](#going-beyond-charts)
-- [Version History](#version-history)
-- [Contact Support](#contact-support)
-- [Folder Structure](#folder-structure)
+* [Installing FusionCharts](#installing-fusioncharts)
+* [Getting Started](#getting-started)
+* [Using FusionCharts as an ES Module](#using-fusioncharts-as-an-es-module)
+* [Related Packages](#related-packages)
+	* [Front-end Integrations](#front-end-integrations)
+	* [Back-end Integrations](#back-end-integrations)
+* [Using Themes](#using-themes)
+* [FusionMaps](#fusionmaps)
+* [Going beyond Charts](#going-beyond-charts)
+* [Version History](#version-history)
+* [Contact Support](#contact-support)
+* [Folder Structure](#folder-structure)
 
 
 ## Installing FusionCharts
