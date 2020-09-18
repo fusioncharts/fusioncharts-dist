@@ -1,0 +1,1 @@
+import Dataskipping from"@fusioncharts/features/src/data-skipping";export default Dataskipping;

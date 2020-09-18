@@ -1,0 +1,1 @@
+import Ignorecaseext from"@fusioncharts/features/src/ignore-case-ext";export default Ignorecaseext;

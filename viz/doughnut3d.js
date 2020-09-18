@@ -1,1 +1,1 @@
-import Doughnut3d from'../vendors/fc-charts/src/chart/doughnut3d';export default Doughnut3d;
+import Doughnut3d from"@fusioncharts/charts/src/chart/doughnut3d";export default Doughnut3d;

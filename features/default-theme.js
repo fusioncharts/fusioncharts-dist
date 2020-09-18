@@ -1,0 +1,1 @@
+import Defaulttheme from"@fusioncharts/features/src/default-theme";export default Defaulttheme;

@@ -1,1 +1,1 @@
-import Vbullet from'../vendors/fc-widgets/src/chart/vbullet';export default Vbullet;
+import Vbullet from"@fusioncharts/widgets/src/chart/vbullet";export default Vbullet;

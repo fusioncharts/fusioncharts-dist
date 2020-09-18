@@ -1,1 +1,1 @@
-import Treemap from'../vendors/fc-powercharts/src/chart/treemap';export default Treemap;
+import Treemap from"@fusioncharts/powercharts/src/chart/treemap";export default Treemap;

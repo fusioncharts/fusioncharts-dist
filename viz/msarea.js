@@ -1,1 +1,1 @@
-import Msarea from'../vendors/fc-charts/src/chart/msarea';export default Msarea;
+import Msarea from"@fusioncharts/charts/src/chart/msarea";export default Msarea;

@@ -1,0 +1,1 @@
+import Alertmanager from"@fusioncharts/features/src/alertmanager";export default Alertmanager;

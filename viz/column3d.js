@@ -1,1 +1,1 @@
-import Column3d from'../vendors/fc-charts/src/chart/column3d';export default Column3d;
+import Column3d from"@fusioncharts/charts/src/chart/column3d";export default Column3d;

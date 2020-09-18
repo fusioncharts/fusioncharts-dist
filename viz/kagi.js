@@ -1,1 +1,1 @@
-import Kagi from'../vendors/fc-powercharts/src/chart/kagi';export default Kagi;
+import Kagi from"@fusioncharts/powercharts/src/chart/kagi";export default Kagi;

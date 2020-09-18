@@ -1,1 +1,1 @@
-import aggregatorStore from'../../vendors/fc-datatable/src/aggregators/';export{aggregatorStore};
+import aggregatorStore from"@fusioncharts/datatable/src/aggregators/index.js";export{aggregatorStore};

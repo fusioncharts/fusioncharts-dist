@@ -1,1 +1,1 @@
-import Pareto2d from'../vendors/fc-charts/src/chart/pareto2d';export default Pareto2d;
+import Pareto2d from"@fusioncharts/charts/src/chart/pareto2d";export default Pareto2d;

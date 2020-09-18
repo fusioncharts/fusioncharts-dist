@@ -1,1 +1,1 @@
-import Bulb from'../vendors/fc-widgets/src/chart/bulb';export default Bulb;
+import Bulb from"@fusioncharts/widgets/src/chart/bulb";export default Bulb;

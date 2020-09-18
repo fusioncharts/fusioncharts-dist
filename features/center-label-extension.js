@@ -1,0 +1,1 @@
+import Centerlabelextension from"@fusioncharts/features/src/center-label-extension";export default Centerlabelextension;

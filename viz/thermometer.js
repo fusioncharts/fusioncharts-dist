@@ -1,1 +1,1 @@
-import Thermometer from'../vendors/fc-widgets/src/chart/thermometer';export default Thermometer;
+import Thermometer from"@fusioncharts/widgets/src/chart/thermometer";export default Thermometer;

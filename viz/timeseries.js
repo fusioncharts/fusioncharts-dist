@@ -1,1 +1,1 @@
-import{TimeSeries}from'../vendors/fc-timeseries/src';export default TimeSeries;
+import{TimeSeries}from"@fusioncharts/fusiontime/src";export default TimeSeries;

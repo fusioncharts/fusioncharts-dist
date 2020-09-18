@@ -1,1 +1,1 @@
-import Zoomscatter from'../vendors/fc-charts/src/chart/zoomscatter';export default Zoomscatter;
+import Zoomscatter from"@fusioncharts/charts/src/chart/zoomscatter";export default Zoomscatter;

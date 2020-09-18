@@ -1,0 +1,1 @@
+import ScrollMSStackedColumn2d from"@fusioncharts/charts/src/chart/scrollmsstackedcolumn2d";export default ScrollMSStackedColumn2d;

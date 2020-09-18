@@ -1,1 +1,1 @@
-import Mssplinearea from'../vendors/fc-charts/src/chart/mssplinearea';export default Mssplinearea;
+import Mssplinearea from"@fusioncharts/charts/src/chart/mssplinearea";export default Mssplinearea;

@@ -1,1 +1,1 @@
-import Realtimecolumn from'../vendors/fc-widgets/src/chart/realtimecolumn';export default Realtimecolumn;
+import Realtimecolumn from"@fusioncharts/widgets/src/chart/realtimecolumn";export default Realtimecolumn;

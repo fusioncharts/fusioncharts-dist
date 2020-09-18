@@ -1,1 +1,1 @@
-import Dragarea from'../vendors/fc-powercharts/src/chart/dragarea';export default Dragarea;
+import Dragarea from"@fusioncharts/powercharts/src/chart/dragarea";export default Dragarea;

@@ -1,1 +1,1 @@
-import Msline from'../vendors/fc-charts/src/chart/msline';export default Msline;
+import Msline from"@fusioncharts/charts/src/chart/msline";export default Msline;
