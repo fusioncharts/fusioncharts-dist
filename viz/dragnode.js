@@ -1,1 +1,1 @@
-import Dragnode from'../vendors/fc-powercharts/src/chart/dragnode';export default Dragnode;
+import Dragnode from"@fusioncharts/powercharts/src/chart/dragnode";export default Dragnode;

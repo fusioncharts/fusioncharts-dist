@@ -1,1 +1,1 @@
-import Scrollcolumn2d from'../vendors/fc-charts/src/chart/scrollcolumn2d';export default Scrollcolumn2d;
+import Scrollcolumn2d from"@fusioncharts/charts/src/chart/scrollcolumn2d";export default Scrollcolumn2d;

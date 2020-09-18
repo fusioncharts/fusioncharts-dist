@@ -1,1 +1,1 @@
-import Multicanvascrosslinemanager from'../vendors/fc-features/src/multicanvas-crossline-manager';export default Multicanvascrosslinemanager;
+import Multicanvascrosslinemanager from"@fusioncharts/features/src/multicanvas-crossline-manager";export default Multicanvascrosslinemanager;

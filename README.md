@@ -1,4 +1,4 @@
-[<img src="https://www.fusioncharts.com/dev/_nuxt/img/d427d93.svg" width="234px" alt="FusionCharts - Build beautiful web & mobile dashboards">](https://www.fusioncharts.com/)
+[<img src="https://www.fusioncharts.com/dist/fusioncharts-idera-logo.svg" width="234px" alt="FusionCharts - Build beautiful web & mobile dashboards">](https://www.fusioncharts.com/)
 [<img alt="FusionCharts jsDelivr Hits" src="https://img.shields.io/jsdelivr/npm/hm/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.jsdelivr.com/package/npm/fusioncharts)
 [<img alt="FusionCharts Downloads" src="https://img.shields.io/npm/dm/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.fusioncharts.com/download)
 [<img alt="FusionCharts NPM Version" src="https://img.shields.io/npm/v/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.npmjs.com/package/fusioncharts)
@@ -11,22 +11,14 @@ This package also contains FusionTime (timeseries charts), FusionWidgets  (gauge
 * Official Website: [https://www.fusioncharts.com/](https://www.fusioncharts.com/)
 * Documentation: [https://www.fusioncharts.com/dev/](https://www.fusioncharts.com/dev/)
 * Download page: [https://www.fusioncharts.com/download/](https://www.fusioncharts.com/download/)
-* Licensing: [https://www.fusioncharts.com/buy/eula-perpetual](https://www.fusioncharts.com/buy/eula-perpetual)
+* Licensing: [Legal Terms & Customer Agreements](https://www.ideracorp.com/legal/FusionCharts#tabs-2)
 * Support: [https://www.fusioncharts.com/contact-support](https://www.fusioncharts.com/contact-support)
 * Issues: [https://github.com/fusioncharts/fusioncharts-dist/issues](https://github.com/fusioncharts/fusioncharts-dist/issues)
 
 
 ### What's New:
 #### FusionCharts
-* :hammer_and_wrench: Added support to customize legend position on 12 different places.
-* :straight_ruler: Ability to place axis and scrollbar on opposite sides of the canvas.
-* :lock: Improved Cross-site scripting (XSS) security.
-* :capital_abcd: Improved data export for gantt, candlestick, bubble, and spark charts.
-
-#### FusionTime
-* :new: Added area and column range plots for FusionTime :fire:
-* :white_check_mark: Added support for clipping of time-axis.
-* :hammer_and_wrench: Added support to customize caption and sub-caption position.
+* Introduced License Validation System. Know more [here](https://www.fusioncharts.com/dev/upgrading/license-activation)
 
 ---
 ### Table of Contents
@@ -58,7 +50,7 @@ Instead of downloading, you can also use FusionCharts’s CDN to access files di
 
 ### Install from NPM
 ```sh
-npm install --save fusioncharts
+npm install --save fusioncharts [node version v12.4.0 (npm v6.9.0)]
 ```
 See [npm documentation](https://docs.npmjs.com/) to know more about npm usage.
 

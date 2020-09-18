@@ -1,0 +1,1 @@
+import Chord from"@fusioncharts/powercharts/src/chart/chord";export default Chord;

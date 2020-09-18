@@ -1,0 +1,1 @@
+import Tooltipcontroller from"@fusioncharts/features/src/tooltip-controller";export default Tooltipcontroller;

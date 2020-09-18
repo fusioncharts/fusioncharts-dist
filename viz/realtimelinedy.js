@@ -1,1 +1,1 @@
-import Realtimelinedy from'../vendors/fc-widgets/src/chart/realtimelinedy';export default Realtimelinedy;
+import Realtimelinedy from"@fusioncharts/widgets/src/chart/realtimelinedy";export default Realtimelinedy;

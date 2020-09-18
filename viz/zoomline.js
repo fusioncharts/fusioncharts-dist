@@ -1,1 +1,1 @@
-import Zoomline from'../vendors/fc-charts/src/chart/zoomline';export default Zoomline;
+import Zoomline from"@fusioncharts/charts/src/chart/zoomline";export default Zoomline;

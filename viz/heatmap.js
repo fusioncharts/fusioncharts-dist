@@ -1,1 +1,1 @@
-import Heatmap from'../vendors/fc-powercharts/src/chart/heatmap';export default Heatmap;
+import Heatmap from"@fusioncharts/powercharts/src/chart/heatmap";export default Heatmap;

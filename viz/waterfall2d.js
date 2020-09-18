@@ -1,1 +1,1 @@
-import Waterfall2d from'../vendors/fc-powercharts/src/chart/waterfall2d';export default Waterfall2d;
+import Waterfall2d from"@fusioncharts/powercharts/src/chart/waterfall2d";export default Waterfall2d;

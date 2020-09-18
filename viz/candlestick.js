@@ -1,1 +1,1 @@
-import Candlestick from'../vendors/fc-powercharts/src/chart/candlestick';export default Candlestick;
+import Candlestick from"@fusioncharts/powercharts/src/chart/candlestick";export default Candlestick;

@@ -1,0 +1,1 @@
+import Scrollbar2d from"@fusioncharts/charts/src/chart/scrollbar2d";export default Scrollbar2d;
