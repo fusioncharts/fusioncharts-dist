@@ -1,1 +1,1 @@
-import Logmsline from'../vendors/fc-powercharts/src/chart/logmsline';export default Logmsline;
+import Logmsline from"@fusioncharts/powercharts/src/chart/logmsline";export default Logmsline;

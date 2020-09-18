@@ -1,1 +1,1 @@
-import Hbullet from'../vendors/fc-widgets/src/chart/hbullet';export default Hbullet;
+import Hbullet from"@fusioncharts/widgets/src/chart/hbullet";export default Hbullet;

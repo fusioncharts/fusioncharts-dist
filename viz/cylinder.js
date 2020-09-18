@@ -1,1 +1,1 @@
-import Cylinder from'../vendors/fc-widgets/src/chart/cylinder';export default Cylinder;
+import Cylinder from"@fusioncharts/widgets/src/chart/cylinder";export default Cylinder;

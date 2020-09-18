@@ -1,1 +1,1 @@
-import Mscolumn3d from'../vendors/fc-charts/src/chart/mscolumn3d';export default Mscolumn3d;
+import Mscolumn3d from"@fusioncharts/charts/src/chart/mscolumn3d";export default Mscolumn3d;

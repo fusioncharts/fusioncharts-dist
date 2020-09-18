@@ -1,1 +1,1 @@
-import Marimekko from'../vendors/fc-charts/src/chart/marimekko';export default Marimekko;
+import Marimekko from"@fusioncharts/charts/src/chart/marimekko";export default Marimekko;

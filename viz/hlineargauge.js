@@ -1,1 +1,1 @@
-import Hlineargauge from'../vendors/fc-widgets/src/chart/hlineargauge';export default Hlineargauge;
+import Hlineargauge from"@fusioncharts/widgets/src/chart/hlineargauge";export default Hlineargauge;

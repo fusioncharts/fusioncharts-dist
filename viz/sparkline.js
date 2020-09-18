@@ -1,1 +1,1 @@
-import Sparkline from'../vendors/fc-widgets/src/chart/sparkline';export default Sparkline;
+import Sparkline from"@fusioncharts/widgets/src/chart/sparkline";export default Sparkline;

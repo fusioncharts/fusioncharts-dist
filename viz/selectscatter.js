@@ -1,1 +1,1 @@
-import Selectscatter from'../vendors/fc-powercharts/src/chart/selectscatter';export default Selectscatter;
+import Selectscatter from"@fusioncharts/powercharts/src/chart/selectscatter";export default Selectscatter;

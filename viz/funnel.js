@@ -1,1 +1,1 @@
-import Funnel from'../vendors/fc-widgets/src/chart/funnel';export default Funnel;
+import Funnel from"@fusioncharts/widgets/src/chart/funnel";export default Funnel;

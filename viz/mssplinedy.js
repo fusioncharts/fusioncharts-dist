@@ -1,1 +1,1 @@
-import Mssplinedy from'../vendors/fc-charts/src/chart/mssplinedy';export default Mssplinedy;
+import Mssplinedy from"@fusioncharts/charts/src/chart/mssplinedy";export default Mssplinedy;

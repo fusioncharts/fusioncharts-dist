@@ -1,1 +1,1 @@
-import Realtimeline from'../vendors/fc-widgets/src/chart/realtimeline';export default Realtimeline;
+import Realtimeline from"@fusioncharts/widgets/src/chart/realtimeline";export default Realtimeline;

@@ -1,1 +1,1 @@
-import Inversemsarea from'../vendors/fc-powercharts/src/chart/inversemsarea';export default Inversemsarea;
+import Inversemsarea from"@fusioncharts/powercharts/src/chart/inversemsarea";export default Inversemsarea;

@@ -1,1 +1,1 @@
-import Crossline from'../vendors/fc-features/src/crossline';export default Crossline;
+import Crossline from"@fusioncharts/features/src/crossline";export default Crossline;

@@ -1,1 +1,1 @@
-import Pyramid from'../vendors/fc-widgets/src/chart/pyramid';export default Pyramid;
+import Pyramid from"@fusioncharts/widgets/src/chart/pyramid";export default Pyramid;

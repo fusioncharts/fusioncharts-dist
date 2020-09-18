@@ -1,1 +1,1 @@
-import Multilevelpie from'../vendors/fc-powercharts/src/chart/multilevelpie';export default Multilevelpie;
+import Multilevelpie from"@fusioncharts/powercharts/src/chart/multilevelpie";export default Multilevelpie;

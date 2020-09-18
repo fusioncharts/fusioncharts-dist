@@ -1,1 +1,1 @@
-import Line from'../vendors/fc-charts/src/chart/line';export default Line;
+import Line from"@fusioncharts/charts/src/chart/line";export default Line;

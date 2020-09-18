@@ -1,1 +1,1 @@
-import Realtimearea from'../vendors/fc-widgets/src/chart/realtimearea';export default Realtimearea;
+import Realtimearea from"@fusioncharts/widgets/src/chart/realtimearea";export default Realtimearea;

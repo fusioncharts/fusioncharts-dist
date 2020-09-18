@@ -1,1 +1,1 @@
-import Bar3d from'../vendors/fc-charts/src/chart/bar3d';export default Bar3d;
+import Bar3d from"@fusioncharts/charts/src/chart/bar3d";export default Bar3d;

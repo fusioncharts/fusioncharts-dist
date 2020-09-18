@@ -1,1 +1,1 @@
-import Realtimestackedarea from'../vendors/fc-widgets/src/chart/realtimestackedarea';export default Realtimestackedarea;
+import Realtimestackedarea from"@fusioncharts/widgets/src/chart/realtimestackedarea";export default Realtimestackedarea;

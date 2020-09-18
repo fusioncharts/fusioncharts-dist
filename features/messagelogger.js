@@ -1,0 +1,1 @@
+import Messagelogger from"@fusioncharts/features/src/messagelogger";export default Messagelogger;
