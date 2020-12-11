@@ -18,7 +18,16 @@ This package also contains FusionTime (timeseries charts), FusionWidgets  (gauge
 
 ### What's New:
 #### FusionCharts
-* Introduced License Validation System. Know more [here](https://www.fusioncharts.com/dev/upgrading/license-activation)
+* Support for Inline HTML Elements
+* Responsive typography
+* Pattern fill
+* Tooltip enhancements for Chord and Sankey Chart
+* Improvements across axis, legend, and APIs
+#### FusionTime
+* Legend Improvements
+* Auto time-axis clipping
+* Improved Excel/CSV Export
+* Improvements across APIs, zooming/panning and data store
 
 ---
 ### Table of Contents
