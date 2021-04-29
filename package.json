@@ -1,59 +1,39 @@
 {
-  "_from": "fusioncharts",
-  "_id": "fusioncharts@3.16.0",
-  "_inBundle": false,
-  "_integrity": "sha512-VLnyO9wf8axj54OvD3PcmjhqnYYHK/KobqkDiq9r1aCHeH43mHCeot93r5QBS2W/IFU8OyqW2zvDRmyJugu4Gg==",
-  "_location": "/fusioncharts",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "fusioncharts",
-    "name": "fusioncharts",
-    "escapedName": "fusioncharts",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+  "name": "fusioncharts",
+  "version": "3.17.0",
+  "releaseDate": "2021-04-29",
+  "description": "FusionCharts JavaScript charting framework",
+  "main": "fusioncharts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "./scripts/build/prepublish",
+    "postpublish": "./scripts/build/postpublish"
   },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/fusioncharts/-/fusioncharts-3.16.0.tgz",
-  "_shasum": "fe3e3e7a1563b6f04ec98741025b03c29e8b745d",
-  "_spec": "fusioncharts",
-  "_where": "/Users/sikrigagan/316-release/dist-repo",
-  "author": {
-    "name": "FusionCharts, Inc.",
-    "email": "support@fusioncharts.com"
+  "author": "FusionCharts, Inc. <support@fusioncharts.com>",
+  "license": "http://www.fusioncharts.com/buy/",
+  "dependencies": {
+    "@babel/runtime": "^7.9.2",
+    "@fusioncharts/accessibility": "^1.4.0",
+    "@fusioncharts/charts": "^3.17.0",
+    "@fusioncharts/constructor": "^1.4.0",
+    "@fusioncharts/core": "^1.4.0",
+    "@fusioncharts/datatable": "^1.4.0",
+    "@fusioncharts/features": "^1.4.0",
+    "@fusioncharts/fusiontime": "^2.5.0",
+    "@fusioncharts/maps": "^3.17.0",
+    "@fusioncharts/powercharts": "^3.17.0",
+    "@fusioncharts/utils": "^1.4.0",
+    "@fusioncharts/widgets": "^3.17.0",
+    "mutationobserver-shim": "^0.3.5",
+    "promise-polyfill": "^8.1.3"
   },
   "bugs": {
     "url": "http://www.fusioncharts.com/contact-support/"
   },
-  "bundleDependencies": false,
-  "dependencies": {
-    "@babel/runtime": "^7.9.2",
-    "@fusioncharts/charts": "^3.16.0",
-    "@fusioncharts/constructor": "^1.2.0",
-    "@fusioncharts/core": "^1.2.0",
-    "@fusioncharts/datatable": "^1.2.0",
-    "@fusioncharts/features": "^1.2.0",
-    "@fusioncharts/fusiontime": "^2.4.0",
-    "@fusioncharts/maps": "^3.16.0",
-    "@fusioncharts/powercharts": "^3.16.0",
-    "@fusioncharts/utils": "^1.2.0",
-    "@fusioncharts/widgets": "^3.16.0",
-    "mutationobserver-shim": "^0.3.5",
-    "promise-polyfill": "^8.1.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fusioncharts/fusioncharts-dist.git"
   },
-  "deprecated": false,
-  "description": "FusionCharts JavaScript charting framework",
-  "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "terser": "^4.0.2"
-  },
-  "gitHead": "88ea06dfe63ec1bd21fcbf428507cf3da5e66bc7",
   "homepage": "http://www.fusioncharts.com/",
   "keywords": [
     "fusioncharts",
@@ -72,18 +52,9 @@
     "column-charts",
     "gantt-chart"
   ],
-  "license": "http://www.fusioncharts.com/buy/",
-  "main": "fusioncharts.js",
-  "name": "fusioncharts",
-  "releaseDate": "2020-12-10",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fusioncharts/fusioncharts-dist.git"
-  },
-  "scripts": {
-    "postpublish": "./scripts/build/postpublish",
-    "prepublishOnly": "./scripts/build/prepublish",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "3.16.0"
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "terser": "^4.0.2"
+  }
 }
