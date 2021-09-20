@@ -1,3 +1,4 @@
+
 [<img src="https://www.fusioncharts.com/dist/fusioncharts-idera-logo.svg" width="234px" alt="FusionCharts - Build beautiful web & mobile dashboards">](https://www.fusioncharts.com/)
 [<img alt="FusionCharts jsDelivr Hits" src="https://img.shields.io/jsdelivr/npm/hm/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.jsdelivr.com/package/npm/fusioncharts)
 [<img alt="FusionCharts Downloads" src="https://img.shields.io/npm/dm/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.fusioncharts.com/download)
@@ -18,17 +19,15 @@ This package also contains FusionTime (timeseries charts), FusionWidgets (gauges
 
 #### FusionCharts
 
-- Radial Bar Chart 🆕🔥
-- Accessibility updates to make FusionCharts WCAG 2.1 complaint 💥
+- Improved Angular and Vue Integration Components 🔥
+- Accessibility Theme 🆕
 - Improved Excel/CSV Export ✉️
-- New and improved React Native Integration Component with Expo support 🆕🔥
+- API Events and Methods Enhancements 💥
 - Improvements across axis, legend, and API events and methods 💥
 
 #### FusionTime
 
-- Tooltip customization options 🆕🔥
-- Auto time-axis clipping improvements 🔥
-- Improved real-time support 💥
+- Weekly Data Binning 🆕🔥
 - Improved Space Management 📐
 - Improvements across API events and methods, zooming/panning, and data store 💥
 
