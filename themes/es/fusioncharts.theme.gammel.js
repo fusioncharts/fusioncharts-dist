@@ -1867,6 +1867,11 @@ var themeObject = {
         nodeLinkPadding: 4
       }
     },
+    radialBar: {
+      chart: {
+        labelPadding: "6px 10px 6px 10px"
+      }
+    },
 
     // timeseries
     timeseries: {

@@ -25,7 +25,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css = "@font-face {\n  font-family: \"Fira Sans Light\";\n  font-style: normal;\n  font-weight: 300;\n  src: local(\"Fira Sans Light\"), local(\"FiraSans-Light\"),\n    url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnPKreRhf6Xl7Glw.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: \"Fira Sans Regular\";\n  font-style: normal;\n  font-weight: 400;\n  src: local(\"Fira Sans Regular\"), local(\"FiraSans-Regular\"),\n    url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jLazX3dA.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n/* ft calendar customiztion */\n.fc-cal-day-candy {\n  background-color: rgb(52, 52, 52);\n  color: rgb(204, 204, 204);\n  font-family: \"Fira Sans Light\";\n  border: none;\n}\n\n.fc-cal-date-normal-candy {\n  background-color: rgb(52, 52, 52);\n  color: rgb(204, 204, 204);\n  font-family: \"Fira Sans Light\";\n  border: none;\n}\n\n.fc-cal-date-normal-candy:hover {\n  background-color: rgb(110, 110, 110);\n  color: rgb(255, 255, 255);\n  font-family: \"Fira Sans Light\";\n  border: none;\n}\n\n.fc-cal-date-disabled-candy {\n  background-color: rgb(52, 52, 52);\n  color: rgba(153, 156, 165, 0.75);\n  font-family: \"Fira Sans Light\";\n  border: none;\n}\n\n.fc-cal-month-header-candy {\n  background-color: rgb(54, 134, 156);\n  font-family: \"Fira Sans Light\";\n}\n\n.fc-cal-weekend-candy {\n  background-color: rgb(53, 85, 93);\n}\n\n.fc-cal-container-candy {\n  border: 0.5px solid rgb(75, 75, 75);\n}\n\n.fc-cal-nav-next-candy,\n.fc-cal-nav-prev-candy {\n  font-family: \"Fira Sans Light\";\n  font-size: 12px;\n}\n\n.fc-cal-date-selected-candy {\n  background-color: rgb(54, 134, 156);\n  color: rgb(255, 255, 255);\n  font-family: \"Fira Sans Regular\";\n}";
+var css = "@font-face {\r\n  font-family: \"Fira Sans Light\";\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  src: local(\"Fira Sans Light\"), local(\"FiraSans-Light\"),\r\n    url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnPKreRhf6Xl7Glw.woff2)\r\n      format(\"woff2\");\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\r\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\r\n    U+FEFF, U+FFFD;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Fira Sans Regular\";\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  src: local(\"Fira Sans Regular\"), local(\"FiraSans-Regular\"),\r\n    url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jLazX3dA.woff2)\r\n      format(\"woff2\");\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\r\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\r\n    U+FEFF, U+FFFD;\r\n}\r\n\r\n/* ft calendar customiztion */\r\n.fc-cal-day-candy {\r\n  background-color: rgb(52, 52, 52);\r\n  color: rgb(204, 204, 204);\r\n  font-family: \"Fira Sans Light\";\r\n  border: none;\r\n}\r\n\r\n.fc-cal-date-normal-candy {\r\n  background-color: rgb(52, 52, 52);\r\n  color: rgb(204, 204, 204);\r\n  font-family: \"Fira Sans Light\";\r\n  border: none;\r\n}\r\n\r\n.fc-cal-date-normal-candy:hover {\r\n  background-color: rgb(110, 110, 110);\r\n  color: rgb(255, 255, 255);\r\n  font-family: \"Fira Sans Light\";\r\n  border: none;\r\n}\r\n\r\n.fc-cal-date-disabled-candy {\r\n  background-color: rgb(52, 52, 52);\r\n  color: rgba(153, 156, 165, 0.75);\r\n  font-family: \"Fira Sans Light\";\r\n  border: none;\r\n}\r\n\r\n.fc-cal-month-header-candy {\r\n  background-color: rgb(54, 134, 156);\r\n  font-family: \"Fira Sans Light\";\r\n}\r\n\r\n.fc-cal-weekend-candy {\r\n  background-color: rgb(53, 85, 93);\r\n}\r\n\r\n.fc-cal-container-candy {\r\n  border: 0.5px solid rgb(75, 75, 75);\r\n}\r\n\r\n.fc-cal-nav-next-candy,\r\n.fc-cal-nav-prev-candy {\r\n  font-family: \"Fira Sans Light\";\r\n  font-size: 12px;\r\n}\r\n\r\n.fc-cal-date-selected-candy {\r\n  background-color: rgb(54, 134, 156);\r\n  color: rgb(255, 255, 255);\r\n  font-family: \"Fira Sans Regular\";\r\n}";
 styleInject(css);
 
 /*
@@ -2128,6 +2128,14 @@ var themeObject = {
         linkAlpha: 50,
         linkBorderAlpha: 50,
         linkHoverAlpha: 100
+      }
+    },
+
+    // 107 RadialBar
+    radialBar: {
+      chart: {
+        legendIconSides: "2",
+        labelPadding: "6px 10px 6px 10px"
       }
     },
 
