@@ -421,6 +421,11 @@ var themeObject = {
         plotFillColor: '#04476c',
         targetColor: '#4d998d'
       }
+    },
+    radialBar: {
+      chart: {
+        labelPadding: "6px 10px 6px 10px"
+      }
     }
   }
 };
