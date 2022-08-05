@@ -19,17 +19,18 @@ This package also contains FusionTime (timeseries charts), FusionWidgets (gauges
 
 #### FusionCharts
 
-- Improved Angular and Vue Integration Components 🔥
-- Accessibility Theme 🆕
-- Improved Excel/CSV Export ✉️
-- API Events and Methods Enhancements 💥
-- Improvements across axis, legend, and API events and methods 💥
+- Improved Angular and React Integration Components 🔥
+- Improvement of PDF encoding to make it compatible with Adobe acrobat reader
+- React-native plugin improved to support android app 🔥
+- Added Group Stacked Bar Chart Visualization to the list 💥
+- Support for Indian UT Maps 💥
+- New Feature request to implement the overlap avoidance rule for values
 
 #### FusionTime
 
-- Weekly Data Binning 🆕🔥
 - Improved Space Management 📐
 - Improvements across API events and methods, zooming/panning, and data store 💥
+- Modification of Sankey charts to accommodate different values
 
 ---
 
@@ -67,7 +68,7 @@ Instead of downloading, you can also use FusionCharts’s CDN to access files di
 ### Install from NPM
 
 ```sh
-npm install --save fusioncharts [node version v12.4.0 (npm v6.9.0)]
+npm install --save fusioncharts [node version v14.12.0 (npm v6.14.8)]
 ```
 
 See [npm documentation](https://docs.npmjs.com/) to know more about npm usage.
