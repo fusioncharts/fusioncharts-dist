@@ -1,4 +1,4 @@
-[<img src="https://www.fusioncharts.com/dist/fusioncharts-idera-logo.svg" width="234px" alt="FusionCharts - Build beautiful web & mobile dashboards">](https://www.fusioncharts.com/)
+[<img src="https://cdn.fusioncharts.com/fusioncharts/assets/fusioncharts-logo.svg" width="234px" alt="FusionCharts - Build beautiful web & mobile dashboards">](https://www.fusioncharts.com/)
 [<img alt="FusionCharts jsDelivr Hits" src="https://img.shields.io/jsdelivr/npm/hm/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.jsdelivr.com/package/npm/fusioncharts)
 [<img alt="FusionCharts Downloads" src="https://img.shields.io/npm/dm/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.fusioncharts.com/download)
 [<img alt="FusionCharts NPM Version" src="https://img.shields.io/npm/v/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.npmjs.com/package/fusioncharts)
@@ -14,18 +14,40 @@ This package also contains FusionTime (timeseries charts), FusionWidgets (gauges
 - Support: [https://www.fusioncharts.com/contact-support](https://www.fusioncharts.com/contact-support)
 - Issues: [https://github.com/fusioncharts/fusioncharts-dist/issues](https://github.com/fusioncharts/fusioncharts-dist/issues)
 
-### What's New
+### What's New in FusionCharts 3.23.0
 
-- FusionCharts version 3.21.1 introduces new maps for all 24 Argentinian departments, all 26 Peruvian departments, and all 7 provinces from Costa Rica.
-- FusionCharts version 3.21.1 introduces the new function that removes any cross-site scripting that might be causing errors in your code.
-- FusionCharts version 3.21.1 updated the `Ramda` dependency package version to the latest version, version 0.29.
-- When using Multiseries Line charts, similar values overlapped in the chart. FusionCharts version 3.21 improved the `drawcrossline` attribute to prevent overlapping values and display a clean chart.
-- Improved the `numberSuffix` attribute to work as expected when using numeric and Arabic characters. Previously, the characters were displayed in an incorrect order. Now, enabling the `hasRtlText` attribute corrects the suffix and prefix positions, showing the characters in the correct order.
-- Improved the `Sunburst` chart by adding the `showLabelValue` property that allows users to control label visibility for each node at all levels in the chart.
-- Improved the `dataLabelstyles` function to handle the properties, attributes, and conditions for the data label styles. Previously, when `plotHighlightEffect` was set, and if value-related cosmetics were applied at the dataset level, the value-related cosmetics did not display as expected upon hovering on the legends.
-- Improved the accessibility feature. Now, when using React or Angular, you can enable the accessibility feature to import directly from the node modules packages.
-- Improved the `Doughnut` and `Pie`charts by allowing users to display legend and data values as percentages or as absolute values.
-- And several bug fixes under the hood, please read the release details on the [FusionCharts Blog](https://www.fusioncharts.com/blog/) for detailed report.
+#### New Features
+
+- FusionCharts enhanced interactivity with draggable taskbars in the FusionCharts Gantt chart. Users can use `allowDrag` attribute to enable the draggable feature and `dataplotdragmove` event to track the previous and new positional values of the taskbar
+- An attribute called `markerLabelOffset` is introduced. This attribute allows to control the position of the marker labels on AngularGauge trend points, aiming to address the problem of overlap that occurs with small differences in values
+- Added an attribute `showValues` to the StackedBar2DChartswhich enables users to auto-hide or show the chart if the text overflows the bar subsection
+
+#### Improvements
+
+- Updated the watermark text for Licence Expired Customers
+- Restructured the angular-fusion grid dependency package to support the latest Angular versions from version 14 to the most recent version 17
+- Improved the behavior of the Gantt chart to adapt to any screen size with new responsive functionality effortlessly
+- Added a method to prevent unnecessary HTML in ASP.NET to prevent DataStream URL implementation errors
+- Upgraded to support working with react-native version 0.73.3
+- Improved the rendering of the Indonesia region in maps
+- Updated Source Data examples on FusionCharts website to display examples with the latest data
+
+#### BugFixes
+
+- Fixed the issue with Inline styling not getting applied when labels/displayValue have HTML elements and
+  tag in them
+- Resolved the issue where the link attribute was not working in Zoom Scatter chart
+- Addressed an issue where the entire chart container was re-rendered when invoking setJSONdata method
+- Fixed an issue where scrollTo method was resetting the scrollbar position when using setJSONData or setChartData
+- The rendering issues of Japan's 16 provinces were resolved. These provinces include Yamagata, Tochigi, Saitama, Tokyo, Toyama, Yamanashi, Shizuoka, Shiga, Wakayama, Tottori, Shimane, Okayama, Yamaguchi, Tokushima, Saga, and Okinawa.
+- Fixed the issue where certain values skewed the Radial bar
+- Starting FusionCharts 3.23, charts are now rendering correctly when using jsonurl data format
+- Resolved the issue where Microsoft Narrator could not read the chart plot details when using the accessibility extension in a certain configuration of Windows 10 and Chrome
+- Two additional provinces were incorporated into Costa Rica maps: Monteverde and Puerto Jimenez
+- Resolved the issue where exporting PDF reports resulted in incomplete information when using the Drag Node chart with a specific dataset
+- Resolved an issue where the Dashboard section on the website was not integrated with Eloqua and the DataStories section was integrated with Eloquoa but the zip was not downloadable
+
+<br />
 
 ---
 
@@ -311,8 +333,7 @@ FusionMaps is a companion package meant to be used in conjunction with FusionCha
 
 ## Contact Support
 
-Fill [this form](https://www.fusioncharts.com/contact-support) or drop an email to
-[support@fusioncharts.com](mailto:support@fusioncharts.com).
+Fill [this form](https://www.fusioncharts.com/contact-support) or drop an email to [support@fusioncharts.com](mailto: <support@fusioncharts.com>)
 
 ## Folder Structure
 
