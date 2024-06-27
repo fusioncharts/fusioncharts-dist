@@ -1,1 +1,0 @@
-import Maps from"@fusioncharts/maps/src/chart/maps";export{Maps};export default{name:"maps",type:"package",requiresFusionCharts:true,extension:FusionCharts=>FusionCharts.addDep(Maps)};
