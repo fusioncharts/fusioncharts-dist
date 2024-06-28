@@ -1,7 +1,9 @@
-[<img src="https://cdn.fusioncharts.com/fusioncharts/assets/fusioncharts-logo.svg" width="234px" alt="FusionCharts - Build beautiful web & mobile dashboards">](https://www.fusioncharts.com/)
-[<img alt="FusionCharts jsDelivr Hits" src="https://img.shields.io/jsdelivr/npm/hm/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.jsdelivr.com/package/npm/fusioncharts)
-[<img alt="FusionCharts Downloads" src="https://img.shields.io/npm/dm/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.fusioncharts.com/download)
-[<img alt="FusionCharts NPM Version" src="https://img.shields.io/npm/v/fusioncharts.svg" align="right" style="padding: 3px;">](https://www.npmjs.com/package/fusioncharts)
+<p align="center"><img src="https://cdn.fusioncharts.com/fusioncharts/assets/fusioncharts-logo.svg" width="234px" alt="FusionCharts - Build beautiful web & mobile dashboards"></p>
+<p align="center">
+<img alt="FusionCharts jsDelivr Hits" src="https://img.shields.io/jsdelivr/npm/hm/fusioncharts.svg">
+<img alt="FusionCharts Downloads" src="https://img.shields.io/npm/dm/fusioncharts.svg">
+<img alt="FusionCharts NPM Version" src="https://img.shields.io/npm/v/fusioncharts.svg">
+</p>
 
 FusionCharts is a JavaScript charting library providing 100+ charts and 2,000+ maps for your web and mobile applications. All the visualizations are interactive and animated, which are rendered in SVG and VML (for IE 6/7/8).
 
@@ -18,13 +20,9 @@ This package also contains FusionTime (timeseries charts), FusionWidgets (gauges
 
 #### New Features
 
-- FusionCharts version 4.0.0 introduces FusionDev AI: AI-powered knowledge base and documentation assistant which:
-  - Improves discoverability and unblocks developers by finding instant answers to questions about using FusionCharts.
-  - Increases developer productivity by providing instant access to clear, concise, and up-to-date documentation.
-  - Improves development efficiency with automated code generation.
 - An attribute called autoUpdateStartEndDateColumn was introduced. This attribute updates the actual start date / actual end date columns in the Gantt Chart when taskbars are getting dragged.
 - An attribute called allowTaskbarOverlap was introduced. When this attribute is set to 1, it allows the dragging of the taskbar over adjacent taskbars in the Gantt Chart.
-- The attributes marginLeft, marginRight, marginTop, and marginBottom were introduced in the milestone option of Gantt charts. These attributes are used to position the milestone per the numeric value provided.
+- The attributes marginLeft, marginRight, marginTop, and marginBottom were introduced in the milestone option of Gantt Chart. These attributes are used to position the milestone per the numeric value provided.
 
 #### Improvements
 
@@ -53,7 +51,8 @@ This package also contains FusionTime (timeseries charts), FusionWidgets (gauges
 - Fixed the issue where React FusionCharts wrapper was not working in strict mode. In react wrapper, if the chart is already rendered then the dispose method is used to delete the instance to avoid render callback in loop.
 - Resolved the issue where data values were not visible for plots in the Bar2D chart when the bar width value was very low.
 - Optimized user experience with Gauge charts through seamless resizing.
-  <br />
+
+<br />
 
 ---
 
