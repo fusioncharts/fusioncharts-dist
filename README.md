@@ -18,37 +18,43 @@ This package also contains FusionTime (timeseries charts), FusionWidgets (gauges
 - Support: [https://www.fusioncharts.com/contact-support](https://www.fusioncharts.com/contact-support)
 - Issues: [https://github.com/fusioncharts/fusioncharts-dist/issues](https://github.com/fusioncharts/fusioncharts-dist/issues)
 
-### What's New
+### What's New – v4.2 – Sept 2025
 
 #### New Features
-- FusionCharts version 4.1.0 introduces scrollbar for Waterfall Charts x-axis. Which improves user experience with the layout and scope for additional amount of Data.
 
-  
+- FusionCharts version 4.2 introduces the `ignoredepthforlineplots` attribute, which, when set to `true`, makes the leftover line plot in an `mscolumn3dlinedy` or `stackedcolumn3dlinedy` chart act as a 2D line. Otherwise, the line continues to appear in 3D.
+- FusionCharts version 4.2 introduces support for inverse axes in Scatter and Bubble charts. You can now reverse the X and Y axes by setting the new attributes `reversexaxis` and `reverseyaxis` to `true` in the chart configuration.
+
 #### Improvements
-- FusionCharts version 4.1.0 upgrades the version for underline dependencies of the  'react-native-fusioncharts' package and makes it compatible with 0.70.x, 0.71.x, 0.72.x, 0.73.x and 0.74 versions.
-- Removed the Expo dependency from the react-native-fusioncharts package, now utilizing native packages, resulting in a reduced overall bundle size.
-- FusionCharts version 4.1.0 added new dynamic attributes to control the look and feel of the legend scrollbars.
-   - The useLegendScrollGradient attribute determines whether to enable or disable gradient colors. If the set value is 1, you need to provide gradient colors for legendScrollTrackColor and legendScrollAnchorColor in the form of an object with angle, startColor, and endColor. If the value is set to 0, you should provide legendScrollTrackColor and legendScrollAnchorColor in hexadecimal format instead of an object.
-- Upgraded third-party integrations support:
-  - Updated ember dependency with the latest version.
-  - Addressed dependabot pull requests, to improve security.
 
+- Upgraded third-party integrations of C#, Python, and Java support to the latest version of the framework:
+  - **C#**: upgraded and now supports up to .NET 9
+  - **Python**: upgraded and now supports up to Python 3.13.5 and Django 5.2.4.
+  - **Java**: upgraded and now supports up to Java 24
+- Added descriptions and documentation for the `legendWidth` attribute, which allows managing legend width and avoiding unwanted scrollbars on legendbox.
+- Added an explicit Webpack public path assignment to ensure compatibility in non-browser-like environments such as React Native WebView.
+- Upgraded third-party integrations support to the latest version of the framework:
+  - Upgraded `react-fusioncharts` integration supports up to the latest version of React v19.
+  - Upgraded `vue-fusioncharts` integration supports up to Vue 3.5.17.
+  - Upgraded `angular-fusioncharts` integration supports up toAngular v20.
 
 #### Fixes
-- FusionCharts 4.1.0 added Content Security Policy (CSP) compatibility for the require-trusted-types-for 'script' and style-src directive. 
-- Resolved an accessibility issue where the tab would focus on the overall chart area instead of the chart plot when the chart did not have a first x-axis value.
-- Fixed an issue where Multie-Pie charts were not resizing correctly without applying a re-render.
-- Addressed an issue where the watermark from the map was not removed on the application of a valid license key for chart type: maps/france2016.
-- Resolved an issue in the legend-item.js file where the legendData object properties were not passed to the getAnchorProps function causing it to apply the same properties to every legend item, regardless of the data.
-- Fixed the issue of specific series not getting highlighted in the Crossline tooltip when 'applycsstransform' attribute was set to 1.
-- Fixed the issue where on hovering over the data plot, the tooltip showed incorrect values when the cursor moved out of the plot area for the scrollbar2d chart when drawCrossLine is enabled for Scrollbar2d chart and Scroll Stacked bar charts.
+
+- Resolved the Accessibility issue where resizing a chart using the Accessibility module changed the focus.
+- Fixed an issue where the Color Range for maps was not working as expected in the latest version.
+- Resolved an issue where the hover effect did not work correctly when having multiple markers in FusionMaps.
+- Fixed the issue where the legend caption exceeded the legend box limit, overlapping with the chart. Also, when using the `chartBottomMargin` attribute, ensure that the value is set to a value higher than 5px; otherwise, the trial watermark and legend will overlap.
+- Resolved the issue where JS threw an error when opening the popup view in Scroll charts. This issue affected the following chart types: `scrollColumn2d`, `scrollBar2D`, `scrollcombi2d`, and `scrollStackedBar2D`.
+- FusionCharts version 4.2 resolved an issue where the `displayValue` was unable to render the ampersand (`&`) symbol in various chart types.
+- Resolved an issue that prevented the `react-fusioncharts` component from rendering correctly inside the shadow DOM.
+- Resolved an issue where tooltips did not display upon hovering over values on an `Errorline` chart. Now, the tooltips are shown as expected.
+- Resolved the issue where ReactJS FusionCharts did not work as expected when using StrictMode. Users using React version 17 can use `react-fusioncharts` version 4.1, while those using React version 18 or higher should use the latest `react-fusioncharts` version.
 
 <br />
 
 ---
 
 <br />
-
 
 ### Table of Contents
 
@@ -84,7 +90,7 @@ Instead of downloading, you can also use FusionCharts’s CDN to access files di
 ### Install from NPM
 
 ```sh
-npm install --save fusioncharts [node version v14.12.0 (npm v6.14.8)]
+npm install fusioncharts
 ```
 
 See [npm documentation](https://docs.npmjs.com/) to know more about npm usage.
@@ -149,37 +155,37 @@ FusionCharts can be loaded as an ES module via transpilers.
 _The following examples presumes you are using npm to install FusionCharts, see Install FusionCharts for more details._
 
 ```javascript
-import FusionCharts from "fusioncharts/core";
+import FusionCharts from 'fusioncharts/core';
 
 // include chart from viz folder - import ChartType from fusioncharts/viz/[ChartType];
-import Column2D from "fusioncharts/viz/column2d";
+import Column2D from 'fusioncharts/viz/column2d';
 
 // add chart as dependency - FusionCharts.addDep(ChartType);
 FusionCharts.addDep(Column2D);
 
 // instantiate the chart.
 var chartInstance = new FusionCharts({
-  type: "Column2D",
-  renderAt: "chart-container", // div container where chart will render
-  width: "600",
-  height: "400",
-  dataFormat: "json",
+  type: 'Column2D',
+  renderAt: 'chart-container', // div container where chart will render
+  width: '600',
+  height: '400',
+  dataFormat: 'json',
   dataSource: {
     // chart configuration
     chart: {
-      caption: "Countries With Most Oil Reserves [2017-18]",
-      subcaption: "In MMbbl = One Million barrels",
+      caption: 'Countries With Most Oil Reserves [2017-18]',
+      subcaption: 'In MMbbl = One Million barrels',
     },
     // chart data
     data: [
-      { label: "Venezuela", value: "290000" },
-      { label: "Saudi", value: "260000" },
-      { label: "Canada", value: "180000" },
-      { label: "Iran", value: "140000" },
-      { label: "Russia", value: "115000" },
-      { label: "UAE", value: "100000" },
-      { label: "US", value: "30000" },
-      { label: "China", value: "30000" },
+      { label: 'Venezuela', value: '290000' },
+      { label: 'Saudi', value: '260000' },
+      { label: 'Canada', value: '180000' },
+      { label: 'Iran', value: '140000' },
+      { label: 'Russia', value: '115000' },
+      { label: 'UAE', value: '100000' },
+      { label: 'US', value: '30000' },
+      { label: 'China', value: '30000' },
     ],
   },
 });
@@ -231,28 +237,28 @@ FusionCharts provides several out-of-the box themes that can be applied to all t
       FusionCharts.ready(function () {
         // chart instance
         var chart = new FusionCharts({
-          type: "column2d",
-          renderAt: "chart-container", // container where chart will render
-          width: "600",
-          height: "400",
-          dataFormat: "json",
+          type: 'column2d',
+          renderAt: 'chart-container', // container where chart will render
+          width: '600',
+          height: '400',
+          dataFormat: 'json',
           dataSource: {
             // chart configuration
             chart: {
-              caption: "Countries With Most Oil Reserves [2017-18]",
-              subcaption: "In MMbbl = One Million barrels",
-              theme: "fusion", //Specifying which theme to use
+              caption: 'Countries With Most Oil Reserves [2017-18]',
+              subcaption: 'In MMbbl = One Million barrels',
+              theme: 'fusion', //Specifying which theme to use
             },
             // chart data
             data: [
-              { label: "Venezuela", value: "290000" },
-              { label: "Saudi", value: "260000" },
-              { label: "Canada", value: "180000" },
-              { label: "Iran", value: "140000" },
-              { label: "Russia", value: "115000" },
-              { label: "UAE", value: "100000" },
-              { label: "US", value: "30000" },
-              { label: "China", value: "30000" },
+              { label: 'Venezuela', value: '290000' },
+              { label: 'Saudi', value: '260000' },
+              { label: 'Canada', value: '180000' },
+              { label: 'Iran', value: '140000' },
+              { label: 'Russia', value: '115000' },
+              { label: 'UAE', value: '100000' },
+              { label: 'US', value: '30000' },
+              { label: 'China', value: '30000' },
             ],
           },
         }).render();
@@ -265,13 +271,13 @@ FusionCharts provides several out-of-the box themes that can be applied to all t
 ### Using themes in ES6
 
 ```javascript
-import FusionCharts from "fusioncharts/core";
+import FusionCharts from 'fusioncharts/core';
 
 // include chart from viz folder - import ChartType from fusioncharts/viz/[ChartType];
-import Column2D from "fusioncharts/viz/column2d";
+import Column2D from 'fusioncharts/viz/column2d';
 
 // include theme from themes folder
-import fusionTheme from "fusioncharts/themes/es/fusioncharts.theme.fusion";
+import fusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
 // add chart as dependency - FusionCharts.addDep(ChartType);
 FusionCharts.addDep(Column2D);
@@ -279,28 +285,28 @@ FusionCharts.addDep(fusionTheme);
 
 // instantiate the chart.
 var chartInstance = new FusionCharts({
-  type: "Column2D",
-  renderAt: "chart-container", // container where chart will render
-  width: "600",
-  height: "400",
-  dataFormat: "json",
+  type: 'Column2D',
+  renderAt: 'chart-container', // container where chart will render
+  width: '600',
+  height: '400',
+  dataFormat: 'json',
   dataSource: {
     // chart configuration
     chart: {
-      caption: "Countries With Most Oil Reserves [2017-18]",
-      subcaption: "In MMbbl = One Million barrels",
-      theme: "fusion",
+      caption: 'Countries With Most Oil Reserves [2017-18]',
+      subcaption: 'In MMbbl = One Million barrels',
+      theme: 'fusion',
     },
     // chart data
     data: [
-      { label: "Venezuela", value: "290000" },
-      { label: "Saudi", value: "260000" },
-      { label: "Canada", value: "180000" },
-      { label: "Iran", value: "140000" },
-      { label: "Russia", value: "115000" },
-      { label: "UAE", value: "100000" },
-      { label: "US", value: "30000" },
-      { label: "China", value: "30000" },
+      { label: 'Venezuela', value: '290000' },
+      { label: 'Saudi', value: '260000' },
+      { label: 'Canada', value: '180000' },
+      { label: 'Iran', value: '140000' },
+      { label: 'Russia', value: '115000' },
+      { label: 'UAE', value: '100000' },
+      { label: 'US', value: '30000' },
+      { label: 'China', value: '30000' },
     ],
   },
 });
