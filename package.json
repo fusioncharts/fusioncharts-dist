@@ -31,7 +31,7 @@
     "gantt-chart"
   ],
   "dependencies": {
-    "@babel/runtime": "7.9.2",
+    "@babel/runtime": "7.28.6",
     "@fusioncharts/accessibility": "1.9.9",
     "@fusioncharts/charts": "4.2.1",
     "@fusioncharts/constructor": "1.9.9",
