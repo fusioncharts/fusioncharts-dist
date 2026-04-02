@@ -11,7 +11,7 @@
     "url": "git+https://github.com/fusioncharts/fusioncharts-dist.git"
   },
   "author": "FusionCharts, Inc. <support@fusioncharts.com>",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "homepage": "http://www.fusioncharts.com/",
   "keywords": [
     "fusioncharts",
@@ -32,17 +32,17 @@
   ],
   "dependencies": {
     "@babel/runtime": "7.9.2",
-    "@fusioncharts/accessibility": "1.9.9",
-    "@fusioncharts/charts": "4.2.1",
-    "@fusioncharts/constructor": "1.9.9",
-    "@fusioncharts/core": "1.9.9",
-    "@fusioncharts/datatable": "1.9.9",
-    "@fusioncharts/features": "1.9.9",
-    "@fusioncharts/fusiontime": "2.9.9",
-    "@fusioncharts/maps": "4.2.1",
-    "@fusioncharts/powercharts": "4.2.1",
-    "@fusioncharts/utils": "1.9.9",
-    "@fusioncharts/widgets": "4.2.1",
+    "@fusioncharts/accessibility": "1.9.10",
+    "@fusioncharts/charts": "4.2.2",
+    "@fusioncharts/constructor": "1.9.10",
+    "@fusioncharts/core": "1.9.10",
+    "@fusioncharts/datatable": "1.9.10",
+    "@fusioncharts/features": "1.9.10",
+    "@fusioncharts/fusiontime": "2.9.10",
+    "@fusioncharts/maps": "4.2.2",
+    "@fusioncharts/powercharts": "4.2.2",
+    "@fusioncharts/utils": "1.9.10",
+    "@fusioncharts/widgets": "4.2.2",
     "mutationobserver-shim": "0.3.5",
     "promise-polyfill": "8.1.3"
   }

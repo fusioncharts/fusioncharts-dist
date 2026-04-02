@@ -18,43 +18,19 @@ This package also contains FusionTime (timeseries charts), FusionWidgets (gauges
 - Support: [https://www.fusioncharts.com/contact-support](https://www.fusioncharts.com/contact-support)
 - Issues: [https://github.com/fusioncharts/fusioncharts-dist/issues](https://github.com/fusioncharts/fusioncharts-dist/issues)
 
-### What's New – v4.2 – Sept 2025
-
-#### New Features
-
-- FusionCharts version 4.2 introduces the `ignoredepthforlineplots` attribute, which, when set to `true`, makes the leftover line plot in an `mscolumn3dlinedy` or `stackedcolumn3dlinedy` chart act as a 2D line. Otherwise, the line continues to appear in 3D.
-- FusionCharts version 4.2 introduces support for inverse axes in Scatter and Bubble charts. You can now reverse the X and Y axes by setting the new attributes `reversexaxis` and `reverseyaxis` to `true` in the chart configuration.
+### What's New – v4.2.2 – Apr 2026
 
 #### Improvements
 
-- Upgraded third-party integrations of C#, Python, and Java support to the latest version of the framework:
-  - **C#**: upgraded and now supports up to .NET 9
-  - **Python**: upgraded and now supports up to Python 3.13.5 and Django 5.2.4.
-  - **Java**: upgraded and now supports up to Java 24
-- Added descriptions and documentation for the `legendWidth` attribute, which allows managing legend width and avoiding unwanted scrollbars on legendbox.
-- Added an explicit Webpack public path assignment to ensure compatibility in non-browser-like environments such as React Native WebView.
-- Upgraded third-party integrations support to the latest version of the framework:
-  - Upgraded `react-fusioncharts` integration supports up to the latest version of React v19.
-  - Upgraded `vue-fusioncharts` integration supports up to Vue 3.5.17.
-  - Upgraded `angular-fusioncharts` integration supports up toAngular v20.
+- FusionCharts 4.2.2 improved how the jQuery plugin is delivered to make it easier and more reliable to use. The plugin is now officially hosted on the FusionCharts CDN, with both [versioned](https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js) and [latest](https://cdn.fusioncharts.com/jquery-fusioncharts/latest/jquery.fusioncharts.min.js) paths available.
 
 #### Fixes
 
-- Resolved the Accessibility issue where resizing a chart using the Accessibility module changed the focus.
-- Fixed an issue where the Color Range for maps was not working as expected in the latest version.
-- Resolved an issue where the hover effect did not work correctly when having multiple markers in FusionMaps.
-- Fixed the issue where the legend caption exceeded the legend box limit, overlapping with the chart. Also, when using the `chartBottomMargin` attribute, ensure that the value is set to a value higher than 5px; otherwise, the trial watermark and legend will overlap.
-- Resolved the issue where JS threw an error when opening the popup view in Scroll charts. This issue affected the following chart types: `scrollColumn2d`, `scrollBar2D`, `scrollcombi2d`, and `scrollStackedBar2D`.
-- FusionCharts version 4.2 resolved an issue where the `displayValue` was unable to render the ampersand (`&`) symbol in various chart types.
-- Resolved an issue that prevented the `react-fusioncharts` component from rendering correctly inside the shadow DOM.
-- Resolved an issue where tooltips did not display upon hovering over values on an `Errorline` chart. Now, the tooltips are shown as expected.
-- Resolved the issue where ReactJS FusionCharts did not work as expected when using StrictMode. Users using React version 17 can use `react-fusioncharts` version 4.1, while those using React version 18 or higher should use the latest `react-fusioncharts` version.
-
-<br />
+- FusionCharts 4.2.2 fixed chart behavior when the chart type is changed. The scroll position now automatically resets to the beginning, providing a more consistent and predictable experience when switching between charts.
+- Fixed zoom, reset, and scroll behavior in ZoomLine charts. Zoom and reset states are now correctly maintained when navigating across multiple zoom levels and using scroll.
+- Resolved an issue where enabling `showPlotBorder` and `plotBorderThickness` caused thin internal lines to appear in negative stacks. Borders are now rendered consistently, resulting in clean, seamless borders between segments and more consistent visuals in stacked-column-2d charts.
 
 ---
-
-<br />
 
 ### Table of Contents
 
@@ -204,7 +180,7 @@ Want to render data-driven maps (FusionMaps) - check out [this link](https://www
 | :------------------------ | :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
 | AngularJS (1.x and above) | [Github Repo](https://github.com/fusioncharts/angularjs-fusioncharts)       | [Documentation](https://www.fusioncharts.com/dev/getting-started/angular/angularjs/your-first-chart-using-angularjs) |
 | Angular (2.x and above)   | [Github Repo](https://github.com/fusioncharts/angular-fusioncharts)         | [Documentation](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular)     |
-| jQuery                    | [Github Repo](https://github.com/fusioncharts/fusioncharts-jquery-plugin)   | [Documentation](https://www.fusioncharts.com/dev/getting-started/jquery/your-first-chart-using-jquery)               |
+| jQuery                    | [Github Repo](https://github.com/fusioncharts/jquery-fusioncharts)           | [Documentation](https://www.fusioncharts.com/dev/getting-started/jquery/your-first-chart-using-jquery)               |
 | React                     | [Github Repo](https://github.com/fusioncharts/react-fusioncharts-component) | [Documentation](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react)                 |
 | Vue                       | [Github Repo](https://github.com/fusioncharts/vue-fusioncharts)             | [Documentation](https://www.fusioncharts.com/dev/getting-started/vue/your-first-chart-using-vuejs)                   |
 | Ember                     | [Github Repo](https://github.com/fusioncharts/ember-fusioncharts)           | [Documentation](https://www.fusioncharts.com/dev/getting-started/ember/your-first-chart-using-ember)                 |
