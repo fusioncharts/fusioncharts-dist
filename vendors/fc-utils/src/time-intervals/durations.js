@@ -1,1 +1,0 @@
-const durationSecond=1e3,durationMinute=6e4,durationHour=36e5,durationDay=864e5,durationWeek=6048e5,durationMonth=2592e6,durationQuarter=78894e5,durationYear=315576e5;export{durationSecond,durationMinute,durationHour,durationDay,durationWeek,durationMonth,durationQuarter,durationYear};

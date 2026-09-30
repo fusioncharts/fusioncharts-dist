@@ -1,1 +1,0 @@
-export default(a=>{let b=a.length;const c=Array(b);for(;0<=--b;)c[b]=b;return c});

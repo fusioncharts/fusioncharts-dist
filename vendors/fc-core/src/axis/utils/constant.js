@@ -1,1 +1,0 @@
-const constant=a=>()=>a;export default constant;

@@ -1,1 +1,0 @@
-import interpolateNumber from'./number';import constant from'../constant';function isValid(a){return null!==a&&'undefined'!=typeof a}function interpolateValue(a,b){return isValid(b)&&isValid(a)&&'boolean'!=typeof b?interpolateNumber(a,b):constant(b)}export default interpolateValue;

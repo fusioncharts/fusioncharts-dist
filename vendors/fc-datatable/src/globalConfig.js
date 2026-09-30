@@ -1,1 +1,0 @@
-const globalConfig={enableUTC:!1};function getConfig(a){if(!a)throw new Error('configName is missing');return globalConfig[a]}function setConfig(a,b){if(!a)throw new Error('configName is missing');globalConfig[a]=b}export{getConfig,setConfig};

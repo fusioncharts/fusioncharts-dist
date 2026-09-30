@@ -1,1 +1,0 @@
-import lineAnimation from'../line/index.animation';export default{"*.dataset.spline":lineAnimation['*.dataset.line']};

@@ -1,1 +1,0 @@
-import fadeInAtAxis from'./polar-axis.animation';export default{"initial.axis.polar":function(){return{"path.appearing":fadeInAtAxis,"text.appearing":fadeInAtAxis}}};

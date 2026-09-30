@@ -1,1 +1,0 @@
-import{pluckNumber}from'../../../../../fc-core/src/lib';export default{"initial.dataMarker.flagMarker":function(){return{"*.appearing":function(a){return[{initialAttr:{opacity:0},finalAttr:{opacity:pluckNumber(a.attr.opacity,1)},slot:'final'}]}}}};

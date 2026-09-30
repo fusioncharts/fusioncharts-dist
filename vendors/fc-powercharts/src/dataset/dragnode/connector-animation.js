@@ -1,1 +1,0 @@
-export default{"initial.dataset.dragNodeConnector":function(){return{"path.appearing":()=>[{initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'plot'}],"text.appearing":()=>[{initialAttr:{opacity:0,"text-bound":'none'},finalAttr:{opacity:1},slot:'final'}],"*":null}}};

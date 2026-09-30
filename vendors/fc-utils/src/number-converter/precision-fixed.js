@@ -1,1 +1,0 @@
-import exponent from'./exponent';const precisionFixed=a=>Math.max(0,-exponent(Math.abs(a)));export default precisionFixed;
