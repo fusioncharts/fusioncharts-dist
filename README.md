@@ -18,18 +18,6 @@ This package also contains FusionTime (timeseries charts), FusionWidgets (gauges
 - Support: [https://www.fusioncharts.com/contact-support](https://www.fusioncharts.com/contact-support)
 - Issues: [https://github.com/fusioncharts/fusioncharts-dist/issues](https://github.com/fusioncharts/fusioncharts-dist/issues)
 
-### What's New – v4.2.2 – Apr 2026
-
-#### Improvements
-
-- FusionCharts 4.2.2 improved how the jQuery plugin is delivered to make it easier and more reliable to use. The plugin is now officially hosted on the FusionCharts CDN, with both [versioned](https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js) and [latest](https://cdn.fusioncharts.com/jquery-fusioncharts/latest/jquery.fusioncharts.min.js) paths available.
-
-#### Fixes
-
-- FusionCharts 4.2.2 fixed chart behavior when the chart type is changed. The scroll position now automatically resets to the beginning, providing a more consistent and predictable experience when switching between charts.
-- Fixed zoom, reset, and scroll behavior in ZoomLine charts. Zoom and reset states are now correctly maintained when navigating across multiple zoom levels and using scroll.
-- Resolved an issue where enabling `showPlotBorder` and `plotBorderThickness` caused thin internal lines to appear in negative stacks. Borders are now rendered consistently, resulting in clean, seamless borders between segments and more consistent visuals in stacked-column-2d charts.
-
 ---
 
 ### Table of Contents
@@ -308,6 +296,7 @@ FusionMaps is a companion package meant to be used in conjunction with FusionCha
 
 ## Version History
 
+- [CHANGELOG.md](./CHANGELOG.md) — what changed in each release of this package
 - [What’s New](https://www.fusioncharts.com/dev/upgrading/whats-new)
 - [Change Log](https://www.fusioncharts.com/dev/upgrading/change-log)
 - [Changed Behaviour & Depreciation](https://www.fusioncharts.com/dev/upgrading/changed-behavior)

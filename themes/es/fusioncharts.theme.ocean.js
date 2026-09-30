@@ -206,6 +206,11 @@ var themeObject = {
         showValues: '0'
       }
     },
+    msstackedbar2d: {
+      chart: {
+        showValues: '0'
+      }
+    },
     mscombi3d: {
       chart: {
         showValues: '0'

@@ -1,32 +1,21 @@
-function styleInject(css, ref) {
-  if ( ref === void 0 ) ref = {};
-  var insertAt = ref.insertAt;
+var css = "@font-face {\n  font-family: 'Source Sans Pro';\n  font-style: normal;\n  font-weight: 400;\n  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Source Sans Pro Light';\n  font-style: normal;\n  font-weight: 300;\n  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Source Sans Pro SemiBold';\n  font-style: normal;\n  font-weight: 600;\n  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n/* ft calendar customization */\n.fc-cal-date-normal-fusion {\n  color: #5F5F5F;\n  font-family: 'Source Sans Pro';\n  font-size: 11px;\n}\n\n.fc-cal-date-selected-fusion {\n  color: #FEFEFE;\n  font-family: 'Source Sans Pro SemiBold';\n  font-size: 11px;\n}";
 
-  if (!css || typeof document === 'undefined') { return; }
-
-  var head = document.head || document.getElementsByTagName('head')[0];
-  var style = document.createElement('style');
+((content) => {
+  const style = document.createElement('style');
   style.type = 'text/css';
-
-  if (insertAt === 'top') {
-    if (head.firstChild) {
-      head.insertBefore(style, head.firstChild);
-    } else {
-      head.appendChild(style);
+  const metaTag = document.querySelector('meta[http-equiv="Content-Security-Policy"]');
+  if (metaTag) {
+    const contentAttr = metaTag.getAttribute('content');
+    if (contentAttr) {
+      const match = contentAttr.match(/'nonce-([^']+)'/);
+      if (match) {
+        style.setAttribute('nonce', match[1]);
+      }
     }
-  } else {
-    head.appendChild(style);
   }
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    style.appendChild(document.createTextNode(css));
-  }
-}
-
-var css = "@font-face {\r\n  font-family: 'Source Sans Pro';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Source Sans Pro Light';\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Source Sans Pro SemiBold';\r\n  font-style: normal;\r\n  font-weight: 600;\r\n  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n\r\n/* ft calendar customization */\r\n.fc-cal-date-normal-fusion {\r\n  color: #5F5F5F;\r\n  font-family: 'Source Sans Pro';\r\n  font-size: 11px;\r\n}\r\n\r\n.fc-cal-date-selected-fusion {\r\n  color: #FEFEFE;\r\n  font-family: 'Source Sans Pro SemiBold';\r\n  font-size: 11px;\r\n}";
-styleInject(css);
+  style.styleSheet ? (style.styleSheet.cssText = content) : style.appendChild(document.createTextNode(content));
+  document.head.appendChild(style);
+})(css);
 
 /*
  Fusion Theme v0.6
@@ -1874,6 +1863,23 @@ var themeObject = {
         labelPadding: "6px 10px 6px 10px"
       }
     },
+
+    // 107 RadialBar
+    radialBar: {
+      chart: {
+        legendIconSides: "2",
+        labelPadding: "6px 10px 6px 10px"
+      }
+    },
+
+    // 108 multi-series stacked Bar2D chart
+    msstackedbar2d: {
+      chart: {
+        showLegend: "1",
+        legendIconSides: "4"
+      }
+    },
+
 
     // timeseries
     timeseries: {

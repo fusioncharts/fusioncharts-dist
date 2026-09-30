@@ -207,7 +207,7 @@ var themeObject = {
         smartLabelClearance: "0"
       },
 
-      data: function(b, a, c) {
+      data: function (b, a, c) {
         a = window.Math;
         return {
           alpha:
@@ -235,7 +235,7 @@ var themeObject = {
         smartLabelClearance: "0"
       },
 
-      data: function(b, a, c) {
+      data: function (b, a, c) {
         a = window.Math;
         return {
           alpha:
@@ -261,7 +261,7 @@ var themeObject = {
         smartLabelClearance: "0"
       },
 
-      data: function(b, a, c) {
+      data: function (b, a, c) {
         a = window.Math;
         return {
           alpha:
@@ -289,7 +289,7 @@ var themeObject = {
         smartLabelClearance: "0"
       },
 
-      data: function(b, a, c) {
+      data: function (b, a, c) {
         a = window.Math;
         return {
           alpha:
@@ -1870,6 +1870,14 @@ var themeObject = {
     radialBar: {
       chart: {
         labelPadding: "6px 10px 6px 10px"
+      }
+    },
+    // 108. Multi-series Stacked Bar2D Chart
+    msstackedbar2d: {
+      chart: {
+        showValues: "0",
+        showSum: "0",
+        drawCrossLine: "0"
       }
     },
 
