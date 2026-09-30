@@ -5,9 +5,7 @@
   "description": "FusionCharts JavaScript charting framework",
   "main": "fusioncharts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "./scripts/build/prepublish",
-    "postpublish": "./scripts/build/postpublish"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "FusionCharts, Inc. <support@fusioncharts.com>",
   "license": "http://www.fusioncharts.com/buy/",
