@@ -1,1 +1,0 @@
-export default{crossline:{crossline:{path:{updating:a=>{let b=a.attr.path;return[{initialAttr:{path:a.el.attr('path')},finalAttr:{path:b}}]}}}}};

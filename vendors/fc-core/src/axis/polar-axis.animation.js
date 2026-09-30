@@ -1,1 +1,0 @@
-let fadeInAtAxisAppearing=[{initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'axis'}];export default fadeInAtAxisAppearing;

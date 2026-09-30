@@ -1,1 +1,0 @@
-import Background from'../../../_internal/components/background';import{componentFactory}from'../../../../../fc-core/src/lib';export default(a=>{componentFactory(a,Background,'background',1,[{}])});

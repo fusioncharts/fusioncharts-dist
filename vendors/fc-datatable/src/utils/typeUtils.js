@@ -1,1 +1,0 @@
-let isNumber=a=>'number'==typeof a&&!isNaN(a-a);export{isNumber};

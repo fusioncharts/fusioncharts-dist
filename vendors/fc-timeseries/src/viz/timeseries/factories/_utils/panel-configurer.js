@@ -1,1 +1,0 @@
-export default((a,b)=>{let c=a[b];return Object.assign({},c,{columnname:c.columnname})});

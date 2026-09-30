@@ -1,1 +1,0 @@
-import Crossline from'../components/crossline';export default(a=>{let b=a.getFromEnv('dataSource');a.attachChild(Crossline,'horizontalCrossLine').configure({type:'horizontal',inputStyle:b.crossline&&b.crossline.style||{}})});

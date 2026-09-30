@@ -1,1 +1,0 @@
-import{componentFactory}from'../../../../fc-core/src/lib';import SmartToolbar from'../components/smart-toolbar';export default(a=>{let b,c=a.getFromEnv('dataSource').chart;componentFactory(a,SmartToolbar,'selectorToolbar',1,[Object.assign({toolbarhdirection:1},c)]),b=a.getChildren('selectorToolbar')[0],a.addToEnv('selectorToolbar',b)});

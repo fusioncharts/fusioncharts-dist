@@ -1,1 +1,0 @@
-let animationObject={initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'initial'};export default{"initial.canvas.canvas":{"canvas.appearing":[animationObject]}};

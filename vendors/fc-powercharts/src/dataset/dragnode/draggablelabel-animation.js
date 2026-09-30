@@ -1,1 +1,0 @@
-export default{"initial.dataset.dragNodeLabels":function(){return{"group.appearing":function(){return[{initialAttr:{opacity:0},finalAttr:{opacity:1},slot:'plot'}]}}}};

@@ -1,1 +1,0 @@
-import pie3danimation from'../pie3d/index.animation';export default{"initial.dataset.doughnut3D":pie3danimation['initial.dataset.pie3d']};

@@ -1,1 +1,0 @@
-import columnAnimation from'../column/index.animation';export default{"initial.dataset.column3D":columnAnimation['initial.dataset.column']};

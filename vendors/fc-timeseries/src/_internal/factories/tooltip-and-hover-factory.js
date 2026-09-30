@@ -1,1 +1,0 @@
-import MouseAction from'../components/tooltip-and-hover';export default function(a){a.config.enableMouseTracking&&a.attachChild(MouseAction,'tooltipHover').configure()}

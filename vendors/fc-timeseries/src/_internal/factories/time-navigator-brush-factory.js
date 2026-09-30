@@ -1,1 +1,0 @@
-import Brush from'../components/brush';export default(a=>{let b=a.attachChild(Brush,'brush'),c=a.getFromEnv('dataSource');b.configure({values:a.config.values,style:c.navigator&&c.navigator.window&&c.navigator.window.style||{}})});

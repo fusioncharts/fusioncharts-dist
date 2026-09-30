@@ -1,1 +1,0 @@
-export default(a=>'number'==typeof a&&!isNaN(a));

@@ -1,1 +1,0 @@
-import columnAnimation from'../../../../fc-charts/src/dataset/column/index.animation';export default{"initial.dataset.waterFall2D":columnAnimation['initial.dataset.column']};
